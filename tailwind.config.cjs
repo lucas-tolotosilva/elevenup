@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Bebas Neue, Poppins, sans-serif'
+        default: 'Poppins, sans-serif',
+        title: 'Bebas Neue, sans-serif'
+      },
+      fontSize: {
+        lg: '14rem', 
+        sm: '1rem'
       },
       colors: {
         blue: {
