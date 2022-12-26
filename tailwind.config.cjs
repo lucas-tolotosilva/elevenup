@@ -28,6 +28,9 @@ module.exports = {
         },
         gray: {
           200: '#ececec'
+        },
+        white: {
+          200: 'rgba(250, 250, 250, 0.5)'
         } 
       },
       screens: {
@@ -39,8 +42,13 @@ module.exports = {
   
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
-      }
+      },
+      backgroundImage: {
+        videoDesktop: "url('/videobg.mp4')",
+        videoMobile:  "url('/videobg-mobile.mp4')",
+      },
     },
+    
   },
   plugins: [],
 }
