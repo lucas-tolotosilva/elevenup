@@ -6,10 +6,10 @@ import c4 from '../assets/circles/circulo-4.png'
 
 function Compromisso () {
     return (
-        <div className='bg-white-200 border-2 w-9/12 rounded-3xl border-indigo-600 flex py-20'>
-            <div className="w-6/12">
+        <div className='bg-white-200 my-72 w-9/12 rounded-3xl border-1 border-white-100 flex items-center py-20'>
+            <div className="w-6/12 flex flex-col gap-8">
                 <h1 className='font-title text-9xl'>Compromissos</h1>
-                <p className='font-default text-justify px-14'>Nosso   time   contém   especialistas   em  design,
+                <p className='font-default text-sm text-justify px-14'>Nosso   time   contém   especialistas   em  design,
                     tráfego em   canais   digitais   e    inteligência   de
                     mercado,    além     de    Biomédicos    e   Biólogos
                     com   mestrado  e  doutorado  e  Engenheiros   de
@@ -18,22 +18,35 @@ function Compromisso () {
                 </p>
             </div>
 
-            <div className="w-6/12 grid grid-cols-2 gap-12 px-14">
-                <div className='bg-blue-900'>
-                    <img src={ c1 }/>
-                    <span></span>
+            <div className="w-6/12 grid grid-cols-2 gap-12 font-default px-14 text-xl">
+                <div className='bg-white-100 flex flex-col items-center justify-center py-10 gap-5 rounded-3xl'>
+                    <img className='w-20' src={ c1 }/>
+                    <div className='h-14 flex items-center '>
+                        <span>Profissionalismo</span>
+                    </div>
+                    
                 </div>
-                <div className='bg-blue-900'>
-                    <img src={ c2 } />
-                    <span></span>
+                <div className='bg-white-100 flex flex-col items-center justify-center py-10 gap-5 rounded-3xl'>
+                    <img className='w-20'  src={ c2 } />
+                    
+                    <div className='h-14 flex items-center '>
+                        <span>Pontualidade</span>
+                    </div>
+                    
                 </div>
-                <div className='bg-blue-900'>
-                    <img src={ c3 } />
-                    <span></span>
+                <div className='bg-white-100 flex flex-col items-center justify-center py-10 gap-5 rounded-3xl'>
+                    <img className='w-20' src={ c3 } />
+                    
+                    <div className='h-14 flex items-center '>
+                        <span>Relatórios <br /> Gerenciais</span>
+                    </div>
                 </div>
-                <div className='bg-blue-900'>
-                    <img src={ c3 } />
-                    <span></span>
+                <div className='bg-white-100 flex flex-col items-center justify-center py-10 gap-5 rounded-3xl'>
+                    <img className='w-20' src={ c4 } />
+                    
+                    <div className='h-14 flex items-center '>
+                        <span>Entrega de  <br /> Resultados</span>
+                    </div>
                 </div>
             </div>
             

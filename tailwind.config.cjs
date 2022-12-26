@@ -12,7 +12,7 @@ module.exports = {
       },
       fontSize: {
         lg: '11rem', 
-        sm: '1rem'
+        sm: '1.5rem'
       },
       colors: {
         blue: {
@@ -30,6 +30,7 @@ module.exports = {
           200: '#ececec'
         },
         white: {
+          100: '#ffffff',
           200: 'rgba(250, 250, 250, 0.5)'
         } 
       },
