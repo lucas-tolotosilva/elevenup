@@ -8,7 +8,7 @@ function App() {
     <div className="App bg-gray-200 h-screen text-center">
       <Header />
       
-      <div className='bg-gray-200  flex items-center justify-center'>
+      <div className='bg-gray-200 flex items-center justify-center'>
         <Compromisso />
       </div>
       

@@ -11,8 +11,8 @@ module.exports = {
         title: 'Bebas Neue, sans-serif'
       },
       fontSize: {
-        lg: '11rem', 
-        sm: '1.5rem'
+        //lg: '11rem', 
+        //sm: '1.5rem'
       },
       colors: {
         blue: {
