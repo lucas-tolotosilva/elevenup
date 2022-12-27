@@ -8,7 +8,7 @@ function Compromisso () {
     return (
         <div className='bg-white-200 my-72 w-9/12 rounded-3xl border-1 border-white-100 flex items-center py-20'>
             <div className="w-6/12 m-0 flex flex-col justify-center gap-8">
-                <div className="max-w-[568px] bg-cyan-500">
+                <div className="">
                     {/* <div className='m-0 w-3/4  bg-cyan-300'> */}
                         <h1 className='font-title w-full text-9xl px-14'>Compromissos</h1>
                         <p className='font-default text-2xl text-justify px-14'>Nosso   time   contém   especialistas   em  design,
@@ -16,7 +16,7 @@ function Compromisso () {
                             mercado,    além     de    Biomédicos    e   Biólogos
                             com   mestrado  e  doutorado  e  Engenheiros   de
                             Bioprocessos, formados    nas   mais   renomadas
-                            universidades do país.....
+                            universidades do país.
                         </p>
                     {/* </div> */}
                 </div>
