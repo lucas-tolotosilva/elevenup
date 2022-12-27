@@ -6,7 +6,7 @@ function Nav () {
     return (
         <div className="w-full h-full absolute top-4 m-0 overflow-hidden">
             <div className="flex items-center justify-center">
-                <div className="min-w-[1344px] flex items-center justify-between">
+                <div className="min-w-[1344px] max flex items-center justify-between">
                     <img className="w-48" src={logo}></img>
 
                     <div>
