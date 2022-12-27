@@ -6,12 +6,12 @@ import c4 from '../assets/circles/circulo-4.png'
 
 function Compromisso () {
     return (
-        <div className='bg-white-200 my-72 max-w-[1280px] rounded-3xl border-1 border-white-100 flex items-center py-20'>
-            <div className="w-6/12 m-0 flex flex-col justify-center gap-8">
+        <div className='bg-white-200 my-72 max-w-[1200px] rounded-3xl border-1 border-white-100 flex items-center py-20'>
+            <div className="w-6/12 m-0 flex flex-col justify-center gap-8 px-14">
                 <div className="">
                     {/* <div className='m-0 w-3/4  bg-cyan-300'> */}
-                        <h1 className='font-title w-full text-9xl px-14'>Compromissos</h1>
-                        <p className='font-default text-2xl text-justify px-14'>Nosso   time   contém   especialistas   em  design,
+                        <h1 className='font-title w-full text-[105px] -ml-1'>Compromissos</h1>
+                        <p className='font-default text-1xl text-justify'>Nosso   time   contém   especialistas   em  design,
                             tráfego em   canais   digitais   e    inteligência   de
                             mercado,    além     de    Biomédicos    e   Biólogos
                             com   mestrado  e  doutorado  e  Engenheiros   de
