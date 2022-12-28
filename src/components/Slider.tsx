@@ -18,7 +18,7 @@ export function Slider () {
         }
     ]
 
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
