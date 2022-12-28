@@ -4,10 +4,10 @@ export function Healthcare (){
     return (
         <div className="w-full h-full flex flex-col justify-center relative">
             <div className="w-full h-full z-0">
-                    <div className="w-[400px] h-[400px] -mr-[80px] -mb-[80px] right-0 bottom-0 absolute rounded-full bg-gradient-radial">
+                    <div className="w-[400px] h-[400px] -mr-[150px] -mb-[150px] right-0  bottom-0 absolute rounded-full bg-gradient-radial2">
                     </div>
             </div>
-            <div className="text-justify z-20 rounded-3xl font-default text-[18px] pr-32 pl-14 py-14 bg-white-gradient">
+            <div className="text-justify z-20 rounded-3xl font-default text-[18px] pr-14 pl-14 py-14 bg-white-gradient">
                 <div className="mb-7">
                     <h3 className="font-title text-6xl ">Healthcare</h3>
                 </div>

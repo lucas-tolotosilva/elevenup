@@ -35,7 +35,7 @@ export function Slider () {
 
     return (
         <div className="w-full h-full flex items-center mr-12 mb-36 relative">
-            <div className=" w-full ">
+            <div className=" w-full pl-14">
             <div >
                 <div className="w-[600px] h-[600px]  top-0 left-28 absolute rounded-full bg-gradient-radial "> 
                 

@@ -8,7 +8,7 @@ import './styles/main.css'
 function App() {
 
   return (
-    <div className="app bg-gray-200 text-center">
+    <div className="app bg-gray-200 text-center overflow-hidden">
       <Header />
       <div className='flex items-center justify-center'>
         <Compromissos />
