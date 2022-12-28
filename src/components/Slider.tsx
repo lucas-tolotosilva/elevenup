@@ -53,7 +53,7 @@ export function Slider () {
 
             {/* --------- Slide --------- */}
             <div className="flex">
-                <div  style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 transition duration-300 ease-out hover:scale-105 w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"></div>  
+                <div  style={{backgroundImage: `url(${slides[currentIndex].slide})`,transition: `ease-in-out 500ms`}} className="z-10 transition transform duration-300 ease-out hover:scale-105 w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"></div>  
                 <div className="flex items-center justify-center relative">
                     <div className="flex items-center justify-center w-auto absolute bottom-0 left-12">
                         {/* Seta Esquerda */}
