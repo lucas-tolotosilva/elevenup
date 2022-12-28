@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import img1 from '../assets/imagem1.jpg'
-import img2 from '../assets/imagem2.jpg'
+import lifescience from '../assets/lifescience.jpg'
+import healthcare from '../assets/healthcare.jpg'
 import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
@@ -8,12 +8,12 @@ export function Slider () {
     const slides = [
         {
             title: 'Healthcare',
-            slide : img1,
+            slide : healthcare,
             content: Healthcare
         },
         {
             title: 'Lifescience',
-            slide : img2,
+            slide : lifescience,
             content: Lifescience
         }
     ]
@@ -23,6 +23,7 @@ export function Slider () {
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+
         setCurrentIndex(newIndex);
     }
 
@@ -33,37 +34,41 @@ export function Slider () {
     }
 
     return (
-        <div className="w-full mr-12 mb-36 relative">
+        <div className="w-full h-full flex items-center mr-12 mb-36 relative">
+            <div className=" w-full ">
+            <div >
+                <div className="w-[600px] h-[600px]  top-0 left-28 absolute rounded-full bg-gradient-radial "> 
+                
+                </div> 
 
-            <div className="w-[650px] h-[650px] top-0 left-0 absolute rounded-full bg-gradient-radial"> 
+                <div className="w-[300px] h-[412px] absolute bg-gradient-to-r  from-blue-600 to-blue-900 blur-sm">
+                    
+                </div>
+
+                <div className="w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r  from-blue-600 to-blue-900 ">
+                    
+                </div>
+            </div>
             
-            </div> 
-
-            <div className="w-[300px] h-[412px] absolute bg-gradient-to-r from-blue-600 to-blue-900">
-                
-            </div>
-
-            <div className="w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r from-blue-600 to-blue-900 ">
-                
-            </div>
 
             {/* --------- Slide --------- */}
             <div className="flex">
-                <div style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"></div>  
+                <div  style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 transition duration-300 ease-out hover:scale-105 w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"></div>  
                 <div className="flex items-center justify-center relative">
                     <div className="flex items-center justify-center w-auto absolute bottom-0 left-12">
                         {/* Seta Esquerda */}
-                        <div className="flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none bg-blue-800 cursor-pointer">
+                        <div className="flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none bg-blue-800 cursor-pointer hover:bg-blue-600">
                             <BsChevronCompactLeft onClick={prevSlide} size={25} color='white' />
                         </div>
                         {/* seta Direita */}
-                        <div className="flex items-center justify-center w-12 h-12 rounded-2xl border-none bg-blue-800 cursor-pointer">
+                        <div className=" flex items-center justify-center w-12 h-12 rounded-2xl border-none bg-blue-800 cursor-pointer hover:bg-blue-600">
                             <BsChevronCompactRight onClick={nextSlide}  size={25} color='white' />
                         </div>
                     </div>
                 </div>
             </div>
             {/* --------- Fim Slide --------- */}
+            </div>
            
 
         </div>
