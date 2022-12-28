@@ -53,7 +53,8 @@ module.exports = {
         videoDesktop: "url('/videobg.mp4')",
         videoMobile:  "url('/videobg-mobile.mp4')",
         //'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-radial': 'radial-gradient(circle, rgba(255,14,209,1) 5%, rgba(255,14,209,0.05)52%, rgba(250, 250, 250, 0.5) 100%)'
+        'gradient-radial': 'radial-gradient(circle, rgba(255,14,209,0.4) 5%, rgba(255,14,209,0.05)52%, rgba(250, 250, 250, 0.5) 90%)',
+        'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)'
       },
     },
     
