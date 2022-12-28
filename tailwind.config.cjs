@@ -17,11 +17,14 @@ module.exports = {
       colors: {
         blue: {
           600: '#025ead',
-          800: '#003868'
+          800: '#003868',
+          900: '#012f57'
         }, 
         pink: {
-          800: '#610950',
-          500: '#ff0ed1'
+          50: 'rgba(255, 14, 209, 0.25)',
+          500: '#ff0ed1',
+          800: '#610950'
+          
         },
         black: {
           900: '#222222'
@@ -30,8 +33,10 @@ module.exports = {
           200: '#ececec'
         },
         white: {
+          50: 'rgba(255, 255, 255, 0)',
           100: '#ffffff',
           200: 'rgba(250, 250, 250, 0.5)'
+          
         } 
       },
       screens: {
@@ -47,6 +52,7 @@ module.exports = {
       backgroundImage: {
         videoDesktop: "url('/videobg.mp4')",
         videoMobile:  "url('/videobg-mobile.mp4')",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
     
