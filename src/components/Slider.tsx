@@ -1,16 +1,24 @@
 import React from "react";
+import img1 from '../assets/imagem1.jpg'
+import img2 from '../assets/imagem2.jpg'
+import { Healthcare, Lifescience } from "./SegTextos";
 
-function Slider () {
+export function Slider () {
+    const slides = [
+        {
+            title: 'Healthcare',
+            slide1 : img1,
+            content: Healthcare
+        },
+        {
+            title: 'Lifescience',
+            slide1 : img2,
+            content: Lifescience
+        }
+    ]
     return (
-        <div className="text-center">
-            <h2 className="font-title w-full text-[230px]">Segmentos</h2>
-            <div className="w-[1440px] bg-blue-400 flex mb-36"> 
-                
-                <div className="w-6/12 bg-pink-700">...</div>
-                <div className="w-6/12 bg-purple-400">...</div>
-            </div>
+        <div className="w-full mr-12">
+
         </div>
     )
 }
-
-export default Slider;

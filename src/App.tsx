@@ -1,6 +1,7 @@
 import { Compromissos } from './components/Compromissos'
 import { Header } from './components/Header'
-import Slider from './components/Slider'
+import { Segmentos } from './components/Segmentos'
+//import Slider from './components/Slider'
 import { Testes } from './components/Testes'
 import './styles/main.css'
 
@@ -14,7 +15,7 @@ function App() {
       </div>
       {/* <Testes /> */}
       <div className='flex items-center justify-center'>
-        <Slider />
+        <Segmentos />
       </div>
       
     </div>
