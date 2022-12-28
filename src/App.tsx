@@ -1,5 +1,6 @@
 import { Compromissos } from './components/Compromissos'
 import { Header } from './components/Header'
+import Slider from './components/Slider'
 import { Testes } from './components/Testes'
 import './styles/main.css'
 
@@ -8,10 +9,14 @@ function App() {
   return (
     <div className="app bg-gray-200 text-center">
       <Header />
-      <div className='bg-gray-200 flex items-center justify-center'>
+      <div className='flex items-center justify-center'>
         <Compromissos />
       </div>
       {/* <Testes /> */}
+      <div className='flex items-center justify-center'>
+        <Slider />
+      </div>
+      
     </div>
   )
 }
