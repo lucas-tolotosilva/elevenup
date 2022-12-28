@@ -52,7 +52,8 @@ module.exports = {
       backgroundImage: {
         videoDesktop: "url('/videobg.mp4')",
         videoMobile:  "url('/videobg-mobile.mp4')",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        //'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-radial': 'radial-gradient(circle, rgba(255,14,209,1) 5%, rgba(255,14,209,0.05) 52%, rgba(250, 250, 250, 0.5) 100%)'
       },
     },
     

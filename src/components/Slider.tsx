@@ -35,6 +35,10 @@ export function Slider () {
     return (
         <div className="w-full mr-12 mb-36 relative">
 
+            <div className="w-[650px] h-[650px] top-0 left-0 absolute rounded-full bg-gradient-radial"> 
+            
+            </div> 
+
             <div className="w-[300px] h-[412px] absolute bg-gradient-to-r from-blue-600 to-blue-900">
                 
             </div>
@@ -43,9 +47,6 @@ export function Slider () {
                 
             </div>
 
-            {/* <div className="w-[700px] h-[700px] z-50 absolute rounded-full box-shadow: 0 25px 50px -12px #ff0ed1"> 
-        ...
-            </div> */}
             {/* --------- Slide --------- */}
             <div className="flex">
                 <div style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"></div>  
