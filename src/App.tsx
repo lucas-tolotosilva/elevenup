@@ -1,3 +1,4 @@
+import { Clientes } from './components/Clientes'
 import { Compromissos } from './components/Compromissos'
 import { Header } from './components/Header'
 import { Segmentos } from './components/Segmentos'
@@ -16,6 +17,10 @@ function App() {
       {/* <Testes /> */}
       <div className='flex items-center justify-center'>
         <Segmentos />
+      </div>
+
+      <div className='flex items-center justify-center'>
+        <Clientes />
       </div>
       
     </div>

@@ -60,6 +60,9 @@ module.exports = {
         'gradient-radial-blue2': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 90%)',
         'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)'
       },
+      animation: {
+        fade: 'fadeOut 5s ease-in-out',
+      },
     },
    },
   plugins: [],

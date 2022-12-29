@@ -15,7 +15,7 @@ export function Healthcare ({color}: colorProps){
                 </div>
                 <div className="text-justify z-20 rounded-3xl font-default text-[18px] pr-14 pl-14 py-14 bg-white-gradient">
                     <div className="mb-7">
-                        <h3 className="font-title text-6xl ">Healthcare</h3>
+                        <h3 className="font-title text-6xl">Healthcare</h3>
                     </div>
                     <div className="mb-7">
                         <p className=" text-[18px]">
@@ -59,7 +59,7 @@ export function Lifescience ({color}: colorProps){
             </div>
             <div className="text-justify z-20 rounded-3xl font-default text-[18px] pr-14 pl-14 py-14 bg-white-gradient">
                 <div className="mb-7">
-                    <h3 className="font-title text-6xl ">Life Science</h3>
+                    <h3 className="font-title text-6xl">Life Science</h3>
                 </div>
                 <div className="mb-7">
                     <p className=" text-[18px]">
