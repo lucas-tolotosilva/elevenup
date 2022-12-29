@@ -47,14 +47,14 @@ export const data = [
         id: 8,
         img: bioX
     },
-    {
-        id: 9,
-        img:jf
-    },
-    {
-        id: 10,
-        img: novaBio
-    },
+    // {
+    //     id: 9,
+    //     img:jf
+    // },
+    // {
+    //     id: 10,
+    //     img: novaBio
+    // },
     {
         id: 11,
         img: omax
