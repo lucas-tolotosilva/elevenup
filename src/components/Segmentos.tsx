@@ -2,6 +2,7 @@ import React from "react";
 import { Healthcare, Lifescience } from "./SegTextos";
 import { Slider } from "./Slider";
 
+
 export function Segmentos (){
     return(
         <div className="">
@@ -11,6 +12,7 @@ export function Segmentos (){
                     <Slider />
                 </div>
                 <div className="w-6/12">
+                    
                     <Healthcare />
                     
                 </div>

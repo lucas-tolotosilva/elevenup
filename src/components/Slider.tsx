@@ -5,7 +5,6 @@ import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export function Slider () {
-    const cards = document.getElementsByClassName('.card');
     
     const slides = [
         {
@@ -25,26 +24,24 @@ export function Slider () {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isToggled, setIsToggled] = useState(false);
 
-    const handleToggled = () => {
-        setIsToggled(!isToggled)
-    }
+    // const handleToggled = () => {
+    //     setIsToggled(!isToggled)
+    // }
 
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-        console.log('Voltar')
-        console.log(newIndex)
-        console.log(currentIndex)
-        setCurrentIndex(newIndex);
         
+        setIsToggled(!isToggled);
+
+        setCurrentIndex(newIndex);
     }
 
     const nextSlide = () => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
-        console.log('Avançar')
-        console.log(newIndex)
-        console.log(currentIndex)
+
+        setIsToggled(!isToggled);
         
         setCurrentIndex(newIndex)
     }
@@ -53,17 +50,20 @@ export function Slider () {
         <div className="w-full h-full flex items-center mr-12 mb-36 relative">
             <div className=" w-full pl-14">
             <div >
-               
-                <div className="w-[600px] h-[600px]  top-0 left-28 absolute rounded-full bg-gradient-radial "> 
+
+                {/* --------- sombra --------- */}
+                <div className={`w-[700px] h-[700px]  top-0 left-28 absolute rounded-full ${!isToggled ? 'bg-gradient-radial' :'bg-gradient-radial-blue'} `}> 
                 
                 </div> 
 
-                <div className="card w-[300px] h-[412px] absolute bg-gradient-to-r from-blue-600 to-blue-900 blur-sm"
+                {/* --------- Quadrado 1 --------- */}
+                <div className={`card w-[300px] h-[412px] absolute bg-gradient-to-r blur-sm ${!isToggled ? 'bg-gradient-to-r from-blue-600 to-blue-900' :'from-pink-500 to-pink-800' }`}
                      style={{backgroundImage: `url(${{}})` }}>
                     
                 </div>
 
-                <div className="card w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r  from-pink-500 to-pink-800 ">
+                {/* --------- Quadrado 2 --------- */}
+                <div className={`card w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r ${!isToggled ? 'bg-gradient-to-r from-blue-600 to-blue-900 ' :'from-pink-500 to-pink-800' }`}>
                     
                 </div>
             </div>
@@ -75,11 +75,11 @@ export function Slider () {
                 <div className="flex items-center justify-center relative">
                     <div className="flex items-center justify-center w-auto absolute bottom-0 left-12">
                         {/* Seta Esquerda */}
-                        <div className="flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none bg-blue-800 cursor-pointer hover:bg-blue-600">
+                        <div className={`flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none cursor-pointer  ${!isToggled ? ' bg-blue-800 hover:bg-blue-600' : ' bg-pink-800 hover:bg-pink-600' }`}>
                             <BsChevronCompactLeft onClick={prevSlide} size={25} color='white' />
                         </div>
                         {/* seta Direita */}
-                        <div className=" flex items-center justify-center w-12 h-12 rounded-2xl border-none bg-blue-800 cursor-pointer hover:bg-blue-600">
+                        <div className={`flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none cursor-pointer ${!isToggled ? ' bg-blue-800 hover:bg-blue-600' : ' bg-pink-800 hover:bg-pink-600' }`}>
                             <BsChevronCompactRight onClick={nextSlide}  size={25} color='white' />
                         </div>
                     </div>
