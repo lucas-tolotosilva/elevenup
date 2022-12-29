@@ -5,31 +5,47 @@ import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export function Slider () {
+    const cards = document.getElementsByClassName('.card');
+    
     const slides = [
         {
             title: 'Healthcare',
             slide : healthcare,
-            content: Healthcare
+            content: Healthcare,
+            color: 'from-blue-600 to-blue-900'
         },
         {
             title: 'Lifescience',
             slide : lifescience,
-            content: Lifescience
+            content: Lifescience,
+            color: 'from-pink-500 to-pink-800'
         }
     ]
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isToggled, setIsToggled] = useState(false);
+
+    const handleToggled = () => {
+        setIsToggled(!isToggled)
+    }
 
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-
+        console.log('Voltar')
+        console.log(newIndex)
+        console.log(currentIndex)
         setCurrentIndex(newIndex);
+        
     }
 
     const nextSlide = () => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        console.log('Avançar')
+        console.log(newIndex)
+        console.log(currentIndex)
+        
         setCurrentIndex(newIndex)
     }
 
@@ -37,15 +53,17 @@ export function Slider () {
         <div className="w-full h-full flex items-center mr-12 mb-36 relative">
             <div className=" w-full pl-14">
             <div >
+               
                 <div className="w-[600px] h-[600px]  top-0 left-28 absolute rounded-full bg-gradient-radial "> 
                 
                 </div> 
 
-                <div className="w-[300px] h-[412px] absolute bg-gradient-to-r  from-blue-600 to-blue-900 blur-sm">
+                <div className="card w-[300px] h-[412px] absolute bg-gradient-to-r from-blue-600 to-blue-900 blur-sm"
+                     style={{backgroundImage: `url(${{}})` }}>
                     
                 </div>
 
-                <div className="w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r  from-blue-600 to-blue-900 ">
+                <div className="card w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r  from-pink-500 to-pink-800 ">
                     
                 </div>
             </div>
