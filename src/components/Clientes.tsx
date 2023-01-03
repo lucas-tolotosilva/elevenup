@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { data } from "./DataImg";
+<<<<<<< Updated upstream
+=======
+import '../styles/locomotive-scroll.css'
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    //el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+>>>>>>> Stashed changes
 
 export function Clientes () {
     
