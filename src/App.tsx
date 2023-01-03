@@ -22,7 +22,7 @@ function App() {
       <div className='flex items-center justify-center'>
         <Clientes />
       </div>
-      
+      <Testes />
     </div>
   )
 }
