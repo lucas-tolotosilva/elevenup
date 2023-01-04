@@ -5,11 +5,11 @@ import bioProx from '../assets/clients-logo/bioproxjr-color.png'
 import gnt from '../assets/clients-logo/gntlab-color.png'
 import br4 from '../assets/clients-logo/grupobr4-color.png'
 import lanLab from '../assets/clients-logo/lanlab-color.png'
-import bioX from '../assets/clients-logo/logo-bioxtracta.png' //
+import bioX from '../assets/clients-logo/bioxtracta-color.png' //
 import jf from '../assets/clients-logo/jflab-color.png'
 import novaBio from '../assets/clients-logo/novabio-color.png'
 import omax from '../assets/clients-logo/omaxlab-color.png'
-import progenix from '../assets/clients-logo/progenix.png' //
+import progenix from '../assets/clients-logo/progenix-color.png' //
 import rbcc from '../assets/clients-logo/rbcc.png'  //
 import veritas from '../assets/clients-logo/veritas-color.png'
 import zymo from '../assets/clients-logo/zymo-color.png'

@@ -10,13 +10,13 @@ export function Clientes () {
             
             <ParallaxProvider >
             <Parallax speed={10} translateX={[-30, 5]}>
-                <div className="w-full mb-12"> 
+                <div className="w-full mb-4"> 
                     <div id="client-logo" className="flex gap-12 ">
                         {carousel1.map((item, indice)=> (
-                            <img id="img" key={item.id} className="grayscale hover:grayscale-0 hover:cursor-pointer" src={item.img} alt='imagem' />
+                            <img id="img" key={item.id} className="grayscale hover:grayscale-0 hover:scale-125  hover:cursor-pointer" src={item.img} alt='imagem' />
                         ))}
                         {carousel1.map((item, indice)=> (
-                            <img id="img" key={item.id} className="grayscale hover:grayscale-0 hover:cursor-pointer" src={item.img} alt='imagem' />
+                            <img id="img" key={item.id} className="grayscale hover:grayscale-0 hover:scale-125  hover:cursor-pointer" src={item.img} alt='imagem' />
                         ))}
                     </div>
                     
