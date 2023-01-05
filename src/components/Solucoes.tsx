@@ -19,7 +19,7 @@ import { Card } from './Card';
 export function Solucoes(){
 
     return (
-        <div className="w-full mb-36">
+        <div className="max-w-[1280px] mb-36">
             <h2 className="font-title w-full text-[200px] mb-4">Soluções</h2>
             <div className="flex justify-center w-full">
                 <p className="text-center font-default text-[18px] w-6/12 mb-20 ">
