@@ -46,11 +46,11 @@ export function Combinacao() {
 
             <div className='w-full z-10 flex justify-center'>
                 <div className='max-w-[1280px] min-w-[1270px] flex items-center justify-center'>
-                    <div className='w-6/12 -mt-40 ml-16 mr-32 bg-black-900'>
-                        <img className='w-full' src={life} />
+                    <div className='w-6/12 -mt-40 ml-16 mr-32'>
+                        <img className='w-full rounded-3xl' src={life} />
                     </div>
-                    <div className='w-6/12 -mt-40 ml-32 mr-16 bg-black-900'>
-                        <img className='w-full' src={health} />
+                    <div className='w-6/12 -mt-40 ml-32 mr-16'>
+                        <img className='w-full rounded-3xl' src={health} />
                     </div>
                 </div>
             </div >
