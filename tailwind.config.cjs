@@ -36,6 +36,7 @@ module.exports = {
         white: {
           50: 'rgba(255, 255, 255, 0)',
           100: '#ffffff',
+          150: '#fafafa',
           200: 'rgba(250, 250, 250, 0.5)'
           
         } 
