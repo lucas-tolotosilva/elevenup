@@ -5,11 +5,11 @@ export function Clientes () {
     
     return (
         <div className="w-full mb-36">
-            <h2 className="font-title w-full text-[200px] mb-8">Clientes</h2>
+            <h2 className="font-title w-full text-[200px] mb-24">Clientes</h2>
                       
             
             <ParallaxProvider >
-            <Parallax speed={10} translateX={[-30, 5]}>
+            <Parallax speed={10} translateY={[0, 0]} translateX={[-30, 5]}>
                 <div className="w-full mb-4"> 
                     <div id="client-logo" className="flex gap-12 ">
                         {carousel1.map((item, indice)=> (

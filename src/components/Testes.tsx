@@ -1,34 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-
-import { carousel1, carousel2 } from "./DataImg";
-
+import life from '../assets/lifescience.jpg'
+import healthcare from '../assets/healthcare.jpg'
 
 export function Testes() {
-    
-
+   
     return(
-        <ParallaxProvider>
-            <Parallax translateX={[-20, 20]}>
-                <div className="w-full mb-36"> 
-                    <div data-anime="left" id="client-logo" className={`flex gap-12 `}>
-                        {carousel1.map((item, indice)=> (
-                            <img id="img" key={item.id} className="grayscale hover:grayscale-0 hover:cursor-pointer" src={item.img} alt='imagem' />
-                        ))}
-                    </div>
-                </div>
-            </Parallax>
-            <Parallax translateX={[10, -20]}>
-                <div className="w-full mb-36"> 
-                    <div data-anime="left" id="client-logo" className={`flex gap-12 mb-[2000px] `}>
-                        {carousel2.map((item, indice)=> (
-                            <img key={item.id} className="cover grayscale" src={item.img} alt='imagem' />
-                        ))}
-                    </div>
-                </div>
-
-            </Parallax>
-        </ParallaxProvider>
+        <div className="w-full h-420 relative">
+            <img className=" w-[390px] h-[412px] margin-auto absolute top-0 bottom-0 right-0 left-0" src={life} />
+            <img className="" src={healthcare} />
+        </div>
         
     )
 }
