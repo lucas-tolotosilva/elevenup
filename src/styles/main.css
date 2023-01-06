@@ -5,7 +5,7 @@
 @keyframes myAnim {
 	0%,
 	100% {
-		transform: rotate(-60deg);
+		//transform: rotate(-60deg);
 	}
 
 

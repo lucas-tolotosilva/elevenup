@@ -64,7 +64,12 @@ module.exports = {
         waveFooter: "url('/fundo.png')"
       },
       animation: {
-        'slow-anim': 'myAnim 2s ease 0s infinite normal none',
+        'slow-anim1': 'myAnim 15s ease-in-out infinite',
+        'slow-anim2': 'myAnim 12s ease-in-out infinite',
+        'slow-anim3': 'myAnim 16s ease-in-out infinite',
+        'slow-anim4': 'myAnim 20s ease-in-out infinite',
+        'slow-anim5': 'myAnim 25s ease-in-out infinite',
+        'slow-anim6': 'myAnim 18s ease-in-out infinite',
       },
       
       boxShadow: {
