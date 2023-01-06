@@ -18,7 +18,7 @@ export function Compromissos() {
                         mercado,    além     de    Biomédicos    e   Biólogos
                         com   mestrado  e  doutorado  e  Engenheiros   de
                         Bioprocessos, formados    nas   mais   renomadas
-                        universidades do país.
+                        universidades do país...
                     </p>
                 </div>
             </div>
