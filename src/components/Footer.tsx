@@ -1,24 +1,47 @@
 import React from 'react'
-import bg from '../assets/fundo-footer.png'
-import bgBlur from '../assets/bg-blur.png'
+import { motion } from "framer-motion"
+import '../styles/main.css'
+import { BiInfinite } from 'react-icons/bi'
 
 export function Footer () {
     return (
-        <div className='w-full  relative'>
-            <div className='w-32 h-32 absolute z-10 bg-blue-500'>
+        <div className="w-full min-h-[700px] bg-[url('../assets/fundo.png')] cover blur-sm relative">
+            <div className='w-full h-full flex justify-center relative'>
+                {/* ---- RETÂNGULO CENTRO - AZUL ---- */}
+                <motion.div 
+                    style={{transform: 'rotate(12deg)'}}
+                    animate={{
+                        x: [1, 2, 2, 1, 1],
+                        y: [0, 0, 180, 180, 0],
+                      }}
+                      transition={{
+                        duration: 2,
+                        ease: "easeInOut",
+                        times: [0, 0.2, 0.5, 0.8, 1],
+                        repeat: Infinity,
+                        repeatDelay: 0
+                      }}
+                
+                className='absolute -top-12 blur-sm w-96 h-56 rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></motion.div>
+            </div>
+            
+            {/* ---- RETÂNGULO ESQUERDA - ROSA ---- */}
+            <div className='absolute animate-slow-anim -top-12 -left-20 blur-sm w-48 h-48 -rotate-[60deg] rounded-3xl bg-gradient-to-t from-pink-500 to-pink-800'></div>
 
-            </div>
-            <div className='relative'>
-                <div className=' w-full h-full'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#ffffff" fill-opacity="0.4" d="M0,128L48,122.7C96,117,192,107,288,90.7C384,75,480,53,576,58.7C672,64,768,96,864,117.3C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                </svg>
-                    <img className='cover w-full h-full' src={bgBlur}/>
-                </div>
-                <div className='absolute w-full h-full'>
-                    <img className=' cover w-full h-full' src={bg}/>
-                </div>
-            </div>
+            {/* ---- RETÂNGULO ESQUERDA 2 - ROSA ---- */}
+            <div className='absolute left-96 top-24 blur-lg w-24 h-24 -rotate-[60deg] rounded-3xl bg-gradient-to-t from-pink-500 to-pink-800'></div>
+
+             {/* ---- *** FUNDO COM OPACIDADE *** ---- */}
+            <div className="w-full h-full bg-[url('../assets/fundo-opacidade.png')] blur-sm absolute "></div>
+            
+            {/* ---- RETÂNGULO ESQUERDA - AZUL ---- */}
+            <div className='absolute top-16 -left-28 blur-sm w-80 h-64 -rotate-[60deg] rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></div>
+
+            {/* ---- RETÂNGULO ESQUERDA 2 - ROSA ---- */}
+            <div className='absolute right-96 -top-10 blur-md w-32 h-24 rotate-[25deg] rounded-3xl bg-gradient-to-b from-pink-500 to-pink-800'></div>
+
+            {/* ---- RETÂNGULO DIREITO - AZUL ---- */}
+            <div className='absolute -right-24 blur-sm w-64 h-60 -rotate-[60deg] rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></div>
         </div>
     )
 }

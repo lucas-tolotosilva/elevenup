@@ -60,13 +60,18 @@ module.exports = {
         'gradient-radial-blue': 'radial-gradient(circle, rgba(0,56,104,0.5) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 100%)',
         'gradient-radial-blue2': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 90%)',
         'gradient-radial-blue-mini': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250, 0.008) 70%)',
-        'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)'
+        'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)',
+        waveFooter: "url('/fundo.png')"
       },
       animation: {
-        fade: 'fadeOut 5s ease-in-out',
+        'slow-anim': 'myAnim 2s ease 0s infinite normal none',
       },
+      
       boxShadow: {
         '3xl': '0 0 21px rgba(0, 0, 0, 0.15 )'
+      },
+      blur: {
+        'tt': '2px'
       }
     },
    },
