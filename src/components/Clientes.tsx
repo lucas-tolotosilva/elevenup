@@ -9,7 +9,11 @@ export function Clientes () {
                       
             
             <ParallaxProvider >
+<<<<<<< Updated upstream
             <Parallax speed={10} translateY={[0, 0]} translateX={[-30, 5]}>
+=======
+            <Parallax speed={10} translateY={[0 ,0]} translateX={[-30, 5]}>
+>>>>>>> Stashed changes
                 <div className="w-full mb-4"> 
                     <div id="client-logo" className="flex gap-12 ">
                         {carousel1.map((item, indice)=> (

@@ -5,7 +5,7 @@ import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export function Slider () {
-    
+    //https://www.youtube.com/results?search_query=react+3d+carousel
     const slides = [
         {
             title: 'Healthcare',
@@ -62,7 +62,7 @@ export function Slider () {
 
                             {/* --------- Quadrado 1 --------- */}
                             <div className={`card w-[300px] h-[412px] absolute bg-gradient-to-r blur-sm ${!isToggled ? 'bg-gradient-to-r from-blue-600 to-blue-900' :'from-pink-500 to-pink-800' }`}
-                                style={{backgroundImage: `url(${{}})` }}>
+                                >
                                 
                             </div>
 
