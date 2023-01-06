@@ -11,15 +11,15 @@ export function Footer () {
                 <motion.div 
                     style={{transform: 'rotate(12deg)'}}
                     animate={{
-                        x: [1, 2, 2, 1, 1],
-                        y: [0, 0, 180, 180, 0],
+                        //x: [1, 2, 2, 1, 1],
+                        //y: [0, 0, 180, 180, 0],
+                        x: [0, 100, 200, 300, 200, 100, 0, 100],
+                        y: [0, 100, -50, 50, -50, 50, -50, 0]
                       }}
                       transition={{
-                        duration: 2,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 0
+                        type: "spring", 
+                        duration: 10,
+                        repeat: Infinity
                       }}
                 
                 className='absolute -top-12 blur-sm w-96 h-56 rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></motion.div>
