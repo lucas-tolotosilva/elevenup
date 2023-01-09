@@ -20,20 +20,20 @@ export function Footer () {
                         <div className='flex space-x-24 z-30 font-default text-lg '>
                             <div >
                                 <h2 className='font-default mb-3 text-3xl font-bold '>Nossa Unidade</h2>
-                                <p>
+                                <a href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" target="_blank">
                                     Rua Reverendo Francisco <br />
                                     Lotufo, 663 - Sala 6 <br />
                                     Vila Nogueira, Botucatu - SP <br />
                                     18606-810 <br />
-                                </p>
+                                </a>
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Institucional</h2>
-                                    <a href='#'>Quem Somos</a><br />
-                                    <a>Equipe</a><br />
-                                    <a>Contato</a> <br />
-                                    <a>Life Science</a><br />
-                                    <a>Healthcare</a>
+                                    <a href='aaaaa'>Quem Somos</a><br />
+                                    <a href='aaaaa'>Equipe</a><br />
+                                    <a href='aaaaa'>Contato</a> <br />
+                                    <a href='aaaaa'>Life Science</a><br />
+                                    <a href='aaaaa'>Healthcare</a>
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Contato</h2>
@@ -43,9 +43,10 @@ export function Footer () {
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Redes Sociais</h2>
                                 <div className='flex items-center justify-center space-x-5'>
-                                    <img src={face} />
-                                    <img src={insta} />
-                                    <img src={link} />
+                                    <a href="aaaaaa" target="_blank"><img  src={face} /></a>
+                                    <a href="aaaaaa" target="_blank"><img  src={insta} /></a>
+                                    <a href="aaaaaa" target="_blank"><img  src={link} /></a>
+                                    
                                 </div>
                             </div>
                         </div>
