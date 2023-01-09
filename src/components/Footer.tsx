@@ -12,9 +12,12 @@ export function Footer () {
         <div className="w-full min-h-[900px] relative">
             <div className='absolute w-full h-full z-10'>
                     <div className='w-full h-full flex flex-col items-center justify-center text-left space-y-24 relative'>
+                    <div className='absolute bottom-0 z-10 '>
+                        <img src={img} />
+                    </div>
                         <img width={'300px'} src={logo} />
                         
-                        <div className='flex space-x-48 font-default text-lg '>
+                        <div className='flex space-x-24 z-30 font-default text-lg '>
                             <div >
                                 <h2 className='font-default mb-3 text-3xl font-bold '>Nossa Unidade</h2>
                                 <p>
@@ -26,7 +29,7 @@ export function Footer () {
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Institucional</h2>
-                                    <a>Quem Somos</a><br />
+                                    <a href='#'>Quem Somos</a><br />
                                     <a>Equipe</a><br />
                                     <a>Contato</a> <br />
                                     <a>Life Science</a><br />
@@ -34,12 +37,12 @@ export function Footer () {
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Contato</h2>
-                                <span>(14) 3354-8256</span> <br />
-                                <span>contato@elevenup.com.br</span>
+                                <a href="tel:+551433548256">(14) 3354-8256</a> <br />
+                                <a href="mailto:contato@elevenup.com.br">contato@elevenup.com.br</a>
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Redes Sociais</h2>
-                                <div className='flex items-center justify-center'>
+                                <div className='flex items-center justify-center space-x-5'>
                                     <img src={face} />
                                     <img src={insta} />
                                     <img src={link} />
@@ -61,9 +64,7 @@ export function Footer () {
                         </div>
                     </div>
                 </div>
-            <div className='absolute bottom-0 z-10 '>
-                <img src={img} />
-            </div>
+            
 
             <div className="w-full min-h-[900px] bg-[url('../assets/fundo.png')] relative cover blur-sm ">
                 <div className='animate-slow-anim4 w-full h-full flex justify-center relative'>
