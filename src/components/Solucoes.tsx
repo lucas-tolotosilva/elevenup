@@ -1,5 +1,4 @@
 import React from 'react';
-import { useMotionValue, useTransform, motion } from "framer-motion"
 
 //importa icones
 import consult from '../assets/icons/consultoria.svg'
