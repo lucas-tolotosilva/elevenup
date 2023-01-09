@@ -9,9 +9,6 @@ export function Clientes () {
                       
             
             <ParallaxProvider >
-
-           
-
             <Parallax speed={10} translateY={[0 ,0]} translateX={[-30, 5]}>
  
                 <div className="w-full mb-4"> 
