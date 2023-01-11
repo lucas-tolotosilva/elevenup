@@ -3,7 +3,6 @@ import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiMenuAltRight, BiDna } from "react-icons/bi";
 import { FaCat } from "react-icons/fa"; 
-import "../styles/style.css"
     
 import dna from '../assets/icons/dna.svg' 
 
@@ -44,16 +43,16 @@ export function Nav () {
             {/* --- Aparecer Menu ---  */}
             <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full overflow-hidden`}>
                 <div className="bg-white-100 min-w-full min-h-full absolute z-10 object-cover" > 
-                    <canvas id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></canvas> 
+                    <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
                         <ul className="font-default font-black leading-[140px] text-8xl ">
-                            <li className="hover:text-9xl hover:cursor-pointer ">Quem Somos</li>
-                            <li className="hover:text-9xl hover:cursor-pointer ">Home</li>
-                            <li className="hover:text-9xl hover:cursor-pointer ">Equipe</li>
-                            <li className="hover:text-9xl hover:cursor-pointer ">Cases</li>
-                            <li className="hover:text-9xl hover:cursor-pointer ">Blog</li>
-                            <li className="hover:text-9xl hover:cursor-pointer ">Contato</li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Quem Somos</a></li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Home</a></li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Equipe</a></li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Cases</a></li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Blog</a></li>
+                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Contato</a></li>
                         </ul>
                     </div>
                 </div>
