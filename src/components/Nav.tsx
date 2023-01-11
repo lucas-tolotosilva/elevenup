@@ -2,19 +2,22 @@ import React, {useState} from "react";
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiMenuAltRight, BiDna } from "react-icons/bi";
+import { FaCat } from "react-icons/fa"; 
+import "../styles/style.css"
+    
 import dna from '../assets/icons/dna.svg' 
-import { FaCat } from "react-icons/fa";
-import rer from '../assets/rer.jpg'
 
 export function Nav () {
-    const [icon, setIcon] = useState(false)
-    const [handleOpen, setHandleOpen] = useState(false)
+    const [icon, setIcon] = useState(false) //Variável state que guarda valor bool para trocar o ícone
+    const [handleOpen, setHandleOpen] = useState(false) //Variável state que guarda valor bool para abrir o menu
 
+    // Função para trocar o icone com hover
     function handleIcon(){
         setIcon(icon => !icon)
         console.log(!icon)
     }
 
+    //Função para abrir e fechar o menu
     function handleMenu(){
         setHandleOpen(handleOpen => !handleOpen)
         console.log(!handleOpen)
@@ -33,25 +36,26 @@ export function Nav () {
                         transition={{type:"spring", damping: 6}}>
                                 
                         
-                        {!icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="rounded-full w-[70px]" src={dna} /></button> }
+                        {!icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><BiMenuAltRight size={40} /></button> }
                     </motion.div>
                 </div>
             </div>
 
             {/* --- Aparecer Menu ---  */}
             <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full overflow-hidden`}>
-                <img className="min-w-full min-h-full absolute z-10 object-cover" src={rer}/>
-                <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
-                <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
-                    <ul className="font-title leading-[150px] text-[150px]">
-                        <li>Texto 1</li>
-                        <li>Texto 1</li>
-                        <li>Texto 1</li>
-                        <li>Texto 1</li>
-                        <li>Texto 1</li>
-                    </ul>
-                   
-                    
+                <div className="bg-white-100 min-w-full min-h-full absolute z-10 object-cover" > 
+                    <canvas id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></canvas> 
+                    <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
+                    <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
+                        <ul className="font-default font-black leading-[140px] text-8xl ">
+                            <li className="hover:text-9xl hover:cursor-pointer ">Quem Somos</li>
+                            <li className="hover:text-9xl hover:cursor-pointer ">Home</li>
+                            <li className="hover:text-9xl hover:cursor-pointer ">Equipe</li>
+                            <li className="hover:text-9xl hover:cursor-pointer ">Cases</li>
+                            <li className="hover:text-9xl hover:cursor-pointer ">Blog</li>
+                            <li className="hover:text-9xl hover:cursor-pointer ">Contato</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
