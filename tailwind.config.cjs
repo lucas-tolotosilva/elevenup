@@ -76,7 +76,8 @@ module.exports = {
         '3xl': '0 0 21px rgba(0, 0, 0, 0.15 )'
       },
       blur: {
-        'tt': '2px'
+        'tt': '2px',
+        'jj': '6px'
       }
     },
    },

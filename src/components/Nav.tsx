@@ -63,10 +63,12 @@ export function Nav () {
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
-                        <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
-                            <h2 className="fonte-default text-[200px] tracking-[60px] opacity-5 font-black uppercase leading-[180px]">{text}</h2>
+                        <div className="w-scree absolute h-screen z-0 flex justify-center items-center">
+                            <h2 className="fonte-default blur-jj text-[200px] tracking-[60px] opacity-[0.15] font-black uppercase leading-[180px]">{text}</h2>
                         </div> 
-                        <ul className="font-default font-extrabold z-10 uppercase leading-[100px] text-7xl ">
+                        <div className="bg-cyan-300 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
+                        </div> 
+                        <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
                             <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Home</a></li>
                             <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Quem Somos</a></li>
                             <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Equipe</a></li>
