@@ -9,17 +9,34 @@ import dna from '../assets/icons/dna.svg'
 export function Nav () {
     const [icon, setIcon] = useState(false) //Variável state que guarda valor bool para trocar o ícone
     const [handleOpen, setHandleOpen] = useState(false) //Variável state que guarda valor bool para abrir o menu
+    const [text, setText] = useState('')
 
     // Função para trocar o icone com hover
     function handleIcon(){
         setIcon(icon => !icon)
-        console.log(!icon)
+        //console.log(!icon)
     }
 
     //Função para abrir e fechar o menu
     function handleMenu(){
         setHandleOpen(handleOpen => !handleOpen)
-        console.log(!handleOpen)
+    
+    }
+
+    function handleMouseOver(value: number){
+        if(value === 1){
+            setText('Home')
+        } else if (value === 2){
+            setText('Quem Somos')
+        } else if (value === 3){
+            setText('Equipe')
+        } else if (value === 4){
+            setText('Cases')
+        } else if (value === 5){
+            setText('Blog')
+        } else if (value === 6){
+            setText('Contato')
+        }
     }
 
     return (
@@ -41,22 +58,26 @@ export function Nav () {
             </div>
 
             {/* --- Aparecer Menu ---  */}
-            <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full overflow-hidden`}>
-                <div className="bg-white-100 min-w-full min-h-full absolute z-10 object-cover" > 
+            <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full overflow-hidden`}>  
+                <div className="bg-white-150 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
-                        <ul className="font-default font-black leading-[140px] text-8xl ">
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Quem Somos</a></li>
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Home</a></li>
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Equipe</a></li>
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Cases</a></li>
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Blog</a></li>
-                            <li className="hover:text-9xl hover:cursor-pointer "><a href="#">Contato</a></li>
+                        <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
+                            <h2 className="fonte-default text-[300px] tracking-[60px] opacity-25 font-black uppercase leading-[250px]">{text}</h2>
+                        </div> 
+                        <ul className="font-default font-black z-10 leading-[140px] text-8xl ">
+                            <li onMouseOver={() => handleMouseOver(1)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Home</a></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Quem Somos</a></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Equipe</a></li>
+                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Cases</a></li>
+                            <li onMouseOver={() => handleMouseOver(5)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Blog</a></li>
+                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-9xl hover:cursor-pointer "><a href="#">Contato</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            
 
         </div> 
     )
