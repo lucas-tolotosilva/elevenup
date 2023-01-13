@@ -3,7 +3,7 @@ import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiMenuAltRight, BiDna } from "react-icons/bi";
 import { FaCat } from "react-icons/fa"; 
-    
+import '../styles/main.css'    
 import dna from '../assets/icons/dna.svg' 
 
 export function Nav () {
@@ -69,12 +69,12 @@ export function Nav () {
                         <div className="bg-cyan-300 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div> 
                         <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
-                            <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Home</a></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Quem Somos</a></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Equipe</a></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Cases</a></li>
-                            <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Blog</a></li>
-                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><a href="#">Contato</a></li>
+                            <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Home</a></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Quem Somos</a></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Equipe</a></li>
+                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Cases</a></li>
+                            <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Blog</a></li>
+                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Contato</a></li>
                         </ul>
                     </div>
                 </div>
