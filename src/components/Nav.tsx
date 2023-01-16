@@ -58,12 +58,12 @@ export function Nav () {
             </div>
 
             {/* --- Aparecer Menu ---  */}
-            <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full overflow-hidden`}>  
+            <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full hidden`}>  
                 <div className="bg-white-150 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
-                        <div className="w-scree absolute h-screen z-0 flex justify-center items-center">
+                        <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
                             <h2 className="fonte-default blur-jj text-[200px] tracking-[60px] opacity-[0.15] font-black uppercase leading-[180px]">{text}</h2>
                         </div> 
                         <div className="bg-cyan-300 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
