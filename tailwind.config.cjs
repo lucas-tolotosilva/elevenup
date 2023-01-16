@@ -57,11 +57,10 @@ module.exports = {
         //'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-radial': 'radial-gradient(circle, rgba(255,14,209,0.6) 5%, rgba(255,14,209,0.05)52%, rgba(250, 250, 250, 0.5) 90%)',
         'gradient-radial2': 'radial-gradient(circle, rgba(255,14,209,0.1) 5%, rgba(255,14,209,0.05)52%, rgba(250, 250, 250, 0.5) 90%)',
-        'gradient-radial-blue': 'radial-gradient(circle, rgba(0,56,104,0.5) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 100%)',
+        'gradient-radial-blue': 'radial-gradient(circle, rgba(0,56,104,0.5) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0) 100%)',
         'gradient-radial-blue2': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 90%)',
         'gradient-radial-blue-mini': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250, 0.008) 70%)',
-        'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)',
-        waveFooter: "url('/fundo.png')"
+        'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)'
       },
       animation: {
         'slow-anim1': 'myAnim 15s ease-in-out infinite',
