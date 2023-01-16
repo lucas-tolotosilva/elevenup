@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiMenuAltRight, BiDna } from "react-icons/bi";
 import { FaCat } from "react-icons/fa"; 
 import '../styles/main.css'    
 import dna from '../assets/icons/dna.svg' 
+import { Home } from "./Home";
+
 
 export function Nav () {
     const [icon, setIcon] = useState(false) //Variável state que guarda valor bool para trocar o ícone
@@ -17,10 +19,16 @@ export function Nav () {
         //console.log(!icon)
     }
 
+    
+
     //Função para abrir e fechar o menu
     function handleMenu(){
-        setHandleOpen(handleOpen => !handleOpen)
-    
+       setHandleOpen(handleOpen => !handleOpen)
+       if(handleOpen){
+        console.log('true')
+       } else {
+        console.log('false')
+       }
     }
 
     function handleMouseOver(value: number){
@@ -40,7 +48,7 @@ export function Nav () {
     }
 
     return (
-        <div className="w-screen h-full ">
+        <div className="w-screen h-full">
             <div className="w-full px-72 h-20 flex items-center justify-between " >
                 <img className="w-36" src={logo}></img>
                 <div className="w-16">
@@ -56,9 +64,9 @@ export function Nav () {
                     </motion.div>
                 </div>
             </div>
-
+           
             {/* --- Aparecer Menu ---  */}
-            <div className={`fixed z-30 top-0 ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full hidden`}>  
+            <div className={`fixed z-30 top-0 ${!handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full`}>  
                 <div className="bg-white-150 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
@@ -84,6 +92,5 @@ export function Nav () {
         </div> 
     )
 }
-
 
 

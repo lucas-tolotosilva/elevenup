@@ -3,7 +3,6 @@ import videobg from '../assets/videobg.mp4'
 
 import dnaIcon from '../assets/dna.png' 
 import { Nav } from './Nav'
-import rer from '../assets/rer.jpg'
 export function Header () {
    
     return (
