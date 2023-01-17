@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from "framer-motion"
 //importa icones
 import consult from '../assets/icons/consultoria.svg'
 import criacao from '../assets/icons/criacao.svg'
@@ -19,7 +19,9 @@ export function Solucoes(){
 
     return (
         <div className="max-w-[1280px] mb-36">
-            <h2 className="font-title w-full text-[200px] mb-4">Soluções</h2>
+            <motion.h2 className="font-title w-full text-[200px] mb-4"
+             initial={{ opacity: 0 , scale: 0}}
+             whileInView={{ opacity: 1 , scale: 1}}>Soluções</motion.h2>
             <div className="flex justify-center w-full">
                 <p className="text-center font-default text-[18px] w-6/12 mb-20 ">
                     A ElevenUp tem como objetivo proporcionar os melhores resultados para a sua empresa
@@ -31,12 +33,13 @@ export function Solucoes(){
                 <div style={{perspective: 2000}}> 
                      <div className="flex relative items-center justify-center ">
                             
-                            <Card shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
-                            <Card shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
-                            <Card shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
-                            <Card shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
-                            <Card shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
-                            <Card shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} />    
+                            <Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
+                            <Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
+                            <Card delay={0.60} shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
+                            <Card delay={0.80} shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
+                            <Card delay={1} shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
+                            <Card delay={1.20} shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+
                     </div>
                 </div>
             </div>

@@ -74,11 +74,11 @@ export function Nav () {
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div> 
 
-                        {/* Cores fundo */}
-                        <Cores cor="bg-gradient-radial" bottom="bottom-0" left="left-0" opacity="20" />
-                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-44" opacity="20" />
+                        {/* Cores fundo
+                        <Cores cor="bg-gradient-radial" bottom="bottom-0" left="left-0" opacity="10" />
+                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-44" opacity="10" />
                         <Cores cor="bg-gradient-radial" bottom="bottom-0" left="-left-36" opacity="10" />
-                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-20" opacity="20" />
+                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-20" opacity="10" /> */}
 
                         <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
                             <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Home</a></li>

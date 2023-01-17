@@ -5,7 +5,8 @@ interface cardProp {
     title: string,
     rosa: string,
     icon: string,
-    shadow: string
+    shadow: string,
+    delay: number
 }
 
 export function Card (props: cardProp) {
@@ -18,7 +19,12 @@ export function Card (props: cardProp) {
     return(
         <div className='relative'>
             <div className='mr-5 ml-5 flex items-end absolute top-12 justify-center w-48 h-48'>
-                <div className='w-44 h-44 bg-gradient-radial-blue-mini'>  </div>
+                <motion.div className='w-44 h-44 bg-gradient-radial-blue-mini'
+                initial={{opacity:0,y:100, scale: 0.7}}
+                transition={{ type: "spring", delay: props.delay }}
+                whileInView={{ opacity: 1,y:0, scale: 1}}
+                >  </motion.div>
+
             </div>
             <motion.div 
                 style={{ x, y, rotateX, rotateY, z:100}}
@@ -26,6 +32,9 @@ export function Card (props: cardProp) {
                 dragElastic={0.05}
                 dragConstraints={{ top:0, left:0, right:0, bottom:0}}
                 whileTap={{cursor: 'grabbing'}}
+                initial={{opacity:0,y:200, scale: 0.7}}
+                transition={{ type: "spring", delay: props.delay }}
+                whileInView={{ opacity: 1, y:0, scale: 1}}
                 className={`w-48 h-48 border mr-5 ml-5 ${props.shadow} border-white-100 bg-gray-200 flex flex-col items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>
