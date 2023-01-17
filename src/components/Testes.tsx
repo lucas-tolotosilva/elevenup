@@ -1,14 +1,64 @@
-import React, { useEffect, useState } from "react";
-import life from '../assets/lifescience.jpg'
+import React, { useState } from "react";
+import { motion } from "framer-motion"
+import lifescience from '../assets/lifescience.jpg'
 import healthcare from '../assets/healthcare.jpg'
+import { Healthcare, Lifescience } from "./SegTextos";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-export function Testes() {
-   
-    return(
-        <div className="w-full h-420 relative">
-            <img className=" w-[390px] h-[412px] margin-auto absolute top-0 bottom-0 right-0 left-0" src={life} />
-            <img className="" src={healthcare} />
-        </div>
+export function Testes () {
+    //https://www.youtube.com/results?search_query=react+3d+carousel
+    const slides = [
+        {
+            title: 'Healthcare',
+            slide : healthcare,
+            content: Healthcare,
+            color: 'from-blue-600 to-blue-900'
+        },
+        {
+            title: 'Lifescience',
+            slide : lifescience,
+            content: Lifescience,
+            color: 'from-pink-500 to-pink-800'
+        }
+    ]
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isToggled, setIsToggled] = useState(false);
+
+    // const handleToggled = () => {
+    //     setIsToggled(!isToggled)
+    // }
+
+
+    const prevSlide = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         
+        setIsToggled(!isToggled);
+
+        setCurrentIndex(newIndex);
+    }
+
+    const nextSlide = () => {
+        const isLastSlide = currentIndex === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+
+        setIsToggled(!isToggled);
+        
+        setCurrentIndex(newIndex)
+    }
+
+    return (
+       <div>
+            
+       </div>
+    )
+}
+
+export function Slide(){
+    return (
+        <div >
+
+        </div>
     )
 }

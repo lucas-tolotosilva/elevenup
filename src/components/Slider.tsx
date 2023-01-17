@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-//import { wrap } from "popmotion";
+import { motion } from "framer-motion"
 import lifescience from '../assets/lifescience.jpg'
 import healthcare from '../assets/healthcare.jpg'
 import { Healthcare, Lifescience } from "./SegTextos";

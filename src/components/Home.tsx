@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Blog } from './Blog'
 import { Clientes } from './Clientes'
 import { Combinacao } from './Combinacao'
@@ -9,16 +8,15 @@ import { Segmentos } from './Segmentos'
 import { Solucoes } from './Solucoes'
 import {Nav} from './Nav'
 import '../styles/main.css'
+import { Testes } from "./Testes";
 
 
 export function Home () {
-    const [hidden, setHidden] = useState(false)
-
     return (
       <div className={``}>
         
-        <div className=''>
-                   
+        <div className='flex items-center justify-center'>
+              <Testes />     
         </div>
         
         <div className='flex items-center justify-center'>
