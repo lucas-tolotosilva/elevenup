@@ -23,6 +23,7 @@ export function Card (props: cardProp) {
                 initial={{opacity:0,y:100, scale: 0.7}}
                 transition={{ type: "spring", delay: props.delay }}
                 whileInView={{ opacity: 1,y:0, scale: 1}}
+                viewport={{once:true}}
                 >  </motion.div>
 
             </div>
@@ -35,6 +36,7 @@ export function Card (props: cardProp) {
                 initial={{opacity:0,y:200, scale: 0.7}}
                 transition={{ type: "spring", delay: props.delay }}
                 whileInView={{ opacity: 1, y:0, scale: 1}}
+                viewport={{once:true}}
                 className={`w-48 h-48 border mr-5 ml-5 ${props.shadow} border-white-100 bg-gray-200 flex flex-col items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>

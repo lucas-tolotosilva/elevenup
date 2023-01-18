@@ -8,6 +8,7 @@ export function Segmentos (){
             <motion.h2 className="font-title w-full text-[200px]"
             initial={{ opacity: 0 , scale: 0}}
             whileInView={{ opacity: 1 , scale: 1}}
+            viewport={{once:true}}
             >Segmentos</motion.h2>
             <div className="w-[1440px] flex"> 
                 <Slider />

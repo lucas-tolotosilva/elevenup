@@ -14,7 +14,7 @@ export function Header () {
             {/* --------- Fim - Vídeo --------- */}
 
             {/* --------- Header (logo e menu) --------- */}
-            <div className="min-w-[1440px] h-screen absolute top-0 py-4">
+            <div className="w-screen h-screen absolute top-0 py-4">
                 <div className="flex items-center justify-center">
                     <Nav  />           
                 </div>

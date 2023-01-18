@@ -50,7 +50,7 @@ export function Slider () {
     }
 
     const posSlide1 = `absolute z-10 left-0 w-[380px] h-[412px] bg-center bg-cover  mt-10 ml-10`
-    const posSlide2 = `absolute z-0 right-0 bg-${isToggled ?slides[0].color : slides[1].color} opacity-20 `
+    const posSlide2 = `absolute z-0 right-0 bg-${isToggled ?slides[0].color : slides[1].color} opacity-20`
     return (
         <div className="w-[1440px] flex mb-36">
 
@@ -73,7 +73,8 @@ export function Slider () {
                                 <motion.div className="flex items-center justify-center w-auto absolute bottom-1/2 right-16"
                                     initial={{ opacity:0 , scale: 0}}
                                     whileInView={{ opacity: 1 , scale: 1}}
-                                    transition={{ type: 'spring',delay: 0.8, bounce: 0.55 }}>
+                                    transition={{ type: 'spring',delay: 0.8, bounce: 0.55 }}
+                                    viewport={{once:true}}>
                                     {/* Seta Esquerda */}
                                     <div className={`flex items-center justify-center w-12 h-12 mr-4 rounded-2xl border-none cursor-pointer  ${!isToggled ? ' bg-blue-800 hover:bg-blue-600' : ' bg-pink-800 hover:bg-pink-600' }`}>
                                         <BsChevronCompactLeft onClick={prevSlide} size={25} color='white' />
@@ -94,7 +95,8 @@ export function Slider () {
             <motion.div className="w-6/12"
                 initial={{ opacity:0 ,x: 400, scale: 0.5}}
                 whileInView={{ opacity: 1 , x: 0, scale: 1}}
-                transition={{ type: "spring", delay: 0.40 }}>
+                transition={{ type: "spring", delay: 0.40 }}
+                viewport={{once:true}}  >
 
                 {!isToggled ? <Healthcare color='bg-gradient-radial2' /> : <Lifescience color='bg-gradient-radial-blue2'/>}            
             

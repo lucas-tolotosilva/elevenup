@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
-import { BiMenuAltRight, BiDna } from "react-icons/bi";
+import { BiMenuAltRight } from "react-icons/bi";
 import { FaCat } from "react-icons/fa"; 
 
 import '../styles/main.css'    
@@ -46,7 +46,7 @@ export function Nav () {
 
     return (
         <div className="w-screen h-full">
-            <div className="w-full px-72 h-20 flex items-center justify-between " >
+            <div className="w-full px-16 h-20 flex items-center justify-between " >
                 <img className="w-36" src={logo}></img>
                 <div className="w-16">
                     <motion.div 
@@ -66,20 +66,13 @@ export function Nav () {
             <div className={`fixed z-30 top-0 transition duration-500 ease-in-out transform ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full`}>  
                 <div className="bg-white-150 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
-                    <FaCat onClick={handleMenu} className="absolute top-4 right-10 z-20 cursor-pointer" size={40} />
+                    <FaCat onClick={handleMenu} className="absolute top-8 right-16 z-20 cursor-pointer" size={40} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
                         <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
                             <h2 className="fonte-default blur-jj text-[200px] tracking-[60px] opacity-[0.15] font-black uppercase leading-[180px]">{text}</h2>
                         </div> 
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div> 
-
-                        {/* Cores fundo
-                        <Cores cor="bg-gradient-radial" bottom="bottom-0" left="left-0" opacity="10" />
-                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-44" opacity="10" />
-                        <Cores cor="bg-gradient-radial" bottom="bottom-0" left="-left-36" opacity="10" />
-                        <Cores cor="bg-gradient-radial-blue" bottom="bottom-10" left="-left-20" opacity="10" /> */}
-
                         <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
                             <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Home</a></li>
                             <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Quem Somos</a></li>
@@ -97,14 +90,5 @@ export function Nav () {
     )
 }
 
-interface CoresProps{
-    cor: string,
-    bottom: string,
-    left: string,
-    opacity: string
-}
-export function Cores ({cor, bottom, left, opacity}:CoresProps){
-    return <div className={`absolute ${cor} ${bottom} ${left} opacity-${opacity} w-[700px] h-[700px]`}></div> 
-    
-}
+
 

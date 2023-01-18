@@ -10,7 +10,8 @@ export function Compromissos() {
         <motion.div className='bg-white-200 my-36 max-w-[1280px] rounded-3xl border-1 border-white-100 flex items-center py-12'
             initial={{opacity:0, scale: 0.7}}
             whileInView={{ opacity: 1, scale: 1}}
-            transition={{ type: "spring", delay: 0.25 }}>
+            transition={{ type: "spring", delay: 0.25 }}
+            viewport={{once:true}}>
 
             {/* --------- Lado Esquerdo --------- */}
             <div className="w-6/12 flex justify-center gap-8">
@@ -19,6 +20,7 @@ export function Compromissos() {
                     <motion.p className='font-default text-[18px] text-justify'
                     initial={{opacity:0, scale: 0.7}}
                     whileInView={{ opacity: 1, scale: 1}}
+                    viewport={{once:true}}
                     >
                         Nosso   time   contém   especialistas   em  design,
                         tráfego em   canais   digitais   e    inteligência   de

@@ -8,7 +8,8 @@ export function Clientes () {
         <div className="w-full mb-36">
             <motion.h2 className="font-title w-full text-[200px] mb-24"
              initial={{ opacity: 0 , scale: 0}}
-             whileInView={{ opacity: 1 , scale: 1}}>Clientes</motion.h2>
+             whileInView={{ opacity: 1 , scale: 1}}
+             viewport={{once:true}}>Clientes</motion.h2>
                       
             
             <ParallaxProvider >
@@ -18,6 +19,7 @@ export function Clientes () {
                 <motion.div className="w-full mb-4"
                     initial={{ opacity:0 , scale: 0}}
                     whileInView={{ opacity: 1 , scale: 1}}
+                    viewport={{once:true}}
                     > 
                     <div id="client-logo" className="flex gap-12 ">
                         {carousel1.map((item, indice)=> (
@@ -33,7 +35,8 @@ export function Clientes () {
             <Parallax translateX={[5, -30]}>
                 <motion.div className="w-full"
                 initial={{ opacity:0 , scale: 0}}
-                whileInView={{ opacity: 1 , scale: 1}}> 
+                whileInView={{ opacity: 1 , scale: 1}}
+                viewport={{once:true}}> 
                     <div id="client-logo" className="flex gap-12">
                         {carousel2.map((item, indice)=> (
                             <img key={item.id} className="cover hover:grayscale-0 hover:cursor-pointer hover:scale-125 grayscale" src={item.img} alt='imagem' />
