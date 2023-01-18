@@ -16,7 +16,7 @@ export function Home () {
       <div className={``}>
         
         <div className='flex items-center justify-center'>
-              <Testes />     
+                  
         </div>
         
         <div className='flex items-center justify-center'>

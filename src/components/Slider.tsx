@@ -7,6 +7,15 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export function Slider () {
     //https://www.youtube.com/results?search_query=react+3d+carousel
+
+    const posSlide1 = 'absolute z-10 left-0 hover:cursor-pointer w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10'
+    const posSlide2 = 'absolute z-0 right-0 opacity-20'
+
+    const variants = {
+        current : { x: 0, opacity: 1, scale: 1.25},
+        prev: {x: 200, opacity: 0.20, scale: 0.75}
+    }
+
     const slides = [
         {
             title: 'Healthcare',
@@ -47,53 +56,32 @@ export function Slider () {
         
         setCurrentIndex(newIndex)
     }
-
+console.log(!isToggled)
     return (
         <div className="w-[1440px] flex mb-36">
 
             <div className="w-6/12">
                 <div className="w-full h-full flex items-center mr-12 mb-36 relative">
                     <div className=" w-full pl-14">
-                        <div >
-
-                            {/* --------- sombra --------- */}
-                            <motion.div className={`w-[700px] h-[700px]  top-0 left-28 absolute rounded-full ${!isToggled ? 'bg-gradient-radial' :'bg-gradient-radial-blue'} `}
-                            initial={{ opacity:0 , scale: 0}}
-                            whileInView={{ opacity: 1 , scale: 1}}
-                            transition={{ delay: 0.8 }}> 
-                            
-                            </motion.div> 
-
-                            {/* --------- Quadrado 1 --------- */}
-                            <motion.div className={`card w-[300px] h-[412px] absolute bg-gradient-to-r blur-sm ${!isToggled ? 'bg-gradient-to-r from-blue-600 to-blue-900' :'from-pink-500 to-pink-800' }`}
-                                initial={{ opacity:0 ,x: -400, scale: 0.5}}
-                                whileInView={{ opacity: 1 , x: 0, scale: 1}}
-                                transition={{ type: "spring", delay: 0.80 }}
-                                >
-                                
-                            </motion.div>
-
-                            {/* --------- Quadrado 2 --------- */}
-                            <motion.div className={`card w-[412px] h-[300px] mt-20 ml-44 absolute bg-gradient-to-r ${!isToggled ? 'bg-gradient-to-r from-blue-600 to-blue-900 ' :'from-pink-500 to-pink-800' }`}
-                                initial={{ opacity:0 ,x: -200, scale: 0.5}}
-                                whileInView={{ opacity: 1 , x: 0, scale: 1}}
-                                transition={{ type: "spring", delay: 0.60 }}>
-                                
-                            </motion.div>
-                        </div>
-                        
-
-                        
-
+                       
                         {/* --------- Slide --------- */}
                         <div className="flex">
-                            <motion.div  style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 hover:cursor-pointer w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"
+                            {/* <motion.div  style={{backgroundImage: `url(${slides[currentIndex].slide})`}} className="z-10 hover:cursor-pointer w-[390px] h-[412px] bg-center bg-cover mt-10 ml-10"
                                 initial={{ opacity:0 ,x: -300, scale: 0.5}}
                                 whileInView={{ opacity: 1 , x: 0, scale: 1}}
                                 transition={{ type: "spring", delay: 0.10 }}
                                 whileHover={{scale:1.15}}
-                                whileFocus={{x:100}}></motion.div>  
-                                
+                                whileFocus={{x:100}}></motion.div>   */}
+                            <div className="flex">
+                                    {slides.map((slide, index) => {
+                                        return <motion.img key={index} src={slide.slide} className={`${currentIndex === index ? posSlide1 : posSlide2}`}
+                                                animate={currentIndex === index ? "current" : "prev"}
+                                                variants={variants}
+                                            
+                                                /> 
+                                    })}
+                            </div>
+                            
                             <div className="flex items-center justify-center relative">
                                 <motion.div className="flex items-center justify-center w-auto absolute bottom-0 left-12"
                                     initial={{ opacity:0 , scale: 0}}
