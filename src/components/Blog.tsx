@@ -1,7 +1,7 @@
 import React  from "react";
 import { motion } from "framer-motion"
 
-export function Blog () {
+export function BlogComponent () {
     return(
         <div className="max-w-[1280px] mb-36">
             <motion.h2 className="font-title w-full text-[200px] mb-4"

@@ -7,7 +7,8 @@ import c4 from '../assets/circles/circulo-4.png'
 
 export function Compromissos() {
     return(
-        <motion.div className='bg-white-200 my-36 max-w-[1280px] rounded-3xl border-1 border-white-100 flex items-center py-12'
+        <motion.div 
+            className='bg-white-200 my-36 max-w-[1280px] rounded-3xl border-1 border-white-100 flex items-center py-12'
             initial={{opacity:0, scale: 0.7}}
             whileInView={{ opacity: 1, scale: 1}}
             transition={{ type: "spring", delay: 0.25 }}
@@ -17,7 +18,8 @@ export function Compromissos() {
             <div className="w-6/12 flex justify-center gap-8">
                 <div className="w-[80%] ml-10">
                     <h1 className='font-title w-full text-[109px] -ml-1'>Compromissos</h1>
-                    <motion.p className='font-default text-[18px] text-justify'
+                    <motion.p 
+                    className='font-default text-[18px] text-justify'
                     initial={{opacity:0, scale: 0.7}}
                     whileInView={{ opacity: 1, scale: 1}}
                     viewport={{once:true}}

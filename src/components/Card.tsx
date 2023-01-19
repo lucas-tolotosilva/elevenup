@@ -23,8 +23,7 @@ export function Card (props: cardProp) {
                 initial={{opacity:0,y:100, scale: 0.7}}
                 transition={{ type: "spring", delay: props.delay }}
                 whileInView={{ opacity: 1,y:0, scale: 1}}
-                viewport={{once:true}}
-                >  </motion.div>
+                viewport={{once:true}}> </motion.div>
 
             </div>
             <motion.div 
@@ -46,8 +45,7 @@ export function Card (props: cardProp) {
 
                 <motion.div  
                 style={{ x, y, rotateX, rotateY, z:10}}
-                className='h-1/2 flex items-center'
-                > 
+                className='h-1/2 flex items-center'> 
                     <h2 className='font-default text-[13px] w-36'>{props.title}</h2>
                 </motion.div>
             </motion.div>

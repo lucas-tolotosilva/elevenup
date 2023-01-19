@@ -1,13 +1,12 @@
 import React, {useEffect, useState} from "react";
+import {Link, BrowserRouter as Router, Switch, } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiDna, BiMenuAltRight } from "react-icons/bi";
 import { FaCat } from "react-icons/fa"; 
-
+import { Home } from "./pages/Home";
 import '../styles/main.css'    
-import dna from '../assets/icons/dna.svg' 
-
 
 
 export function Nav () {
@@ -16,16 +15,19 @@ export function Nav () {
     const [text, setText] = useState('')
 
     // Função para trocar o icone com hover
-    function handleIcon(){
-        setIcon(icon => !icon)
-        //console.log(!icon)
+    function handleIconOver(){
+        setIcon(true)
+        console.log(!icon)
     }
-
+    // Função para trocar o icone com hover
+    function handleIconOut(){
+        setIcon(false)
+        console.log(!icon)
+    }
 
     //Função para abrir e fechar o menu
     function handleMenu(){
        setHandleOpen(handleOpen => !handleOpen)
-    
     }
 
     function handleMouseOver(value: number){
@@ -50,14 +52,14 @@ export function Nav () {
                 <img className="w-36" src={logo}></img>
                 <div className="w-16">
                     <motion.div 
-                        className={`rounded-full p-3 ${!icon ? 'bg-white-100' : null} border-white-100  hover:cursor-pointer hover:border-none`}
+                        className={`rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none`}
                         whileHover={{rotate: 180 }}
-                        onHoverStart={handleIcon}
-                        onHoverEnd={handleIcon}
-                        transition={{type:"spring", damping: 6}}>
+                        onHoverStart={handleIconOver}
+                        onHoverEnd={handleIconOut}
+                        transition={{type:"spring", damping: 10}}>
                                 
                         
-                        {!icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><BiMenuAltRight size={40} /></button> }
+                        { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><BiDna size={40} /></button> }
                     </motion.div>
                 </div>
             </div>
@@ -73,14 +75,19 @@ export function Nav () {
                         </div> 
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div> 
-                        <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
-                            <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Home</a></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Quem Somos</a></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Equipe</a></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Cases</a></li>
-                            <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Blog</a></li>
-                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><a href="#" className="link" >Contato</a></li>
-                        </ul>
+                        <Router >
+                            <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
+                                <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><Link to="/" >Home</Link></li>
+                                <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos" >Quem Somos</Link></li>
+                                <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe" >Equipe</Link></li>
+                                <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases" >Cases</Link></li>
+                                <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link to="/blog" >Blog</Link></li>
+                                <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato" >Contato</Link></li>
+                            </ul>
+                        </Router>
+                        <Switch>
+
+                        </Switch>
                     </div>
                 </div>
             </div>

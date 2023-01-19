@@ -19,10 +19,12 @@ export function Solucoes(){
 
     return (
         <div className="max-w-[1280px] mb-36">
-            <motion.h2 className="font-title w-full text-[200px] mb-4"
-             initial={{ opacity: 0 , scale: 0}}
-             whileInView={{ opacity: 1 , scale: 1}}
-             viewport={{once:true}}>Soluções</motion.h2>
+            <motion.h2 
+                className="font-title w-full text-[200px] mb-4"
+                initial={{ opacity: 0 , scale: 0}}
+                whileInView={{ opacity: 1 , scale: 1}}
+                viewport={{once:true}}>Soluções</motion.h2>
+                
             <div className="flex justify-center w-full">
                 <p className="text-center font-default text-[18px] w-6/12 mb-20 ">
                     A ElevenUp tem como objetivo proporcionar os melhores resultados para a sua empresa
