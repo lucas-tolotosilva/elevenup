@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link, BrowserRouter as Router, Switch, } from "react-router-dom"
+import {Link, BrowserRouter as Router } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
@@ -85,9 +85,7 @@ export function Nav () {
                                 <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato" >Contato</Link></li>
                             </ul>
                         </Router>
-                        <Switch>
-
-                        </Switch>
+                        
                     </div>
                 </div>
             </div>
