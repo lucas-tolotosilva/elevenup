@@ -47,7 +47,7 @@ h1 small {
 	height: 400px;
 	min-width: 400px;
 	margin: 0;
-	overflow: visible;
+	overflow: hidden;
 	order: 2;
 	
 }

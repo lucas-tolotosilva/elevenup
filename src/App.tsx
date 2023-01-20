@@ -1,6 +1,5 @@
 import { Home } from './components/pages/Home'
 import './styles/main.css'
-import { Nav } from './components/Nav'
 
 function App() {
   
