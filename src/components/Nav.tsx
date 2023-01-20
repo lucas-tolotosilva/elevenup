@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link, BrowserRouter as Router } from "react-router-dom"
+import { Link } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
@@ -47,9 +47,9 @@ export function Nav () {
     }
 
     return (
-        <div className="w-screen h-full">
+        <div className="w-screen absolute top-0 z-20 h-full">
             <div className="w-full px-16 h-20 flex items-center justify-between " >
-                <img className="w-36" src={logo}></img>
+                <Link to="/"><img className="w-36" src={logo} /></Link>
                 <div className="w-16">
                     <motion.div 
                         className={`rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none`}
@@ -75,17 +75,14 @@ export function Nav () {
                         </div> 
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div> 
-                        <Router >
                             <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
-                                <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><Link to="/" >Home</Link></li>
-                                <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos" >Quem Somos</Link></li>
-                                <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe" >Equipe</Link></li>
-                                <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases" >Cases</Link></li>
-                                <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link to="/blog" >Blog</Link></li>
-                                <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato" >Contato</Link></li>
-                            </ul>
-                        </Router>
-                        
+                                <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><Link to="/">Home</Link></li>
+                                <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos">Quem Somos</Link></li>
+                                <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe">Equipe</Link></li>
+                                <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases">Cases</Link></li>
+                                <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link to="/blog">Blog</Link></li>
+                                <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato">Contato</Link></li>
+                            </ul>                        
                     </div>
                 </div>
             </div>
