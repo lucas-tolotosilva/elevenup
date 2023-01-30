@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import videobg from '../assets/videobg.mp4'
+import videobg from '../assets/videos/videobg.mp4'
 
 import dnaIcon from '../assets/dna.png' 
 import { Nav } from './Nav'

@@ -8,7 +8,10 @@ export function BlogComponent () {
             initial={{opacity:0, scale: 0.7}}
             whileInView={{ opacity: 1, scale: 1}}
             viewport={{once:true}}>Blog Elevenup</motion.h2>
-            <div className="w-full h-28 bg-black-900"></div>
+            <div className="w-full h-28 bg-black-900">
+
+                
+            </div>
         </div>
     )
 }
