@@ -5,7 +5,7 @@ export function Blog(){
     return (
         <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center">
             {/* --------- Header (logo e menu) --------- */}
-            <div className="w-screen h-screen absolute top-0 py-4">
+            <div className="bg-gray-200 absolute top-0 py-4">
                 <div className="flex items-center justify-center">
                     <Nav  />           
                 </div>

@@ -31,7 +31,7 @@ export function Combinacao() {
             <div className='w-full  flex justify-center'>
                 <div className='max-w-[1280px] min-w-[1270px] flex justify-center items-center'>
                     <motion.div 
-                        className='w-6/12 z-20 mr-14 p-12 text-left rounded-3xl bg-white-150'
+                        className='w-6/12 z-10 mr-14 p-12 text-left rounded-3xl bg-white-150'
                         initial={{opacity:0, scale: 0}}
                         whileInView={{ opacity: 1, scale: 1}}
                         viewport={{once:true}}
@@ -50,7 +50,7 @@ export function Combinacao() {
                     </motion.div>
 
                     <motion.div 
-                        className='w-6/12 z-20 ml-14 p-12 text-left rounded-3xl bg-white-150'
+                        className='w-6/12 z-10 ml-14 p-12 text-left rounded-3xl bg-white-150'
                         initial={{opacity:0, scale: 0}}
                         whileInView={{ opacity: 1, scale: 1}}
                         transition={{type:"spring", delay: 0.3, bounce: 0.5}}

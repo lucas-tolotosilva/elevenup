@@ -29,6 +29,7 @@ module.exports = {
         },
         black: {
           900: '#222222',
+          100: 'RGBA( 0, 0, 0, 0.32 )'
         },
         gray: {
           200: '#ececec'

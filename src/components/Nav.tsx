@@ -4,8 +4,7 @@ import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiDna, BiMenuAltRight } from "react-icons/bi";
-import { FaCat } from "react-icons/fa"; 
-import { Home } from "./pages/Home";
+import { FaCat } from "react-icons/fa"; ;
 import '../styles/main.css'    
 
 
@@ -13,6 +12,7 @@ export function Nav () {
     const [icon, setIcon] = useState(false) //Variável state que guarda valor bool para trocar o ícone
     const [handleOpen, setHandleOpen] = useState(false) //Variável state que guarda valor bool para abrir o menu
     const [text, setText] = useState('')
+    const [showMenu, setShowMenu] = useState(false)
 
     // Função para trocar o icone com hover
     function handleIconOver(){
@@ -46,9 +46,23 @@ export function Nav () {
         }
     }
 
+    const handleBgMenu = () => {
+        if(window.scrollY > 100){
+            setShowMenu(true)
+            console.log(showMenu)
+        } else{
+            setShowMenu(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleBgMenu)
+        return () => window.removeEventListener("scroll", handleBgMenu)
+    }, [])
+
     return (
-        <div className="w-screen absolute top-0 z-20 h-full">
-            <div className="w-full px-16 h-20 flex items-center justify-between " >
+        <div className="w-screen absolute top-0 z-20 "> 
+            <div className={`${showMenu ? 'bg-black-100 backdrop-blur-md' : 'bg-transparent'} transition ease-in-out delay-80 w-full px-16 h-20 flex items-center justify-between fixed`} >
                 <Link to="/"><img className="w-36" src={logo} /></Link>
                 <div className="w-16">
                     <motion.div 
