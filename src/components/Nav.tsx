@@ -3,10 +3,12 @@ import { Link } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
-import { BiDna, BiMenuAltRight } from "react-icons/bi";
+import { BiMenuAltRight } from "react-icons/bi";
 import iDna from "../assets/icons/menu-dna.svg"
-import inbound from "../assets/icons/inbound.svg"
 import { FaCat } from "react-icons/fa"; ;
+import iFace from "../assets/icons/iface.svg"
+import iInsta from "../assets/icons/iinsta.svg"
+import iLink from "../assets/icons/ilinkedin.svg"
 import '../styles/main.css'    
 
 
@@ -64,19 +66,30 @@ export function Nav () {
 
     return (
         <div className="w-screen absolute top-0 z-20 "> 
-            <div className={`${showMenu ? 'bg-black-100 backdrop-blur-md' : 'bg-transparent'} transition ease-in-out delay-80 w-full px-16 h-20 flex items-center justify-between fixed`} >
-                <Link to="/"><img className="w-36" src={logo} /></Link>
-                <div className="w-16">
-                    <motion.div 
-                        className={`rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none`}
-                        whileHover={{rotate: 180 }}
-                        onHoverStart={handleIconOver}
-                        onHoverEnd={handleIconOut}
-                        transition={{type:"spring", damping: 10}}>
-                                
-                        
-                        { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="w-20 h-20" alt="DNA" src={iDna}/></button> }
-                    </motion.div>
+        
+            <div className="flex justify-center">
+                <div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-tl-[40px] rounded-br-[40px]' : 'bg-transparent'} transition ease-in-out delay-75 w-full px-16 h-24 flex items-center justify-between fixed`} >
+                    <Link to="/"><img className="w-36" src={logo} /></Link>
+
+                    <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'}`}>
+                        <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
+                        <img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
+                        <img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
+                     
+                    </div>
+
+                    <div className="w-16">
+                        <motion.div 
+                            className={`rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none`}
+                            whileHover={{rotate: 180 }}
+                            onHoverStart={handleIconOver}
+                            onHoverEnd={handleIconOut}
+                            transition={{type:"spring", damping: 10}}>
+                                    
+                            
+                            { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna}/></button> }
+                        </motion.div>
+                    </div>
                 </div>
             </div>
            

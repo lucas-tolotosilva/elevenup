@@ -7,7 +7,11 @@ export function Equipe(){
             {/* --------- Header (logo e menu) --------- */}
             <Nav  />           
             {/* --------- Fim - Header (logo e menu) --------- */} 
-            <div> Aqui é a Equipe </div>
+            <div className="bg-black-900 max-w-[1280px] absolute top-28">
+                <div className="w-full bg-gray-700">
+                    ...
+                </div>
+            </div>
         </div> 
     )
 }
