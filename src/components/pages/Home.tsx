@@ -12,7 +12,7 @@ import { Testes } from "../Testes";
 
 export function Home () {
     return (
-      <div className="overflow-hidden">
+      <div>
         <Header />  
         <div className='flex items-center justify-center'>
           <Compromissos />

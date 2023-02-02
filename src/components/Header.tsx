@@ -1,12 +1,11 @@
 import React, {useState} from "react";
 import videobg from '../assets/videos/videobg.mp4'
 
-import dnaIcon from '../assets/dna.png' 
 import { Nav } from './Nav'
 export function Header () {
    
     return (
-        <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center">
+        <div className="relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden text-center">
             {/* --------- Vídeo --------- */}
             <div className="absolute w-full h-full overflow-hidden">
                 <video className="min-w-full min-h-full absolute object-cover" src={videobg} autoPlay loop muted/>
@@ -14,9 +13,7 @@ export function Header () {
             {/* --------- Fim - Vídeo --------- */}
 
             {/* --------- Header (logo e menu) --------- */}
-       
-                    <Nav  />           
-                
+            <Nav  />           
             {/* --------- Fim - Header (logo e menu) --------- */}
 
             

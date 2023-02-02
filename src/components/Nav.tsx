@@ -4,6 +4,8 @@ import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
 import { BiDna, BiMenuAltRight } from "react-icons/bi";
+import iDna from "../assets/icons/menu-dna.svg"
+import inbound from "../assets/icons/inbound.svg"
 import { FaCat } from "react-icons/fa"; ;
 import '../styles/main.css'    
 
@@ -73,13 +75,13 @@ export function Nav () {
                         transition={{type:"spring", damping: 10}}>
                                 
                         
-                        { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><BiDna size={40} /></button> }
+                        { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="w-20 h-20" alt="DNA" src={iDna}/></button> }
                     </motion.div>
                 </div>
             </div>
            
             {/* --- Aparecer Menu ---  */}
-            <div className={`fixed z-30 top-0 transition duration-500 ease-in-out transform ${handleOpen ? 'translate-x-0' : 'translate-x-full overflow-y-hidden'}  w-full h-full`}>  
+            <div className={`fixed z-30 overflow-hidden top-0 transition duration-500 ease-in-out transform ${handleOpen ? 'translate-x-0 overflow-hidden' : 'translate-x-full overflow-y-hidden'}  w-full h-full`}>  
                 <div className="bg-white-150 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div> 
                     <FaCat onClick={handleMenu} className="absolute top-8 right-16 z-20 cursor-pointer" size={40} />
