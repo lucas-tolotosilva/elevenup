@@ -9,7 +9,31 @@ export function QuemSomos(){
             <Nav  />           
             
             {/* --------- Fim - Header (logo e menu) --------- */} 
-           
+<div className="text-9xl">
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+<h2>Olá</h2>
+</div>
 
             
         </div> 

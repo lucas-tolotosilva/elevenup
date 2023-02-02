@@ -68,10 +68,12 @@ export function Nav () {
         <div className="w-screen absolute top-0 z-20 "> 
         
             <div className="flex justify-center">
-                <div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-full ' : 'transition-opacity ease-in-out delay-1000 bg-transparent'} transition ease-in-out delay-100 w-full px-16 h-24 flex items-center justify-between fixed`} >
+                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-full ' : 'transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
+                                            transition-all duration-700 ease-in-out delay-400 w-full px-16 h-24 flex items-center justify-between fixed`} 
+                          >
                     <Link to="/"><img className="w-36" src={logo} /></Link>
 
-                    <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'}`}>
+                    <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'}  transition-all duration-700 ease-in-out delay-400`}>
                         <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
                         <img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
                         <img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
@@ -90,7 +92,7 @@ export function Nav () {
                             { !icon ?  <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna}/></button> }
                         </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
            
             {/* --- Aparecer Menu ---  */}
