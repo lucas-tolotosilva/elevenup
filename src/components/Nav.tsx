@@ -68,7 +68,7 @@ export function Nav () {
         <div className="w-screen absolute top-0 z-20 "> 
         
             <div className="flex justify-center">
-                <div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-tl-[40px] rounded-br-[40px]' : 'bg-transparent'} transition ease-in-out delay-75 w-full px-16 h-24 flex items-center justify-between fixed`} >
+                <div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-tl-[40px] rounded-br-[40px]' : 'transition-opacity ease-in-out delay-1000 bg-transparent'} transition ease-in-out delay-100 w-full px-16 h-24 flex items-center justify-between fixed`} >
                     <Link to="/"><img className="w-36" src={logo} /></Link>
 
                     <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'}`}>
