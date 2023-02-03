@@ -74,7 +74,8 @@ module.exports = {
       },
       
       boxShadow: {
-        '3xl': '0 0 21px rgba(0, 0, 0, 0.15 )'
+        '3xl': '0 0 21px rgba(0, 0, 0, 0.15 )',
+        '4xl': '0px 0px 78px -7px rgba(0,0,0,0.1)'
       },
       blur: {
         'tt': '2px',

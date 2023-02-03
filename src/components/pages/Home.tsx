@@ -12,7 +12,7 @@ import { Testes } from "../Testes";
 
 export function Home () {
     return (
-      <div>
+      <div className='bg-gray-200 '>
         <Header />  
         <div className='flex items-center justify-center'>
           <Compromissos />
