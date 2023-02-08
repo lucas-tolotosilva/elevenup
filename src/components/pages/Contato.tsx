@@ -18,6 +18,7 @@ export function Contato(){
             <div className="max-w-[1280px] bg-gray-200 absolute top-40">
                 <h1 className="font-title tracking-wider mb-24   font-bold text-[200px]">CONTATO</h1>
                 <div className="w-full flex flex-wrap overflow-hidden">
+
                     <form>
                         <div className="w-[1000px] flex justify-center items-center rounded-3xl overflow-hidden bg-white-100">
                             <div className="w-1/2 rounded-tl-3xl relative">
@@ -29,28 +30,32 @@ export function Contato(){
                             </div>
                             <div className="w-1/2 px-14 py-14 font-default text-blue-800 text-[18px] bg-white-80">
                                 <div className="relative my-10">
-                                    <input onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} className="relative w-full border-none bg-transparent py-2 outline-none " required/>
-                                    <span className={`${focus ? '-translate-y-[32px] text-[16px] ' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Nome</span>
-                                    <i className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 rounded-full"></i>
+                                    <input onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} className={`${focus ? null : 'text-transparent' } relative text-white-100 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required/>
+                                    <span className={`${focus ? '-translate-y-[32px] text-[16px]' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Nome</span>
+                                    <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-600 z-10 ${focus ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>
                                 <div className="relative my-10">
-                                    <input onFocus={() => setFocus2(true)} onBlur={() => setFocus2(false)} className="relative w-full border-none bg-transparent py-2 outline-none " required/>
-                                    <span className={`${focus2 ? '-translate-y-[32px] text-[16px] ' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Telefone</span>
-                                    <i className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 rounded-full"></i>
+                                    <input onFocus={() => setFocus2(true)} onBlur={() => setFocus2(false)} className={`${focus2 ? null : 'text-transparent' } relative text-white-100 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required/>
+                                    <span className={`${focus2 ? '-translate-y-[32px] text-[16px]' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Telefone</span>
+                                    <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-600 z-10 ${focus2 ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>
                                 <div className="relative my-10">
-                                    <input onFocus={() => setFocus3(true)} onBlur={() => setFocus3(false)} className="relative w-full border-none bg-transparent py-2 outline-none " required/>
-                                    <span className={`${focus3 ? '-translate-y-[32px] text-[16px] ' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Email</span>
-                                    <i className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 rounded-full"></i>
+                                    <input onFocus={() => setFocus3(true)} onBlur={() => setFocus3(false)} className={`${focus3 ? null : 'text-transparent' } relative text-white-100 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required/>
+                                    <span className={`${focus3 ? '-translate-y-[32px] text-[16px]' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Email</span>
+                                    <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-600 z-10 ${focus3 ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>
                                 <div className="relative my-10">
-                                    <textarea onFocus={() => setFocus4(true)} onBlur={() => setFocus4(false)} className="relative w-full border-none bg-transparent py-2 outline-none " required/>
-                                    <span className={`${focus4 ? '-translate-y-[32px] text-[16px] ' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Mensagem</span>
-                                    <i className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 rounded-full"></i>
+                                    <textarea onFocus={() => setFocus4(true)} onBlur={() => setFocus4(false)} className={`${focus4 ? null : 'text-transparent' } relative text-white-100 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required/>
+                                    <span className={`${focus4 ? '-translate-y-[32px] text-[16px]' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>Mensagem</span>
+                                    <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-600 z-10 ${focus4 ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>
-                            </div>
+                            
+                                <button className="px-7 py-2 rounded-md bg-blue-600 text-white-100 ">Enviar</button>
+                            </div>    
                         </div>
                     </form> 
+
+
                 </div>
             </div>
         </div>
