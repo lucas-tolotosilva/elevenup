@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import InputMask from "react-input-mask";
 import { Footer } from "../Footer"
 import { Nav } from "../Nav"
 import img from "../../assets/img-contato.jpg"
@@ -8,10 +9,6 @@ export function Contato(){
     const [focus2, setFocus2] = useState(false)
     const [focus3, setFocus3] = useState(false)
     const [focus4, setFocus4] = useState(false)
-
-    const temail = 'Email'
-    const tnome = 'Nome'
-    const ttel = 'Telefone'
 
     const [nome, setNome] = useState('')
     const [tel, setTel] = useState('')
@@ -46,7 +43,8 @@ export function Contato(){
                                     <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-50 z-10 ${focus ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>
                                 <div className="relative my-10">
-                                    <input value={tel} onChange={(e) => setTel(e.target.value)} onFocus={() => setFocus2(true)} onBlur={() => setFocus2(false)} className={`${focus2 ? null : 'text-transparent' } relative text-black-900 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required/>
+                                    <InputMask mask="(99)99999-9999" value={tel} onChange={(e) => setTel(e.target.value)} onFocus={() => setFocus2(true)} onBlur={() => setFocus2(false)} className={`${focus2 ? null : 'text-transparent' } relative text-black-900 pl-2 z-20 w-full border-none bg-transparent py-2 outline-none`} required />
+         
                                     <span className={`${focus2 ? '-translate-y-[32px] text-[16px]' : null} transition-all duration-400 absolute py-2 left-0 pointer-events-none`}>{focus2 ? 'Telefone' : tel == '' ? 'Telefone' : null}</span>
                                     <i className={`absolute bottom-0 left-0 w-full text-white-100 bg-blue-50 z-10 ${focus2 ? 'h-full' : 'h-[2px] '} rounded-lg transition-all ease-in-out duration-400`}></i>
                                 </div>

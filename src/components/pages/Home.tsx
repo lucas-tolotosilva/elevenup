@@ -6,8 +6,6 @@ import { Footer } from '../Footer'
 import { Header } from '../Header'
 import { Segmentos } from '../Segmentos'
 import { Solucoes } from '../Solucoes'
-import {Nav} from '../Nav'
-import { Testes } from "../Testes";
 
 
 export function Home () {
@@ -30,9 +28,9 @@ export function Home () {
           <Solucoes />
         </div>
 
-        <div className='flex items-center justify-center'>
+        {/* <div className='flex items-center justify-center'>
           <BlogComponent />
-        </div>
+        </div> */}
 
         <div className='flex items-center justify-center'>
           <Combinacao />
