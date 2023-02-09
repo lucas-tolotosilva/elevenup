@@ -11,7 +11,7 @@ export function Cases(){
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
                 <div className="max-w-[1280px] mb-96 pb-96 bg-gray-200 absolute top-40">
-                <h1 className="font-title tracking-wider font-bold text-[200px]">CASES</h1>
+                <h1 className="font-title tracking-wider font-bold text-[150px]">CASES</h1>
                     <div className="w-full z-50 overflow-hidden gap-10">
                         <Case link={casesList[0].link} img={casesList[0].img} content={casesList[0].content} />
                         <Case link={casesList[1].link} img={casesList[1].img} content={casesList[1].content} />

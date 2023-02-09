@@ -15,7 +15,7 @@ export function Equipe(){
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
                 <div className="max-w-[1280px] bg-gray-200 absolute top-40">
-                    <h1 className="font-title tracking-wider font-bold text-[200px]">EQUIPE</h1>
+                    <h1 className="font-title tracking-wider font-bold text-[150px]">EQUIPE</h1>
                     <div className="w-full flex flex-wrap overflow-hidden gap-10">
                         {listaEquipe.map(item => (
                             <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} insta={item.insta} face={item.face} linkedin={item.linkedin} img={item.img} />

@@ -24,7 +24,7 @@ export function Contato(){
             <Nav  />           
             {/* --------- Fim - Header (logo e menu) --------- */} 
             <div className="max-w-[1280px] bg-gray-200 absolute top-40">
-                <h1 className="font-title tracking-wider mb-24   font-bold text-[200px]">CONTATO</h1>
+                <h1 className="font-title tracking-wider mb-24   font-bold text-[150px]">CONTATO</h1>
                 <div className="w-full flex flex-wrap overflow-hidden">
 
                     <form>

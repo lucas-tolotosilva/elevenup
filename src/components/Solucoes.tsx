@@ -20,7 +20,7 @@ export function Solucoes(){
     return (
         <div className="max-w-[1280px] mb-36">
             <motion.h2 
-                className="font-title w-full text-[200px] mb-4"
+                className="font-title w-full text-[150px] mb-4"
                 initial={{ opacity: 0 , scale: 0}}
                 whileInView={{ opacity: 1 , scale: 1}}
                 viewport={{once:true}}>Soluções</motion.h2>
