@@ -9,38 +9,38 @@ import { Cases } from './components/pages/Cases'
 import { Blog } from './components/pages/Blog'
 import { Contato } from './components/pages/Contato'
 
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { ErrorPAge } from './components/pages/ErrorPage'
 
 const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPAge />
   },
   {
     path: "/",
-    element:<Home />
+    element: <Home />
   },
   {
     path: "/quem-somos",
-    element: <QuemSomos/>
+    element: <QuemSomos />
   },
   {
     path: "/equipe",
-    element: <Equipe/>
+    element: <Equipe />
   },
   {
     path: "/cases",
-    element: <Cases/>
+    element: <Cases />
   },
   {
     path: "/blog",
-    element: <Blog/>
+    element: <Blog />
   },
   {
     path: "/contato",
-    element: <Contato/>
+    element: <Contato />
   }
 ])
 
