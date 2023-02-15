@@ -3,11 +3,10 @@ import copy from '../assets/quem-somos-imagens/copy.svg'
 import designer from '../assets/quem-somos-imagens/designer.svg'
 import manager from '../assets/quem-somos-imagens/manager.svg'
 import webDev from '../assets/quem-somos-imagens/webDev.svg'
-import user from '../assets/equipe/user.jpg'
 
 export const listaQuemSomos = [
     {
-        img: user,
+        img: copy,
         nome: 'Copywriters',   
     },
     {
