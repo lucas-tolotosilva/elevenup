@@ -74,4 +74,28 @@ export const listaEquipe = [
         linkedin: 'https://www.linkedin.com/company/elevenup/',
         img: user
     },
+    {
+        nome: 'Nome',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: user
+    },
+    {
+        nome: 'Nome',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: user
+    },
+    {
+        nome: 'Nome',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: user
+    },
 ]

@@ -100,7 +100,7 @@ export function Slider () {
                 transition={{ type: "spring", delay: 0.40 }}
                 viewport={{once:true}}  >
 
-                {!isToggled ? <Healthcare color='bg-gradient-radial2' /> : <Lifescience color='bg-gradient-radial-blue2'/>}            
+                {!isToggled ? <Healthcare color='bg-white' /*color='bg-gradient-radial2'*//> : <Lifescience color='bg-white '/*color='bg-gradient-radial-blue2'*//>}            
             
             </motion.div>
         </div>

@@ -10,7 +10,7 @@ import { Footer } from "../Footer"
 export function Equipe(){
     return (
         <div className="bg-gray-200 overflow-x-hidden">
-            <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center mb-96 ">
+            <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center mb-[500px] ">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
@@ -20,6 +20,9 @@ export function Equipe(){
                         {listaEquipe.map(item => (
                             <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} insta={item.insta} face={item.face} linkedin={item.linkedin} img={item.img} />
                         ))}
+                    </div>
+                    <div>
+                        <img src="" alt="" />
                     </div>
                 </div>
             </div>
@@ -56,7 +59,7 @@ export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProp
             <div className="w-full flex justify-center cover">
                 <img className={`${show ? 'object-cover -mt-6 w-[194px] h-[194px] ' : 'object-contain w-[280px] h-[280px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
             </div>
-            <div className="flex flex-col items-center justify-center ">
+            <div className="flex flex-col items-center justify-center">
                 <span className="font-default font-regular mt-2 text-[24px]">{nome}</span>
                 <span className="font-default font-thin -mt-1 mb-2 text-[16px]">{funcao}</span>
                 <div className="flex gap-4 items-center justify-center">
