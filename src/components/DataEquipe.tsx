@@ -7,70 +7,71 @@ import f5 from "../assets/equipe/bruno.jpg"
 import f6 from "../assets/equipe/maria.jpg"
 import f7 from "../assets/equipe/luis.jpg"
 import f8 from "../assets/equipe/lucas.jpg"
+import user from "../assets/equipe/user.jpg"
 
 export const listaEquipe = [
     {
-        nome: 'Nome 1',
-        funcao: 'Pedreiro',
-        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
-        face: 'https://www.facebook.com/ElevenUpMarketing/',
-        linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f1
-    },
-    {
-        nome: 'Nome 2',
-        funcao: 'Eletricista',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
         img: f2
     },
     {
-        nome: 'Nome 3',
-        funcao: 'Lavador de Carros',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f3
+        img: user
     },
     {
-        nome: 'Nome 4',
-        funcao: 'Uber',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f4
+        img: user
     },
     {
-        nome: 'Nome 5',
-        funcao: 'Entregador',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f5
+        img: user
     },
     {
-        nome: 'Nome 6',
-        funcao: 'Raspador de Neve',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f6
+        img: user
     },
     {
-        nome: 'Nome 7',
-        funcao: 'Frentista',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f7
+        img: user
     },
     {
-        nome: 'Nome 8',
-        funcao: 'Pedinte',
+        nome: 'Nome',
+        funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f8
+        img: user
+    },
+    {
+        nome: 'Nome',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: user
     },
 ]
