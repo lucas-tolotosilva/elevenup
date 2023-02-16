@@ -1,101 +1,121 @@
 import react from 'react'
-import f1 from "../assets/equipe/joey.jpg"
-import f2 from "../assets/equipe/cr7.jpg"
-import f3 from "../assets/equipe/ney.jpg"
-import f4 from "../assets/equipe/lennon.jpg"
-import f5 from "../assets/equipe/bruno.jpg"
-import f6 from "../assets/equipe/maria.jpg"
-import f7 from "../assets/equipe/luis.jpg"
-import f8 from "../assets/equipe/lucas.jpg"
-import user from "../assets/equipe/user.jpg"
+//import gustavo from "../assets/equipe/gustavo.jpg"
+import wivian from "../assets/equipe/wivian.jpg"
+import lucas from "../assets/equipe/lucas.jpg"
+//import bruno from "../assets/equipe/bruno.jpg"
+import venancio from "../assets/equipe/venancio.jpg"
+import bia from "../assets/equipe/bia.jpg"
+import lennon from "../assets/equipe/lennon.jpg"
+import maria from "../assets/equipe/maria.jpg"
+import luis from "../assets/equipe/luis.jpg"
+import penelope from "../assets/equipe/penelope.jpg"
+import simoes from "../assets/equipe/simoes.jpg"
+import joey from "../assets/equipe/joey.jpg"
+import toloto from "../assets/equipe/toloto.jpg"
 
 export const listaEquipe = [
     {
-        nome: 'Nome',
-        funcao: 'Cargo',
+        nome: 'Gustavo Vieira',
+        funcao: 'Boss',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: f2
+        img: maria
     },
     {
-        nome: 'Nome',
-        funcao: 'Cargo',
+        nome: 'Wivian Ramos',
+        funcao: '',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: wivian
     },
     {
-        nome: 'Nome',
+        nome: 'Lucas Defavari',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: lucas
     },
     {
-        nome: 'Nome',
+        nome: 'Bruno Prado',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: maria
     },
     {
-        nome: 'Nome',
+        nome: 'Gustavo Venancio',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: venancio
     },
     {
-        nome: 'Nome',
+        nome: 'Beatriz',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: bia
     },
     {
-        nome: 'Nome',
+        nome: 'Lennon Policastro',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: lennon
     },
     {
-        nome: 'Nome',
+        nome: 'Maria Fernanda',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: maria
     },
     {
-        nome: 'Nome',
+        nome: 'Luis Tozi',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: luis
     },
     {
-        nome: 'Nome',
+        nome: 'Penelope Lourenço',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: penelope
     },
     {
-        nome: 'Nome',
+        nome: 'Gustavo Simões',
         funcao: 'Cargo',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: user
+        img: simoes
+    },
+    {
+        nome: 'Joedison Dias',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: joey
+    },
+    {
+        nome: 'Lucas Toloto',
+        funcao: 'Cargo',
+        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        face: 'https://www.facebook.com/ElevenUpMarketing/',
+        linkedin: 'https://www.linkedin.com/company/elevenup/',
+        img: toloto
     },
 ]

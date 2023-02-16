@@ -57,7 +57,7 @@ export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProp
                 onHoverEnd={handleMouseOut}
                 transition={{delay:20 }}>
             <div className="w-full flex justify-center cover">
-                <img className={`${show ? 'object-cover -mt-6 w-[194px] h-[194px] ' : 'object-contain w-[280px] h-[280px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
+                <img className={`${show ? '-mt-6 w-[194px] h-[194px] ' : ' w-[280px] h-[280px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
             </div>
             <div className="flex flex-col items-center justify-center">
                 <span className="font-default font-regular mt-2 text-[24px]">{nome}</span>
