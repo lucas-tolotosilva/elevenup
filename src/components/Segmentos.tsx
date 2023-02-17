@@ -6,7 +6,7 @@ export function Segmentos (){
     return(
         <div className="">
             <motion.h2 
-            className="font-title w-full text-[150px]"
+            className="font-title w-full text-[50px]"
             initial={{ opacity: 0 , scale: 0}}
             whileInView={{ opacity: 1 , scale: 1}}
             viewport={{once:true}}
