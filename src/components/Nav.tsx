@@ -68,30 +68,28 @@ export function Nav() {
         <div className="w-screen absolute top-0 z-20 ">
 
             <div className="flex justify-center">
-                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md w-[1100px] mt-4 rounded-full ' : 'transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
-                                            transition-all duration-700 ease-in-out delay-400 w-full px-16 h-24 flex items-center justify-between fixed`}
-                >
+                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
+                                            transition-all duration-700 ease-in-out delay-400 w-full px-16 h-24 flex items-center justify-between fixed`}>
                     <Link to="/"><img className="w-36" src={logo} /></Link>
 
-                    <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'}  transition-all duration-700 ease-in-out delay-400`}>
+                    <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'} sm:hidden  transition-all duration-700 ease-in-out delay-400`}>
                         <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
                         <img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
                         <img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
 
                     </div>
 
-                    <div className="w-16">
-                        <motion.div
-                            className={`rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none`}
-                            whileHover={{ rotate: 180 }}
-                            onHoverStart={handleIconOver}
-                            onHoverEnd={handleIconOut}
-                            transition={{ type: "spring", damping: 10 }}>
-
-
-                            {!icon ? <BiMenuAltRight size={40} /> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna} /></button>}
-                        </motion.div>
+                    {/* Desktop */}
+                    <div className=" w-16">
+                            <motion.div className=" rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none"
+                                whileHover={{ rotate: 180 }}
+                                onHoverStart={handleIconOver}
+                                onHoverEnd={handleIconOut}
+                                transition={{ type: "spring", damping: 10 }}>
+                                {!icon ? <a onClick={handleMenu}><BiMenuAltRight size={40} /></a> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna} /></button>}
+                            </motion.div> 
                     </div>
+
                 </motion.div>
             </div>
 
@@ -106,8 +104,8 @@ export function Nav() {
                         </div>
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div>
-                        <ul className="font-default font-extrabold z-20 uppercase leading-[100px] text-7xl ">
-                            <li onMouseOver={() => handleMouseOver(1)} className="hover:text-8xl hover:cursor-pointer "><Link to="/">Home</Link></li>
+                        <ul className="font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
+                            <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><Link to="/">Home</Link></li>
                             <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos">Quem Somos</Link></li>
                             <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe">Equipe</Link></li>
                             <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases">Cases</Link></li>
