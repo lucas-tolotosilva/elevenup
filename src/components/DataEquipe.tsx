@@ -2,7 +2,7 @@ import react from 'react'
 //import gustavo from "../assets/equipe/gustavo.jpg"
 import wivian from "../assets/equipe/wivian.jpg"
 import lucas from "../assets/equipe/lucas.jpg"
-//import bruno from "../assets/equipe/bruno.jpg"
+import bruno from "../assets/equipe/bruno.jpg"
 import venancio from "../assets/equipe/venancio.jpg"
 import bia from "../assets/equipe/bia.jpg"
 import lennon from "../assets/equipe/lennon.jpg"
@@ -16,7 +16,7 @@ import toloto from "../assets/equipe/toloto.jpg"
 export const listaEquipe = [
     {
         nome: 'Gustavo Vieira',
-        funcao: 'Boss',
+        funcao: 'CEO',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -24,7 +24,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Wivian Ramos',
-        funcao: '',
+        funcao: 'Gerente de Projetos',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -32,7 +32,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Lucas Defavari',
-        funcao: 'Cargo',
+        funcao: 'Analista de Marketing',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -40,15 +40,15 @@ export const listaEquipe = [
     },
     {
         nome: 'Bruno Prado',
-        funcao: 'Cargo',
+        funcao: 'Gestor de Tráfego',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: maria
+        img: bruno
     },
     {
         nome: 'Gustavo Venancio',
-        funcao: 'Cargo',
+        funcao: 'Copywriter',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -56,7 +56,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Beatriz',
-        funcao: 'Cargo',
+        funcao: 'Copywriter',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -64,7 +64,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Lennon Policastro',
-        funcao: 'Cargo',
+        funcao: 'Gestor Operacional | Designer',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -72,7 +72,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Maria Fernanda',
-        funcao: 'Cargo',
+        funcao: 'Designer',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -80,7 +80,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Luis Tozi',
-        funcao: 'Cargo',
+        funcao: 'Designer',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -88,7 +88,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Penelope Lourenço',
-        funcao: 'Cargo',
+        funcao: 'Designer',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -96,7 +96,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Gustavo Simões',
-        funcao: 'Cargo',
+        funcao: 'Videomaker',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -104,7 +104,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Joedison Dias',
-        funcao: 'Cargo',
+        funcao: 'Desenvolvedor Web',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
@@ -112,7 +112,7 @@ export const listaEquipe = [
     },
     {
         nome: 'Lucas Toloto',
-        funcao: 'Cargo',
+        funcao: 'Estagiário',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
