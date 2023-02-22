@@ -52,7 +52,7 @@ export function Slider () {
     const posSlide1 = `absolute z-10 left-0 w-[380px] h-[412px] bg-center bg-cover  mt-10 ml-10`
     const posSlide2 = `absolute z-0 right-0  opacity-20`
     return (
-        <div className="w-[1440px] flex mb-36">
+        <div className=" w-[1440px] flex mb-36">
 
             <div className="w-6/12">
                 <div className="w-full h-full flex items-center mr-12 mb-36 relative">
@@ -100,9 +100,31 @@ export function Slider () {
                 transition={{ type: "spring", delay: 0.40 }}
                 viewport={{once:true}}  >
 
-                {!isToggled ? <Healthcare color='bg-white' /*color='bg-gradient-radial2'*//> : <Lifescience color='bg-white '/*color='bg-gradient-radial-blue2'*//>}            
+                {!isToggled ? <Healthcare /> : <Lifescience/>}            
             
             </motion.div>
+        </div>
+    )
+}
+
+export function SlideSm() {
+    const [showHealth, setHealth] = useState(false)
+
+    function handleLife(){
+        setHealth(false);
+    }
+    function handleHealth(){
+        setHealth(true);
+    }
+
+    return(
+        <div className="w-full mx-5 text-[18px]">
+            <div className={` font-title rounded-md text-[30px]`}>
+                <button onClick={handleHealth} className={`px-5 py-2 ${showHealth ? 'bg-pink-500' : null} -ml-[6px] rounded-t-lg`}>Healthcare</button> | <button onClick={handleLife} className={`px-5 py-2 ${showHealth ? null : 'bg-blue-500 rounded-t-lg'}`}>Lifescience</button>
+                <div className={`${showHealth ? 'bg-pink-500 rounded-tr-lg rounded-b-lg' : 'bg-blue-500 rounded-tl-lg rounded-b-lg'}`}>
+                    {showHealth ? <Healthcare /> : <Lifescience /> }
+                </div>
+            </div>
         </div>
     )
 }

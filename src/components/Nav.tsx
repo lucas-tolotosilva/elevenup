@@ -65,7 +65,7 @@ export function Nav() {
     }, [])
 
     return (
-        <div className="w-screen absolute top-0 z-20 ">
+        <div className="w-screen absolute top-0 z-50 ">
 
             <div className="flex justify-center">
                 <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
