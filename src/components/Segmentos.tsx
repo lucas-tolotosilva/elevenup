@@ -14,7 +14,7 @@ export function Segmentos (){
                 <div className="sm:hidden w-[1440px] lg:flex"> 
                    <Slider /> 
                 </div>
-                <div className="sm:flex w-full lg:hidden"> 
+                <div className="sm:flex sm:mb-20 w-full lg:hidden"> 
                    <SlideSm />
                 </div>
         </div>

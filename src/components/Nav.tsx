@@ -69,8 +69,8 @@ export function Nav() {
 
             <div className="flex justify-center">
                 <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
-                                            transition-all duration-700 ease-in-out delay-400 w-full px-16 h-24 flex items-center justify-between fixed`}>
-                    <Link to="/"><img className="w-36" src={logo} /></Link>
+                                            transition-all duration-700 ease-in-out delay-400 w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed`}>
+                    <Link to="/"><img className="lg:w-32 sm:w-24" src={logo} /></Link>
 
                     <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'} sm:hidden  transition-all duration-700 ease-in-out delay-400`}>
                         <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
@@ -81,7 +81,7 @@ export function Nav() {
 
                     {/* Desktop */}
                     <div className=" w-16">
-                            <motion.div className=" rounded-full p-3 bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none"
+                            <motion.div className=" rounded-full  p-3  lg:bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none"
                                 whileHover={{ rotate: 180 }}
                                 onHoverStart={handleIconOver}
                                 onHoverEnd={handleIconOut}

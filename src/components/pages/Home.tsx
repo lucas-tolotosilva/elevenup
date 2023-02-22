@@ -11,7 +11,7 @@ import { Solucoes } from '../Solucoes'
 export function Home () {
     return (
       <div className='bg-gray-200 '>
-        <Header />  
+          <Header />  
         <div className='flex items-center justify-center'>
           <Compromissos />
         </div>

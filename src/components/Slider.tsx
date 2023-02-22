@@ -118,10 +118,12 @@ export function SlideSm() {
     }
 
     return(
-        <div className="w-full mx-5 text-[18px]">
+        <div className="w-full mx-5 mt-10 text-[18px]">
             <div className={` font-title rounded-md text-[30px]`}>
-                <button onClick={handleHealth} className={`px-5 py-2 ${showHealth ? 'bg-pink-500' : null} -ml-[6px] rounded-t-lg`}>Healthcare</button> | <button onClick={handleLife} className={`px-5 py-2 ${showHealth ? null : 'bg-blue-500 rounded-t-lg'}`}>Lifescience</button>
-                <div className={`${showHealth ? 'bg-pink-500 rounded-tr-lg rounded-b-lg' : 'bg-blue-500 rounded-tl-lg rounded-b-lg'}`}>
+                <button onClick={handleHealth} className={`px-2 py-2 ${showHealth ? 'bg-pink-200' : null} -ml-[6px] rounded-t-lg`}>Healthcare</button> | 
+                <button onClick={handleLife} className={`px-2 py-2 ${showHealth ? null : 'bg-blue-200 rounded-t-lg'}`}>Lifescience</button>
+                
+                <div className={`${showHealth ? 'bg-pink-200 rounded-t-lg rounded-b-lg' : 'bg-blue-200 rounded-t-lg rounded-b-lg'}`}>
                     {showHealth ? <Healthcare /> : <Lifescience /> }
                 </div>
             </div>
