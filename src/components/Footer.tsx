@@ -107,3 +107,53 @@ export function Footer () {
         </div>
     )
 }
+
+export function FooterMobile(){
+    return (
+        <div className='w-full '>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,181.3C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                </svg>
+            </div>
+            <div className='bg-white-100'>
+                <div className='w-full flex justify-center py-5'>
+                    <img className='w-2/5' src={logo} />
+                </div>
+            
+                <div className='mt-10 flex flex-col items-center justify-center gap-10 z-30 font-default text-lg '>
+                    <div >
+                        <h2 className='font-default mb-3 font-bold text-2xl '>Nossa Unidade</h2>
+                        <a href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" className="text-[14px]" target="_blank">
+                            Rua Reverendo Francisco <br />
+                            Lotufo, 663 - Sala 6 <br />
+                            Vila Nogueira, Botucatu - SP <br />
+                            18606-810 <br />
+                        </a>
+                    </div>
+                    <div>
+                        <h2 className='font-default mb-3 font-bold text-2xl'>Institucional</h2>
+                            <a href='aaaaa' className="text-[14px]">Quem Somos</a><br />
+                            <a href='aaaaa' className="text-[14px]">Equipe</a><br />
+                            <a href='aaaaa' className="text-[14px]">Contato</a> <br />
+                            <a href='aaaaa' className="text-[14px]">Life Science</a><br />
+                            <a href='aaaaa' className="text-[14px]">Healthcare</a>
+                    </div>
+                    <div>
+                        <h2 className='font-default mb-3 font-bold text-2xl'>Contato</h2>
+                        <a href="tel:+551433548256" className="text-[14px]">(14) 3354-8256</a> <br />
+                        <a href="mailto:contato@elevenup.com.br" className="text-[14px]">contato@elevenup.com.br</a>
+                    </div>
+                    <div>
+                        <h2 className='font-default mb-3 font-bold text-2xl'>Redes Sociais</h2>
+                        <div className='flex items-center justify-center space-x-5'>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={face} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={insta} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={link} /></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

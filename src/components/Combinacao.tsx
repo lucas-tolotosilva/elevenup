@@ -7,13 +7,13 @@ export function Combinacao() {
     return (
         <div className='w-full mb-36'>
             <motion.h2 
-                className="font-title w-full text-[150px] mb-4"
+                className="font-title w-full sm:text-[45px] sm:text-center lg:text-[150px] mb-4"
                 initial={{opacity:0, scale: 0.7}}
                 whileInView={{ opacity: 1, scale: 1}}
                 viewport={{once:true}}>A Combinação Perfeita</motion.h2>
 
             <motion.p 
-                className='font-default '
+                className='font-default sm:text-[14px] lg:text[18px] sm:mx-5'
                 initial={{opacity:0, scale: 0.7}}
                 whileInView={{ opacity: 1, scale: 1}}
                 viewport={{once:true}}>
@@ -22,16 +22,16 @@ export function Combinacao() {
             </motion.p>
 
             <motion.h3 
-                className='font-title text-7xl my-20'
+                className='font-title lg:text-7xl sm:text-[30px] sm:my-16 lg:my-20'
                 initial={{opacity:0,y:100, scale: 0.7}}
                 whileInView={{ opacity: 1,y:0, scale: 1}}
                 viewport={{once:true}}> Qual o segmento da sua empresa?
             </motion.h3>
 
             <div className='w-full  flex justify-center'>
-                <div className='max-w-[1280px] min-w-[1270px] flex justify-center items-center'>
+                <div className='lg:max-w-[1280px] sm:text-[14px] lg:min-w-[1270px] sm:w-full sm:flex-wrap flex justify-center items-center'>
                     <motion.div 
-                        className='w-6/12 z-10 mr-14 p-12 text-left rounded-3xl bg-white-150'
+                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl bg-white-150'
                         initial={{opacity:0, scale: 0}}
                         whileInView={{ opacity: 1, scale: 1}}
                         viewport={{once:true}}
@@ -50,7 +50,7 @@ export function Combinacao() {
                     </motion.div>
 
                     <motion.div 
-                        className='w-6/12 z-10 ml-14 p-12 text-left rounded-3xl bg-white-150'
+                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl bg-white-150'
                         initial={{opacity:0, scale: 0}}
                         whileInView={{ opacity: 1, scale: 1}}
                         transition={{type:"spring", delay: 0.3, bounce: 0.5}}
@@ -70,7 +70,7 @@ export function Combinacao() {
                 </div>
             </div>
 
-            <div className='w-full z-10 flex justify-center'>
+            <div className='w-full z-10 sm:hidden lg:flex justify-center'>
                 <div className='max-w-[1280px] min-w-[1270px] flex items-center justify-center'>
                     <motion.div 
                         className='w-6/12 -mt-40 ml-16 mr-32'

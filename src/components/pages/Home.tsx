@@ -2,7 +2,7 @@ import { BlogComponent } from '../Blog'
 import { Clientes } from '../Clientes'
 import { Combinacao } from '../Combinacao'
 import { Compromissos } from '../Compromissos'
-import { Footer } from '../Footer'
+import { Footer, FooterMobile } from '../Footer'
 import { Header } from '../Header'
 import { Segmentos } from '../Segmentos'
 import { Solucoes } from '../Solucoes'
@@ -36,8 +36,13 @@ export function Home () {
           <Combinacao />
         </div>
 
-        <div className='flex items-center justify-center'>
+        {/* DESKTOP */}
+        <div className='lg:flex sm:hidden items-center justify-center'>
           <Footer />
+        </div>
+        {/* MOBILE */}
+        <div className='sm:inline lg:hidden'>
+          <FooterMobile />
         </div>
 
         

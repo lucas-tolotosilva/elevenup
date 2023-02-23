@@ -13,7 +13,7 @@ import rosa3 from '../assets/icons/rosas/rosa3.svg'
 import rosa4 from '../assets/icons/rosas/rosa4.svg'
 import rosa5 from '../assets/icons/rosas/rosa5.svg'
 import rosa6 from '../assets/icons/rosas/rosa6.svg'
-import { Card } from './Card';
+import { Card, CardMobile } from './Card';
 
 export function Solucoes(){
 
@@ -34,7 +34,8 @@ export function Solucoes(){
             </div>
             <div className="lg:min-w-[1280px] sm:w-full flex items-center justify-center">
                 <div style={{perspective: 2000}}> 
-                     <div className="sm:flex-wrap sm:gap-10 flex relative items-center justify-center ">
+                    {/* DESKTOP */}
+                     <div className="sm:hidden lg:flex sm:gap-10 relative items-center justify-center ">
                             
                             <Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
                             <Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
@@ -42,6 +43,17 @@ export function Solucoes(){
                             <Card delay={0.80} shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
                             <Card delay={1} shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
                             <Card delay={1.20} shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+
+                    </div>
+                    {/* MOBILE */}
+                     <div className="sm:flex-wrap lg:hidden sm:flex sm:items-center sm:justify-center sm:gap-10  ">
+                            
+                            <CardMobile  shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
+                            <CardMobile  shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
+                            <CardMobile  shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
+                            <CardMobile  shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
+                            <CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
+                            <CardMobile  shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
 
                     </div>
                 </div>
