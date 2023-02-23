@@ -47,13 +47,18 @@ export function Solucoes(){
                     </div>
                     {/* MOBILE */}
                      <div className="sm:flex-wrap lg:hidden sm:flex sm:items-center sm:justify-center sm:gap-10  ">
-                            
-                            <CardMobile  shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
-                            <CardMobile  shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
-                            <CardMobile  shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
-                            <CardMobile  shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
-                            <CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
-                            <CardMobile  shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+                            <div className='flex'>
+                                <CardMobile  shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
+                                <CardMobile  shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
+                            </div>
+                            <div className='flex'>
+                                <CardMobile  shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
+                                <CardMobile  shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
+                            </div>
+                            <div className='flex'>
+                                <CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
+                                <CardMobile  shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+                            </div>
 
                     </div>
                 </div>
