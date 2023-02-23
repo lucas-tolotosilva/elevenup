@@ -18,23 +18,23 @@ import { Card } from './Card';
 export function Solucoes(){
 
     return (
-        <div className="max-w-[1280px] mb-36">
+        <div className="lg:max-w-[1280px] sm:w-full sm:mx-5 mb-36">
             <motion.h2 
-                className="font-title w-full text-[150px] mb-4"
+                className="font-title w-full lg:text-[150px] sm:text-[50px] mb-4"
                 initial={{ opacity: 0 , scale: 0}}
                 whileInView={{ opacity: 1 , scale: 1}}
                 viewport={{once:true}}>Soluções</motion.h2>
                 
             <div className="flex justify-center w-full">
-                <p className="text-center font-default text-[18px] w-6/12 mb-20 ">
+                <p className="text-center font-default lg:text-[18px] sm:text-[14px] lg:w-6/12 sm:w-full mb-20 mt-10 ">
                     A ElevenUp tem como objetivo proporcionar os melhores resultados para a sua empresa
                     de Life Science e Healthcare. Pensando nisso, nós oferecemos as melhores soluções para
                     evoluir  seu  negócio  e   elevar sua   marca   no mundo digital! 
                 </p>
             </div>
-            <div className="min-w-[1280px] flex items-center justify-center">
+            <div className="lg:min-w-[1280px] sm:w-full flex items-center justify-center">
                 <div style={{perspective: 2000}}> 
-                     <div className="flex relative items-center justify-center ">
+                     <div className="sm:flex-wrap sm:gap-10 flex relative items-center justify-center ">
                             
                             <Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
                             <Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
