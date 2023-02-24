@@ -69,15 +69,15 @@ export function CardMobile (props: cardPropMobile) {
                 <div className='w-44 h-44 bg-gradient-radial-blue-mini'> </div>
 
             </div>
-            <div className={`w-36 h-36 border mr-5 ml-5 ${props.shadow} border-white-100 bg-gray-200 flex flex-col items-center justify-center rounded-3xl`}>
+            <div className={`w-48 h-48 border mr-5 ml-5 ${props.shadow} border-white-100 bg-gray-200 flex flex-col items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>
-                    <img className='absolute -left-7 w-16 h-16' src={props.rosa} alt="Inbound"/> 
-                    <img draggable="false" className=' w-16 h-16' src={props.icon} alt="Inbound"/> 
+                    <img className='absolute -left-7 w-20 h-20' src={props.rosa} alt="Inbound"/> 
+                    <img draggable="false" className=' w-20 h-20' src={props.icon} alt="Inbound"/> 
                 </div>
 
                 <div className='h-1/2 flex items-center'> 
-                    <h2 className='font-default text-[11px] w-36'>{props.title}</h2>
+                    <h2 className='font-default text-[13px] w-36'>{props.title}</h2>
                 </div>
             </div>
 
