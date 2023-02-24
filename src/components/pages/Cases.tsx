@@ -1,17 +1,17 @@
 import React from "react"
-import { Footer } from "../Footer"
+import { Footer, FooterMobile } from "../Footer"
 import { Nav } from "../Nav"
 import img from "../../assets/logo.png"
 
 export function Cases(){
     return (
         <div className="bg-gray-200 overflow-x-hidden">
-            <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center mb-96 ">
+            <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
-                <div className="max-w-[1280px] mb-96 pb-96 bg-gray-200 absolute top-40">
-                <h1 className="font-title tracking-wider font-bold text-[150px]">CASES</h1>
+                <div className="max-w-[1280px] mb-96 pb-96 bg-gray-200 mt-40">
+                <h1 className="font-title tracking-wider font-bold sm:text-[50px] lg:text-[150px]">CASES</h1>
                     <div className="w-full z-50 overflow-hidden gap-10">
                         <Case link={casesList[0].link} img={casesList[0].img} content={casesList[0].content} />
                         <Case link={casesList[1].link} img={casesList[1].img} content={casesList[1].content} />
@@ -19,8 +19,13 @@ export function Cases(){
                     </div>
                 </div>
             </div>
-                <div className='flex items-center pt-96 justify-center'>
-                    <Footer />
+                {/* DESKTOP */}
+                <div className='lg:flex sm:hidden lg:items-center lg:justify-center pt-96'>
+                <Footer />
+                </div>
+                {/* MOBILE */}
+                <div className='sm:inline lg:hidden'>
+                <FooterMobile />
                 </div>
         </div>  
     )

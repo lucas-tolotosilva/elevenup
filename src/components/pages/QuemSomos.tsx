@@ -15,7 +15,7 @@ export function QuemSomos() {
                 <Nav />
 
                 <div className="inicio max-w-[1280px] mt-32">
-                    <h1 className="font-title tracking-wider font-bold mb-20 text-[80px]">quem somos</h1>
+                    <h1 className="font-title tracking-wider font-bold mb-20 lg:text-[150px] sm:text-[80px]">quem somos</h1>
                     <div className="flex justify-end  items-center">
                         <img className="lg:inline-flex sm:hidden w-1/2 cover rounded-3xl" src={img1} />
                         <div className="sm:w-full sm:mx-5 text-justify px-10 py-5 rounded-3xl backdrop-blur-md font-default text-[15px] bg-white-80 ">

@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import InputMask from "react-input-mask";
-import { Footer } from "../Footer"
+import { Footer, FooterMobile } from "../Footer"
 import { Nav } from "../Nav"
 import img from "../../assets/img-contato.jpg"
 
@@ -19,12 +19,12 @@ export function Contato(){
     
     return (
         <div className="bg-gray-200 overflow-x-hidden">
-        <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-96 ">
+        <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center ">
             {/* --------- Header (logo e menu) --------- */}
             <Nav  />           
             {/* --------- Fim - Header (logo e menu) --------- */} 
-            <div className="max-w-[1280px] bg-gray-200 absolute top-40">
-                <h1 className="font-title tracking-wider mb-24   font-bold text-[150px]">CONTATO</h1>
+            <div className="max-w-[1280px] bg-gray-200 mt-40">
+                <h1 className="font-title tracking-wider mb-24 font-bold sm:text-[80px] lg:text-[150px]">CONTATO</h1>
                 <div className="w-full flex flex-wrap overflow-hidden">
 
                     <form>
@@ -68,8 +68,13 @@ export function Contato(){
                 </div>
             </div>
         </div>
-            <div className='flex items-center justify-center pt-64'>
-                <Footer />
+            {/* DESKTOP */}
+            <div className='lg:flex sm:hidden lg:items-center lg:justify-center pt-96'>
+            <Footer />
+            </div>
+            {/* MOBILE */}
+            <div className='sm:inline lg:hidden'>
+            <FooterMobile />
             </div>
     </div> 
     )

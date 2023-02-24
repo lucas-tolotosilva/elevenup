@@ -5,18 +5,18 @@ import { listaEquipe } from "../DataEquipe"
 import iFace from "../../assets/icons/iface.svg"
 import iInsta from "../../assets/icons/iinsta.svg"
 import iLink from "../../assets/icons/ilinkedin.svg"
-import { Footer } from "../Footer"
+import { Footer, FooterMobile } from "../Footer"
 
 export function Equipe(){
     return (
         <div className="bg-gray-200 overflow-x-hidden">
-            <div className="relative w-screen h-screen flex flex-col items-center justify-center text-center mb-[500px] ">
+            <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
-                <div className="max-w-[1280px] bg-gray-200 absolute top-40">
-                    <h1 className="font-title tracking-wider font-bold text-[150px]">EQUIPE</h1>
-                    <div className="w-full flex flex-wrap overflow-hidden gap-10">
+                <div className="max-w-[1280px] bg-gray-200 mt-40">
+                    <h1 className="font-title tracking-wider font-bold sm:text-[80px] lg:text-[150px]">EQUIPE</h1>
+                    <div className="w-full flex flex-wrap overflow-hidden lg:justify-start sm:justify-center sm:gap-5 lg:gap-10">
                         {listaEquipe.map(item => (
                             <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} insta={item.insta} face={item.face} linkedin={item.linkedin} img={item.img} />
                         ))}
@@ -26,8 +26,13 @@ export function Equipe(){
                     </div>
                 </div>
             </div>
-                <div className='flex items-center justify-center pt-96'>
-                    <Footer />
+                 {/* DESKTOP */}
+                <div className='lg:flex sm:hidden lg:items-center lg:justify-center pt-96'>
+                <Footer />
+                </div>
+                {/* MOBILE */}
+                <div className='sm:inline lg:hidden'>
+                <FooterMobile />
                 </div>
         </div> 
     )
@@ -52,15 +57,15 @@ export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProp
    }
 
     return(
-        <motion.div className={`${show ? 'w-[280px] h-[280px] ' : 'w-[280px] h-[280px] overflow-hidden'} mt-10 backdrop-blur-sm bg-gray-80 rounded-2xl`}
+        <motion.div className={`${show ? 'lg:w-[280px] lg:h-[280px] sm:w-[180px] sm:h-[300px] ' : 'lg:w-[280px] lg:h-[280px] sm:w-[180px] sm:h-[300px] overflow-hidden'} lg:pointer-events-auto sm:pointer-events-none mt-10 backdrop-blur-sm bg-gray-80 rounded-2xl`}
                 onHoverStart={handleMouseOver}
                 onHoverEnd={handleMouseOut}
                 transition={{delay:20 }}>
             <div className="w-full flex justify-center cover">
-                <img className={`${show ? '-mt-6 w-[194px] h-[194px] ' : ' w-[280px] h-[280px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
+                <img className={`${show ? '-mt-6 lg:w-[194px] lg:h-[194px] sm:w-[150px] sm:h-[150px] ' : ' lg:w-[280px] lg:h-[280px] sm:w-[180px] sm:h-[180px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
             </div>
             <div className="flex flex-col items-center justify-center">
-                <span className="font-default font-regular mt-2 text-[24px]">{nome}</span>
+                <span className="font-default font-regular mt-2 sm:text-[20px] lg:text-[24px]">{nome}</span>
                 <span className="font-default font-thin -mt-1 mb-2 text-[16px]">{funcao}</span>
                 <div className="flex gap-4 items-center justify-center">
                     <a target="_blank" href={insta}><img className="w-6 " src={iInsta} /></a> 
