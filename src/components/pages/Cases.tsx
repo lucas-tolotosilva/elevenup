@@ -11,8 +11,8 @@ export function Cases() {
                 <Nav />
                 {/* --------- Fim - Header (logo e menu) --------- */}
                 <div className="max-w-[1280px] mb-10  bg-gray-200 mt-40">
-                    <h1 className="font-title tracking-wider font-bold sm:text-[80px] sm:mb-10 lg:text-[150px]">CASES</h1>
-                    <div className="w-full z-50 overflow-hidden ">
+                    <h1 className="font-title tracking-wider font-bold sm:text-[80px] sm:mb-20 lg:text-[150px]">CASES</h1>
+                    <div className="w-full z-50 lg:overflow-hidden sm:mt-28 ">
                         <Case link={casesList[0].link} img={casesList[0].img} content={casesList[0].content} />
                         <Case link={casesList[1].link} img={casesList[1].img} content={casesList[1].content} />
                         <Case link={casesList[2].link} img={casesList[2].img} content={casesList[2].content} />
@@ -57,12 +57,12 @@ export function Case({ img, content, link }: casesProps) {
 export const casesList = [
     {
         img: img,
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed diam consectetur, laoreet erat eu, pretium tortor. Cras scelerisque ut nibh malesuada suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non dolor ligula. Aliquam dapibus, erat vitae dictum tristique, mi dolor egestas nulla, eu imperdiet felis libero vitae leo. Quisque egestas magna quis neque mattis auctor.',
+        content: 'Lorem ipsum sdsds sdsd dolor sit amet, consectetur adipiscing elit. Duis sed diam consectetur, laoreet erat eu, pretium tortor. Cras scelerisque ut nibh malesuada suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non dolor ligula. Aliquam dapibus, erat vitae dictum tristique, mi dolor egestas nulla, eu imperdiet felis libero vitae leo. Quisque egestas magna quis neque mattis auctor.',
         link: "aaa"
     },
     {
         img: img,
-        content: 'Phasellus tincidunt rhoncus nisl, vitae tempus dui tincidunt a. In hac habitasse platea dictumst. Donec lacinia congue lectus non aliquet. Phasellus lobortis vel odio sed consectetur. Curabitur lorem tortor, dignissim ac nunc eu, sagittis vulputate augue. Aenean suscipit, felis iaculis interdum aliquam, libero quam imperdiet nisl, ac venenatis massa felis vel ligula. Vivamus eu auctor enim. Cras sapien orci, dignissim vitae lorem vitae, consequat tempor dolor. Sed viverra lacinia tincidunt. Morbi in orci consectetur, consequat ante quis, fermentum mi. Integer risus velit, fringilla vitae dapibus laoreet, bibendum vel diam. Nunc porta maximus tellus, aliquam dignissim ipsum lacinia ac. Integer ac consequat neque. Phasellus in lacinia felis, sit amet dignissim arcu. Nulla facilisi',
+        content: 'Phasellus dsdsdsd tincidunt rhoncus nisl, vitae tempus dui tincidunt a. In hac habitasse platea dictumst. Donec lacinia congue lectus non aliquet. Phasellus lobortis vel odio sed consectetur. Curabitur lorem tortor, dignissim ac nunc eu, sagittis vulputate augue. Aenean suscipit, felis iaculis interdum aliquam, libero quam imperdiet nisl, ac venenatis massa felis vel ligula. Vivamus eu auctor enim. Cras sapien orci, dignissim vitae lorem vitae, consequat tempor dolor. Sed viverra lacinia tincidunt. Morbi in orci consectetur, consequat ante quis, fermentum mi. Integer risus velit, fringilla vitae dapibus laoreet, bibendum vel diam. Nunc porta maximus tellus, aliquam dignissim ipsum lacinia ac. Integer ac consequat neque. Phasellus in lacinia felis, sit amet dignissim arcu. Nulla facilisi',
         link: 'bbb'
     },
     {
