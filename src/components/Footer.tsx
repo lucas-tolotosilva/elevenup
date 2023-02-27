@@ -152,6 +152,9 @@ export function FooterMobile(){
                             
                         </div>
                     </div>
+                    <hr className='w-2/3 h-[2px] bg-[#FF0ED1]'/>
+                    <span className='text-sm mb-10'>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
+                                </span> 
                 </div>
             </div>
         </div>
