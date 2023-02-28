@@ -5,7 +5,7 @@ import health from '../assets/health.jpg'
 
 export function Combinacao() {
     return (
-        <div className='w-full relative '>
+        <div className='w-full relative mb-96'>
             <motion.h2
                 className="font-title w-full sm:text-[45px] sm:text-center lg:text-[150px] mb-4"
                 initial={{ opacity: 0, scale: 0.7 }}

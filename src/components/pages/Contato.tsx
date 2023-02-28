@@ -73,7 +73,7 @@ export function Contato() {
                 <Footer />
             </div>
             {/* MOBILE */}
-            <div className='sm:inline lg:hidden'>
+            <div className='sm:inline lg:hidden text-center'>
                 <FooterMobile />
             </div>
         </div>

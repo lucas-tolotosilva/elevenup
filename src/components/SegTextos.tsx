@@ -71,6 +71,7 @@ export function Lifescience (){
                         <li>Prestadores de serviços de suporte e manutenção.</li>
                         <li>Softwares relacionados à Biotech.</li>
                         <li>Indústria de materiais laboratoriais e médico-hospitalares.</li>
+                        <br />
                     </ul>
                 </div>
                   

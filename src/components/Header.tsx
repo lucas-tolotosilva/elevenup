@@ -6,7 +6,7 @@ import { Nav } from './Nav'
 export function Header () {
    
     return (
-        <div className="relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden text-center">
+        <div id="home" className=" relative w-screen h-screen flex flex-col items-center justify-center overflow-hidden text-center">
             {/* --------- Vídeo --------- */}
             <div className="absolute w-full h-full overflow-hidden">
                 <video className="lg:block sm:hidden min-w-full min-h-full object-cover" src={videobg} autoPlay loop muted/>
