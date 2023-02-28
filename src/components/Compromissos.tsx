@@ -8,7 +8,7 @@ import c4 from '../assets/circles/circulo-4.png'
 export function Compromissos() {
     return(
         <motion.div 
-            className='bg-white-200 my-36 lg:max-w-[1280px] rounded-3xl border-1 border-white-100 lg:flex lg:items-center py-12 sm:px-6  sm:w-full sm:mx-5'
+            className='bg-white-200 sm:mt-36 mb-16 lg:my-36 lg:max-w-[1280px] rounded-3xl border-1 border-white-100 lg:flex lg:items-center py-12 sm:px-6  sm:w-full sm:mx-5'
             initial={{opacity:0, scale: 0.7}}
             whileInView={{ opacity: 1, scale: 1}}
             transition={{ type: "spring", delay: 0.25 }}

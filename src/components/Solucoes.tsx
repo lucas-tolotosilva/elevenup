@@ -18,7 +18,7 @@ import { Card, CardMobile } from './Card';
 export function Solucoes(){
 
     return (
-        <div className="lg:max-w-[1280px] sm:w-full sm:mx-5 mb-36">
+        <div className="lg:max-w-[1280px] sm:w-full sm:mx-5 sm:mb-16 lg:mb-36">
             <motion.h2 
                 className="font-title w-full lg:text-[150px] sm:text-[50px] mb-4"
                 initial={{ opacity: 0 , scale: 0}}
@@ -32,10 +32,10 @@ export function Solucoes(){
                     evoluir  seu  negócio  e   elevar sua   marca   no mundo digital! 
                 </p>
             </div>
-            <div className="lg:min-w-[1280px] sm:w-full flex items-center justify-center">
+            <div className=" sm:w-full flex items-center justify-center">
                 <div style={{perspective: 2000}}> 
                     {/* DESKTOP */}
-                     <div className="sm:hidden lg:flex sm:gap-10 relative items-center justify-center ">
+                     <div className="sm:hidden lg:flex relative items-center justify-center ">
                             
                             <Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
                             <Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    

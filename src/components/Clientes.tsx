@@ -5,7 +5,7 @@ import { carousel1,carousel2 } from "./DataImg";
 export function Clientes () {
     
     return (
-        <div className="w-full mb-36">
+        <div className="w-full sm:mb-16 lg:mb-36">
             <motion.h2 
                 className="font-title w-full lg:text-[150px] sm:text-[50px] sm:mt-10 sm:mb-10 mb-24"
                 initial={{ opacity: 0 , scale: 0}}
