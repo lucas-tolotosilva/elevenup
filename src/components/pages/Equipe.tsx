@@ -10,6 +10,8 @@ import { Footer, FooterMobile } from "../Footer"
 export function Equipe(){
     return (
         <div className="bg-gray-200 overflow-x-hidden">
+            <div className="absolute inicio top-0 bg-transparent"></div>
+
             <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav  />           

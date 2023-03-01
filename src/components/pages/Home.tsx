@@ -11,6 +11,8 @@ import { Solucoes } from '../Solucoes'
 export function Home () {
     return (
       <div className='bg-gray-200 '>
+        <div className="absolute inicio top-0 bg-transparent"></div>
+          
           <Header />  
         <div className='flex items-center justify-center'>
           <Compromissos />

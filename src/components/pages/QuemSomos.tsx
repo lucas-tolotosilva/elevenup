@@ -11,10 +11,12 @@ export function QuemSomos() {
     return (
         
         <div className="bg-gray-200 overflow-x-hidden">
-            <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
+            <div id="inicio" className="absolute w-full h-10 top-0 bg-transparent"></div>
+
+            <div className="relative  w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
                 <Nav />
 
-                <div className="inicio max-w-[1280px] mt-32">
+                <div className=" max-w-[1280px] mt-32">
                     <h1 className="font-title tracking-wider font-bold mb-20 lg:text-[150px] sm:text-[80px]">quem somos</h1>
                     <div className="flex justify-end  items-center">
                         <img className="lg:inline-flex sm:hidden w-1/2 cover rounded-3xl" src={img1} />

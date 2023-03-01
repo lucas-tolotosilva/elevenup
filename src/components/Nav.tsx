@@ -105,18 +105,16 @@ export function Nav() {
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div>
                         <ul className="font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
-                            <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><Link to="/">Home</Link></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos">Quem Somos</Link></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe">Equipe</Link></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases">Cases</Link></li>
+                            <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><Link to="/#inicio">Home</Link></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos#inicio">Quem Somos</Link></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe#inicio">Equipe</Link></li>
+                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases#inicio">Cases</Link></li>
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link to="/blog">Blog</Link></li> */}
-                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato">Contato</Link></li>
+                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato#inicio">Contato</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

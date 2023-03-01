@@ -19,7 +19,9 @@ export function Contato() {
 
     return (
         <div className="bg-gray-200 overflow-x-hidden">
-            <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center ">
+            <div className="absolute inicio top-0 bg-transparent"></div>
+
+            <div className="relative  w-screen min-h-screen flex flex-col items-center justify-center text-center ">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav />
                 {/* --------- Fim - Header (logo e menu) --------- */}
