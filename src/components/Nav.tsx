@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { Link } from "react-router-dom"
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
