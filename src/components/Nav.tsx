@@ -70,7 +70,7 @@ export function Nav() {
             <div className="flex justify-center">
                 <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
                                             transition-all duration-700 ease-in-out delay-400 w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed`}>
-                    <Link to="/"><img className="lg:w-32 sm:w-24" src={logo} /></Link>
+                    <a href="/"><img className="lg:w-32 sm:w-24" src={logo} /></a>
 
                     <div className={`${showMenu ? 'flex gap-2 -ml-16 ' : 'hidden'} sm:hidden  transition-all duration-700 ease-in-out delay-400`}>
                         <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
@@ -105,12 +105,12 @@ export function Nav() {
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div>
                         <ul className="font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
-                            <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><Link to="/#inicio">Home</Link></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><Link to="/quem-somos#inicio">Quem Somos</Link></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><Link to="/equipe#inicio">Equipe</Link></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><Link to="/cases#inicio">Cases</Link></li>
-                            {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link to="/blog">Blog</Link></li> */}
-                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><Link to="/contato#inicio">Contato</Link></li>
+                            <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/">Home</a></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="/quem-somos">Quem Somos</a></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="/equipe">Equipe</a></li>
+                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><a href="/cases">Cases</a></li>
+                            {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
+                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><a href="/contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>

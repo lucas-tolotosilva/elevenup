@@ -13,7 +13,7 @@ export function Combinacao() {
                 viewport={{ once: true }}>A Combinação Perfeita</motion.h2>
 
             <motion.p
-                className='font-default sm:text-[14px] lg:text[18px] sm:mx-5'
+                className='font-default sm:text-[14px] lg:text-[18px] sm:mx-5'
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}>
