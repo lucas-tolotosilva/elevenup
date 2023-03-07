@@ -104,13 +104,21 @@ export function Nav() {
                         </div>
                         <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center">
                         </div>
-                        <ul className="font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
+                        <ul className="lg:flex sm:hidden flex-col font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
                             <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/">Home</a></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="hover:text-8xl hover:cursor-pointer "><a href="/quem-somos">Quem Somos</a></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="hover:text-8xl hover:cursor-pointer "><a href="/equipe">Equipe</a></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="hover:text-8xl hover:cursor-pointer "><a href="/cases">Cases</a></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/quem-somos">Quem Somos</a></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/equipe">Equipe</a></li>
+                            <li onMouseOver={() => handleMouseOver(4)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/cases">Cases</a></li>
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
-                            <li onMouseOver={() => handleMouseOver(6)} className="hover:text-8xl hover:cursor-pointer "><a href="/contato">Contato</a></li>
+                            <li onMouseOver={() => handleMouseOver(6)} className="lg:hover:text-8xl hover:cursor-pointer "><a href="/contato">Contato</a></li>
+                        </ul>
+                        <ul className="sm:flex flex-col lg:hidden font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
+                            <li  className="hover:cursor-pointer "><a href="/">Home</a></li>
+                            <li  className="hover:cursor-pointer "><a href="/quem-somos">Quem Somos</a></li>
+                            <li  className="hover:cursor-pointer "><a href="/equipe">Equipe</a></li>
+                            <li  className="hover:cursor-pointer "><a href="/cases">Cases</a></li>
+                            {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
+                            <li  className="hover:cursor-pointer "><a href="/contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>
