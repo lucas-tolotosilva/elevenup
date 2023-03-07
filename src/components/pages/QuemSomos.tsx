@@ -13,7 +13,7 @@ export function QuemSomos() {
         <div className="bg-gray-200 overflow-x-hidden">
             <div id="inicio" className="absolute w-full h-10 top-0 bg-transparent"></div>
 
-            <div className="relative  w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
+            <div className="relative  w-screen min-h-screen flex flex-col items-center justify-center text-center sm:mb-32 ">
                 <Nav />
 
                 <div className=" max-w-[1280px] mt-32">
@@ -63,7 +63,7 @@ export function QuemSomos() {
                     
                     Venha para a ElevenUp e evolua para o mundo digital!</span>
             </div>
-            <div className="w-screen flex items-center justify-center pt-10">
+            <div className="w-screen flex items-center justify-center sm:mb-28 pt-10">
                 <div className="font-default sm:text-[14px] sm:mx-5 lg:mb-80 sm:mb-5 lg:text-2xl max-w-[1200px] text-center">
                     <p>
                     Assim, ao se unir a ElevenUp você estará junto a
