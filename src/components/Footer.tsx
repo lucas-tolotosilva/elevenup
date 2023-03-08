@@ -3,9 +3,9 @@ import '../styles/main.css'
 import { BiInfinite } from 'react-icons/bi'
 import logo from '../assets/logo.png'
 import img from '../assets/fundo-footer.png'
-import face from '../assets/icons/iface.svg'
-import insta from '../assets/icons/iinsta.svg'
-import link from '../assets/icons/ilinkedin.svg'
+import face from '../assets/icons/face.png'
+import insta from '../assets/icons/insta.png'
+import link from '../assets/icons/linkedin.png'
 
 export function Footer () {
     return (
@@ -146,15 +146,15 @@ export function FooterMobile(){
                     <div>
                         <h2 className='font-default mb-3 font-bold text-2xl'>Redes Sociais</h2>
                         <div className='flex items-center justify-center space-x-5'>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={face} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={insta} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={link} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-1' src={face} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-1' src={insta} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-1' src={link} /></a>
                             
                         </div>
                     </div>
                     <hr className='w-2/3 h-[2px] bg-[#FF0ED1]'/>
                     <span className='text-sm mb-10'>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
-                                </span> 
+                    </span> 
                 </div>
             </div>
         </div>
