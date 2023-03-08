@@ -11,6 +11,7 @@ import { Contato } from './components/pages/Contato'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { ErrorPAge } from './components/pages/ErrorPage'
+import { Termos } from './components/pages/termos'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/contato",
     element: <Contato />
+  },
+  {
+    path:"/termos-de-uso-e-politica-de-privacidade",
+    element: <Termos />
   }
 ])
 

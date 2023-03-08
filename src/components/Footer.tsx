@@ -43,9 +43,9 @@ export function Footer () {
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Redes Sociais</h2>
                                 <div className='flex items-center justify-center space-x-5'>
-                                    <a href="aaaaaa" target="_blank"><img  src={face} /></a>
-                                    <a href="aaaaaa" target="_blank"><img  src={insta} /></a>
-                                    <a href="aaaaaa" target="_blank"><img  src={link} /></a>
+                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={face} /></a>
+                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={insta} /></a>
+                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={link} /></a>
                                     
                                 </div>
                             </div>
@@ -146,15 +146,17 @@ export function FooterMobile(){
                     <div>
                         <h2 className='font-default mb-3 font-bold text-2xl'>Redes Sociais</h2>
                         <div className='flex items-center justify-center space-x-5'>
-                            <a href="aaaaaa" target="_blank"><img className='w-1' src={face} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-1' src={insta} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-1' src={link} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={face} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={insta} /></a>
+                            <a href="aaaaaa" target="_blank"><img className='w-10' src={link} /></a>
                             
                         </div>
                     </div>
                     <hr className='w-2/3 h-[2px] bg-[#FF0ED1]'/>
                     <span className='text-sm mb-10'>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
-                    </span> 
+                    </span>
+                    <br />
+                    <a href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
                 </div>
             </div>
         </div>
