@@ -73,9 +73,9 @@ export function Nav() {
                     <a href="/"><img className="lg:w-32 sm:w-24" src={logo} /></a>
 
                     <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} transition-all duration-700 ease-in-out delay-400`}>
-                        <img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
-                        <img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
-                        <img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" />
+                        <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.linkedin.com/company/elevenup/"><img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
 
                     </div>
 

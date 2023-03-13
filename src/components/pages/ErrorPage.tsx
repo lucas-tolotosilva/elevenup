@@ -5,7 +5,7 @@ export function ErrorPAge(){
     return (
         <div className="relative overflow-hidden w-screen h-screen flex flex-col items-center justify-center text-center">
             
-            <div className="flex justify-center items-center gap-8">
+            <div className="flex lg:flex-row sm:flex-col sm:mx-40 justify-center items-center gap-8">
                 <div className="w-96 h-96">
                     <img src={virus} />
                 </div>

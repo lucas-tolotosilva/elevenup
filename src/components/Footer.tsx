@@ -29,9 +29,9 @@ export function Footer () {
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Institucional</h2>
-                                    <a href='aaaaa'>Quem Somos</a><br />
-                                    <a href='aaaaa'>Equipe</a><br />
-                                    <a href='aaaaa'>Contato</a> <br />
+                                    <a href='/quem-somos'>Quem Somos</a><br />
+                                    <a href='/equipe'>Equipe</a><br />
+                                    <a href='/contato'>Contato</a> <br />
                                     <a href='aaaaa'>Life Science</a><br />
                                     <a href='aaaaa'>Healthcare</a>
                             </div>
@@ -43,9 +43,9 @@ export function Footer () {
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Redes Sociais</h2>
                                 <div className='flex items-center justify-center space-x-5'>
-                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={face} /></a>
-                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={insta} /></a>
-                                    <a href="aaaaaa" target="_blank"><img className='w-12' src={link} /></a>
+                                    <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank"><img className='w-12' src={face} /></a>
+                                    <a href="https://www.instagram.com/elevenupmktg/" target="_blank"><img className='w-12' src={insta} /></a>
+                                    <a href="https://www.linkedin.com/company/elevenup/" target="_blank"><img className='w-12' src={link} /></a>
                                     
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ export function Footer () {
                             <div className='w-full flex flex-col items-center justify-center'>
                                 <span>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
                                 </span> 
-                                <span><a>Termos de Uso | Política de Privacidade</a></span>
+                                <a className='cursor-pointer' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
                             </div>
                         </div>
                     </div>
@@ -132,9 +132,9 @@ export function FooterMobile(){
                     </div>
                     <div>
                         <h2 className='font-default mb-3 font-bold text-2xl'>Institucional</h2>
-                            <a href='aaaaa' className="text-[14px]">Quem Somos</a><br />
-                            <a href='aaaaa' className="text-[14px]">Equipe</a><br />
-                            <a href='aaaaa' className="text-[14px]">Contato</a> <br />
+                            <a href='/quem-somos' className="text-[14px]">Quem Somos</a><br />
+                            <a href='/equipe' className="text-[14px]">Equipe</a><br />
+                            <a href='/contato' className="text-[14px]">Contato</a> <br />
                             <a href='aaaaa' className="text-[14px]">Life Science</a><br />
                             <a href='aaaaa' className="text-[14px]">Healthcare</a>
                     </div>
@@ -146,17 +146,16 @@ export function FooterMobile(){
                     <div>
                         <h2 className='font-default mb-3 font-bold text-2xl'>Redes Sociais</h2>
                         <div className='flex items-center justify-center space-x-5'>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={face} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={insta} /></a>
-                            <a href="aaaaaa" target="_blank"><img className='w-10' src={link} /></a>
+                            <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank"><img className='w-10' src={face} /></a>
+                            <a href="https://www.instagram.com/elevenupmktg/" target="_blank"><img className='w-10' src={insta} /></a>
+                            <a href="https://www.linkedin.com/company/elevenup/" target="_blank"><img className='w-10' src={link} /></a>
                             
                         </div>
                     </div>
                     <hr className='w-2/3 h-[2px] bg-[#FF0ED1]'/>
-                    <span className='text-sm mb-10'>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
+                    <span className='text-sm '>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
                     </span>
-                    <br />
-                    <a href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
+                    <a className='-mt-8' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
                 </div>
             </div>
         </div>

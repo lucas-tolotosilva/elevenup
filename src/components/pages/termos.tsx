@@ -2,7 +2,8 @@ import React from 'react'
 
 export function Termos () {
     return(
-        <div>
+        <div className='w-full flex flex-col items-center justify-center'>
+            <div className='w-[1100px] text-justify' >
             <h2>Política Privacidade</h2>
 A sua privacidade é importante para nós. É política do ElevenUp respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href="https://www.elevenup.com.br/"><b>ElevenUp</b></a>, e outros sites que possuímos e operamos.
 
@@ -86,6 +87,8 @@ O ElevenUp não analisou todos os sites vinculados ao seu site e não é respons
 O ElevenUp pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.
 <h3>Lei aplicável</h3>
 Estes termos e condições são regidos e interpretados de acordo com as leis do ElevenUp e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.
-        </div>
+   
+            </div>
+                 </div>
     )
 }
