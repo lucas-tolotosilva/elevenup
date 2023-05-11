@@ -68,8 +68,8 @@ export function Nav() {
         <div className="w-screen absolute top-0 z-50 ">
 
             <div className="flex justify-center">
-                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
-                                            transition-all duration-700 ease-in-out delay-400 w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed`}>
+                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 border-transparent lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
+                                            transition-all duration-700 ease-in-out delay-400  w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed`}>
                     <a href="/"><img className="lg:w-32 sm:w-24" src={logo} /></a>
 
                     <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} transition-all duration-700 ease-in-out delay-400`}>

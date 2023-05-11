@@ -64,6 +64,7 @@ export function Contato() {
                                     <button className="px-7 py-2 rounded-md bg-blue-600 text-white-100 ">Enviar</button>
                                 </div>
                             </div>
+                            
                         </form>
 
 
@@ -80,4 +81,6 @@ export function Contato() {
             </div>
         </div>
     )
+
+    
 }

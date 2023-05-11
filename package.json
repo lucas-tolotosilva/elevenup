@@ -19,7 +19,8 @@
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.7.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scroll-parallax": "^3.3.2"
+    "react-scroll-parallax": "^3.3.2",
+    "react-switch": "^7.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

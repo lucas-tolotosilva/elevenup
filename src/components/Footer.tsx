@@ -32,8 +32,7 @@ export function Footer () {
                                     <a href='/quem-somos'>Quem Somos</a><br />
                                     <a href='/equipe'>Equipe</a><br />
                                     <a href='/contato'>Contato</a> <br />
-                                    <a href='aaaaa'>Life Science</a><br />
-                                    <a href='aaaaa'>Healthcare</a>
+                                    <a href='/cases'>Cases</a> <br />
                             </div>
                             <div>
                                 <h2 className='font-default mb-3 text-3xl font-bold'>Contato</h2>
@@ -135,8 +134,7 @@ export function FooterMobile(){
                             <a href='/quem-somos' className="text-[14px]">Quem Somos</a><br />
                             <a href='/equipe' className="text-[14px]">Equipe</a><br />
                             <a href='/contato' className="text-[14px]">Contato</a> <br />
-                            <a href='aaaaa' className="text-[14px]">Life Science</a><br />
-                            <a href='aaaaa' className="text-[14px]">Healthcare</a>
+                            <a href='/cases' className="text-[14px]">Cases</a> <br />
                     </div>
                     <div>
                         <h2 className='font-default mb-3 font-bold text-2xl'>Contato</h2>
