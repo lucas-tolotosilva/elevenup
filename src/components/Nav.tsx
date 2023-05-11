@@ -3,12 +3,15 @@ import { Link } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
-import { BiMenuAltRight, BiX } from "react-icons/bi";
+import { BiMenuAltRight, BiX, BiSun } from "react-icons/bi";
+import { FaMoon } from 'react-icons/fa'
 import iDna from "../assets/icons/menu-dna.svg"
-import { FaCat } from "react-icons/fa";;
 import iFace from "../assets/icons/iface.svg"
 import iInsta from "../assets/icons/iinsta.svg"
 import iLink from "../assets/icons/ilinkedin.svg"
+import iFaceB from "../assets/icons/iface-branco.svg"
+import iInstaB from "../assets/icons/iinsta-branco.svg"
+import iLinkB from "../assets/icons/ilinkedin-branco.svg"
 import '../styles/main.css'
 
 
@@ -17,6 +20,7 @@ export function Nav() {
     const [handleOpen, setHandleOpen] = useState(false) //Variável state que guarda valor bool para abrir o menu
     const [text, setText] = useState('')
     const [showMenu, setShowMenu] = useState(false)
+    const [theme, setTheme] = useState(false)
 
     // Função para trocar o icone com hover
     function handleIconOver() {
@@ -63,31 +67,56 @@ export function Nav() {
         window.addEventListener("scroll", handleBgMenu)
         return () => window.removeEventListener("scroll", handleBgMenu)
     }, [])
+ 
+
+    function toggleTheme() {
+        const rootElement = document.documentElement;
+        const isDarkMode = rootElement.classList.toggle('dark');
+        setTheme(isDarkMode)
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      }
+
+      useEffect(() => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+            toggleTheme(); // Alterar para tema escuro
+        }
+        // Adicione esta verificação para definir explicitamente o tema como "light" se não estiver definido
+        else if (theme === null) {
+            localStorage.setItem('theme', 'light');
+        }
+      }, []);
 
     return (
         <div className="w-screen absolute top-0 z-50 ">
 
             <div className="flex justify-center">
-                <motion.div className={`${showMenu ? 'bg-white-80 backdrop-blur-md lg:w-[1100px] lg:mt-4 border-transparent lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
+                <motion.div className={`${showMenu ? 'bg-white-80 dark:bg-black-900 backdrop-blur-md lg:w-[1100px] lg:mt-4 border-transparent lg:rounded-full sm:w-full ' : 'lg:transition-all duration-700 ease-in-out delay-400 bg-transparent'} 
                                             transition-all duration-700 ease-in-out delay-400  w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed`}>
                     <a href="/"><img className="lg:w-32 sm:w-24" src={logo} /></a>
 
                     <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} transition-all duration-700 ease-in-out delay-400`}>
-                        <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={iInsta} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-                        <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={iFace} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-                        <a href="https://www.linkedin.com/company/elevenup/"><img src={iLink} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={!theme ? iInsta : iInstaB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={!theme ? iFace : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
 
                     </div>
 
                     {/* Desktop */}
-                    <div className=" w-16">
-                            <motion.div className=" rounded-full  p-3  lg:bg-white-100 border-white-100 hover:bg-transparent hover:cursor-pointer hover:border-none"
-                                whileHover={{ rotate: 180 }}
-                                onHoverStart={handleIconOver}
-                                onHoverEnd={handleIconOut}
-                                transition={{ type: "spring", damping: 10 }}>
-                                {!icon ? <a onClick={handleMenu}><BiMenuAltRight size={40} /></a> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna} /></button>}
-                            </motion.div> 
+                    <div className="flex items-center gap-10">
+                        <div onClick={toggleTheme} className={`flex items-center justify-center rounded-md h-10 w-10 cursor-pointer`}>
+                           {!theme ? <FaMoon color="#000000" size={20}/> : <BiSun color="#ffc222" size={30}/> } 
+                        </div>
+                        <div className=" w-16">
+                                <motion.div className={`rounded-full  p-3  ${!theme ? 'lg:bg-white-100' : 'lg:bg-white-50' }  hover:bg-transparent hover:cursor-pointer hover:border-none`} 
+                                    whileHover={{ rotate: 180 }}
+                                    onHoverStart={handleIconOver}
+                                    onHoverEnd={handleIconOut}
+                                    transition={{ type: "spring", damping: 10 }}>
+                                    {!icon ? <a onClick={handleMenu}><BiMenuAltRight color={!theme ? '#000000' : '#ffffff'} size={40} /></a> : <button onClick={handleMenu}><img className="h-[46px]" alt="DNA" src={iDna} /></button>}
+                                </motion.div> 
+                        </div>
+
                     </div>
 
                 </motion.div>
