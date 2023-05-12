@@ -7,13 +7,13 @@ export function Combinacao() {
     return (
         <div className='w-full relative sm:mb-20 lg:mb-96'>
             <motion.h2
-                className="font-title w-full sm:text-[45px] sm:text-center lg:text-[150px] mb-4"
+                className="dark:text-white-90 font-title w-full sm:text-[45px] sm:text-center lg:text-[150px] mb-4"
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}>A Combinação Perfeita</motion.h2>
 
             <motion.p
-                className='font-default sm:text-[14px] lg:text-[18px] sm:mx-5'
+                className='dark:text-gray-400 font-default sm:text-[14px] lg:text-[18px] sm:mx-5'
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}>
@@ -22,7 +22,7 @@ export function Combinacao() {
             </motion.p>
 
             <motion.h3
-                className='font-title lg:text-7xl sm:text-[30px] lg:mb-36 sm:my-16 lg:my-20'
+                className='dark:text-white-90 font-title lg:text-7xl sm:text-[30px] lg:mb-36 sm:my-16 lg:my-20'
                 initial={{ opacity: 0, y: 100, scale: 0.7 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}> Qual o segmento da sua empresa?
@@ -31,14 +31,14 @@ export function Combinacao() {
             <div className='w-full  flex justify-center'>
                 <div className='lg:max-w-[1280px] sm:text-[14px] lg:min-w-[1270px] sm:w-full sm:flex-wrap flex justify-center items-center'>
                     <motion.div
-                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl bg-white-150 shadow-3xl'
+                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl dark:bg-gray-800 bg-white-150 shadow-3xl'
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", delay: 0.3, bounce: 0.5 }}>
                         <div>
-                            <h4 className='font-title text-left mb-6 text-4xl'>Life Science</h4>
-                            <p className='font-default w-11/12'>
+                            <h4 className='dark:text-white-90 font-title text-left mb-6 text-4xl'>Life Science</h4>
+                            <p className='dark:text-gray-400 font-default w-11/12'>
                                 – Representantes de materiais laboratoriais e
                                 médico-hospitalares. <br />
                                 – Prestadores de serviços de suporte e manutenção. <br />
@@ -50,14 +50,14 @@ export function Combinacao() {
                     </motion.div>
 
                     <motion.div
-                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl bg-white-150 shadow-3xl'
+                        className='lg:w-6/12 sm:w-full sm:mx-5 z-10 lg:mr-14 sm:my-5 p-12 text-left rounded-3xl dark:bg-gray-800 bg-white-150 shadow-3xl'
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ type: "spring", delay: 0.3, bounce: 0.5 }}
                         viewport={{ once: true }}>
                         <div>
-                            <h4 className='font-title text-left mb-6 text-4xl'>Healthcare</h4>
-                            <p className='font-default w-11/12'>
+                            <h4 className='dark:text-white-90 font-title text-left mb-6 text-4xl'>Healthcare</h4>
+                            <p className='dark:text-gray-400 font-default w-11/12'>
                                 – Laboratórios de análise. <br />
                                 – Serviços especializados em saúde.<br />
                                 – Empresas de equipamentos especializados.<br />

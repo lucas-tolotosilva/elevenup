@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion"
 import lifescience from '../assets/lifescience.jpg'
 import healthcare from '../assets/healthcare.jpg'
@@ -6,7 +6,6 @@ import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 export function Slider () {
-
 
     const variants = {
         current : { x: 0, opacity: 1, scale: 1.15},

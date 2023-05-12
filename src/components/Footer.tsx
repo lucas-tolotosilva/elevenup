@@ -1,26 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import '../styles/main.css'
 import { BiInfinite } from 'react-icons/bi'
 import logo from '../assets/logo.png'
+import logoB from '../assets/logo-branco.png'
 import img from '../assets/fundo-footer.png'
 import face from '../assets/icons/face.png'
 import insta from '../assets/icons/insta.png'
 import link from '../assets/icons/linkedin.png'
 
+
 export function Footer () {
+    
     return (
-        <div className="w-full min-h-[900px] relative">
+        <div className={`w-full min-h-[900px] relative `}>
             <div className='absolute w-full h-full z-10'>
                     <div className='w-full h-full flex flex-col items-center justify-center text-left space-y-24 relative'>
                     <div className='absolute bottom-0 z-10 '>
                         <img src={img} />
                     </div>
+                    <div className="dark:hidden block">
                         <img width={'300px'} src={logo} />
+                    </div>
+                    <div className="hidden dark:block">
+                        <img width={'300px'} src={logoB} />
+                    </div>
                         
                         <div className='flex space-x-24 z-30 font-default text-lg '>
                             <div >
-                                <h2 className='font-default mb-3 text-3xl font-bold '>Nossa Unidade</h2>
-                                <a href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" target="_blank">
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Nossa Unidade</h2>
+                                <a className="dark:text-gray-400" href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" target="_blank">
                                     Rua Reverendo Francisco <br />
                                     Lotufo, 663 - Sala 6 <br />
                                     Vila Nogueira, Botucatu - SP <br />
@@ -28,19 +36,19 @@ export function Footer () {
                                 </a>
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold'>Institucional</h2>
-                                    <a href='/quem-somos'>Quem Somos</a><br />
-                                    <a href='/equipe'>Equipe</a><br />
-                                    <a href='/contato'>Contato</a> <br />
-                                    <a href='/cases'>Cases</a> <br />
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Institucional</h2>
+                                    <a className="dark:text-gray-400" href='/quem-somos'>Quem Somos</a><br />
+                                    <a className="dark:text-gray-400" href='/equipe'>Equipe</a><br />
+                                    <a className="dark:text-gray-400" href='/contato'>Contato</a> <br />
+                                    <a className="dark:text-gray-400" href='/cases'>Cases</a> <br />
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold'>Contato</h2>
-                                <a href="tel:+551433548256">(14) 3354-8256</a> <br />
-                                <a href="mailto:contato@elevenup.com.br">contato@elevenup.com.br</a>
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Contato</h2>
+                                <a className="dark:text-gray-400" href="tel:+551433548256">(14) 3354-8256</a> <br />
+                                <a className="dark:text-gray-400" href="mailto:contato@elevenup.com.br">contato@elevenup.com.br</a>
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold'>Redes Sociais</h2>
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Redes Sociais</h2>
                                 <div className='flex items-center justify-center space-x-5'>
                                     <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank"><img className='w-12' src={face} /></a>
                                     <a href="https://www.instagram.com/elevenupmktg/" target="_blank"><img className='w-12' src={insta} /></a>
@@ -52,7 +60,7 @@ export function Footer () {
 
                         <div className='w-full absolute z-20 bottom-28'> 
                             <div className='w-full flex items-center justify-center'>
-                                <hr className='w-2/3 h-[2px] bg-[#FF0ED1]'/>
+                                <hr className='w-2/3 h-[2px] border-none bg-[#FF0ED1]'/>
                             </div>
                         </div>
                         <div className='w-full absolute z-20 bottom-8'> 
@@ -66,7 +74,7 @@ export function Footer () {
                 </div>
             
 
-            <div className="w-full min-h-[900px] bg-[url('../assets/fundo.png')] relative cover blur-sm ">
+            <div className="w-full min-h-[900px] bg-[url('../assets/fundo.png')] dark:bg-[url('../assets/fundo-cinza-op.png')] relative cover blur-sm ">
                 <div className='animate-slow-anim4 w-full h-full flex justify-center relative'>
                     {/* ---- RETÂNGULO CENTRO - AZUL ---- */}
                     <div className='absolute -top-12 -rotate-[24deg] blur-sm w-96 h-56 rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></div>
@@ -83,7 +91,7 @@ export function Footer () {
                 </div>
 
                 {/* ---- *** FUNDO COM OPACIDADE *** ---- */}
-                <div className="w-full h-full bg-[url('../assets/fundo-opacidade.png')] blur-sm absolute "></div>
+                <div className={`w-full h-full bg-[url('../assets/fundo-opacidade.png')] dark:bg-[url('../assets/fundo-cinza-op.png')]  blur-sm absolute`} ></div>
                 
                 {/* ---- RETÂNGULO ESQUERDA - AZUL ---- */}
                 <div className='animate-slow-anim5'>

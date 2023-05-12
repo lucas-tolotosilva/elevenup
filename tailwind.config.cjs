@@ -30,10 +30,13 @@ module.exports = {
         },
         black: {
           900: '#222222',
+          200: '#363636',
           100: 'RGBA( 0, 0, 0, 0.4 )'
         },
         gray: {
-          200: '#ececec'
+          200: '#ececec',
+          400: '#C0C0C0',
+          800: '#696969'
         },
         white: {
           50: 'rgba(255, 255, 255, 0.3)',
@@ -65,6 +68,7 @@ module.exports = {
         'gradient-radial-blue2': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250,0.5) 90%)',
         'gradient-radial-blue-mini': 'radial-gradient(circle, rgba(0,56,104,0.1) 5%, rgba(45,91,130,0.05) 52%, rgba(250,250,250, 0.008) 70%)',
         'white-gradient': 'linear-gradient(138deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15449929971988796) 64%, rgba(250,250,250,1) 100%)',
+        'black-gradient': 'linear-gradient(138deg, #222222 50%, #363636 90%, #4F4F4F 100% )',
        },
       animation: {
         'slow-anim1': 'myAnim 15s ease-in-out infinite',

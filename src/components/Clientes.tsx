@@ -7,7 +7,7 @@ export function Clientes () {
     return (
         <div className="w-full sm:mb-16 lg:mb-36">
             <motion.h2 
-                className="font-title w-full lg:text-[150px] sm:text-[50px] sm:mt-10 sm:mb-10 lg:mb-24"
+                className="dark:text-white-90 font-title w-full lg:text-[150px] sm:text-[50px] sm:mt-10 sm:mb-10 lg:mb-24"
                 initial={{ opacity: 0 , scale: 0}}
                 whileInView={{ opacity: 1 , scale: 1}}
                 viewport={{once:true}}> Clientes </motion.h2>

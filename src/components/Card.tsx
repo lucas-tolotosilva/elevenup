@@ -36,7 +36,7 @@ export function Card (props: cardProp) {
                 transition={{ type: "spring", delay: props.delay }}
                 whileInView={{ opacity: 1, y:0, scale: 1}}
                 viewport={{once:true}}
-                className={`w-48 h-48 border mr-5 ml-5 ${props.shadow} border-white-100 bg-gray-200 flex flex-col items-center justify-center rounded-3xl`}>
+                className={`w-48 h-48 border mr-5 ml-5 ${props.shadow} dark:text-white-90 dark:border-gray-800 border-white-100 bg-gray-200 dark:bg-gray-800 flex flex-col items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>
                     <motion.img style={{ x, y, rotateX, rotateY, z:10}} className='absolute -left-7 w-20 h-20' src={props.rosa} alt="Inbound"/> 
@@ -66,7 +66,7 @@ export function CardMobile (props: cardPropMobile) {
     return(
         <div className='relative'>
             
-            <div className={`w-32 h-32 border  ${props.shadow} border-white-100 bg-gray-200 flex flex-col flex-wrap items-center justify-center rounded-3xl`}>
+            <div className={`w-32 h-32 border  ${props.shadow} border-white-100 bg-gray-200 dark:bg-gray-800 flex flex-col flex-wrap items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>
                     <img className='absolute -left-7 w-12 h-12' src={props.rosa} alt="Inbound"/> 

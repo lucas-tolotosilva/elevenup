@@ -20,13 +20,13 @@ export function Solucoes(){
     return (
         <div className="lg:max-w-[1280px] sm:w-full sm:mx-5 sm:mb-16 lg:mb-36">
             <motion.h2 
-                className="font-title w-full lg:text-[150px] sm:text-[50px] mb-4"
+                className="dark:text-white-90 font-title w-full lg:text-[150px] sm:text-[50px] mb-4"
                 initial={{ opacity: 0 , scale: 0}}
                 whileInView={{ opacity: 1 , scale: 1}}
                 viewport={{once:true}}>Soluções</motion.h2>
                 
             <div className="flex justify-center w-full">
-                <p className="text-center font-default lg:text-[18px] sm:text-[14px] lg:w-6/12 sm:w-full mb-20 mt-10 ">
+                <p className="dark:text-gray-400 text-center font-default lg:text-[18px] sm:text-[14px] lg:w-6/12 sm:w-full mb-20 mt-10 ">
                     A ElevenUp tem como objetivo proporcionar os melhores resultados para a sua empresa
                     de Life Science e Healthcare. Pensando nisso, nós oferecemos as melhores soluções para
                     evoluir  seu  negócio  e   elevar sua   marca   no mundo digital! 
