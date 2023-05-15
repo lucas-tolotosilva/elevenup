@@ -110,7 +110,7 @@ export function Nav() {
                     <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} transition-all duration-700 ease-in-out delay-400`}>
                         <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={!theme ? iInsta : iInstaB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
                         <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={!theme ? iFace : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-                        <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                        <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iLinkB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
 
                     </div>
 

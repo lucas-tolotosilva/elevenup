@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion"
 import lifescience from '../assets/lifescience.jpg'
 import healthcare from '../assets/healthcare.jpg'
@@ -118,9 +118,9 @@ export function SlideSm() {
 
     return(
         <div className="w-full mx-5 mt-10 text-[18px]">
-            <div className={` font-title rounded-md text-[30px]`}>
-                <button onClick={handleHealth} className={`px-2 py-2 ${showHealth ? 'bg-pink-200' : null} -ml-[6px] rounded-t-lg`}>Healthcare</button> | 
-                <button onClick={handleLife} className={`px-2 py-2 ${showHealth ? null : 'bg-blue-200 rounded-t-lg'}`}>Lifescience</button>
+            <div className={`dark:text-white-90 font-title rounded-md text-[30px]`}>
+                <button onClick={handleHealth} className={`px-2 py-2 ${showHealth ? 'bg-pink-200 dark:text-black-900' : 'dark:text-white-90'} -ml-[6px] rounded-t-lg`}>Healthcare</button> | 
+                <button onClick={handleLife} className={`px-2 py-2 ${showHealth ? 'dark:text-white-90' : 'bg-blue-200 rounded-t-lg dark:text-black-900'}`}>Lifescience</button>
                 
                 <div className={`${showHealth ? 'bg-pink-200 rounded-t-lg rounded-b-lg' : 'bg-blue-200 rounded-t-lg rounded-b-lg'}`}>
                     {showHealth ? <Healthcare /> : <Lifescience /> }

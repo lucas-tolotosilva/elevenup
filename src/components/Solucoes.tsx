@@ -1,18 +1,18 @@
 import React from 'react';
 import { motion } from "framer-motion"
 //importa icones
-import consult from '../assets/icons/consultoria.svg'
-import criacao from '../assets/icons/criacao.svg'
-import dev from '../assets/icons/desenvolvimento.svg'
-import geracao from '../assets/icons/geracao.svg'
-import gestao from '../assets/icons/gestao.svg'
-import inbound from '../assets/icons/inbound.svg'
-import rosa1 from '../assets/icons/rosas/rosa1.svg'
-import rosa2 from '../assets/icons/rosas/rosa2.svg'
-import rosa3 from '../assets/icons/rosas/rosa3.svg'
-import rosa4 from '../assets/icons/rosas/rosa4.svg'
-import rosa5 from '../assets/icons/rosas/rosa5.svg'
-import rosa6 from '../assets/icons/rosas/rosa6.svg'
+import consult from '../assets/icons/icons-solucoes/consultoria.svg'
+import criacao from '../assets/icons/icons-solucoes/criacao.svg'
+import dev from '../assets/icons/icons-solucoes/desenvolvimento.svg'
+import geracao from '../assets/icons/icons-solucoes/geracao.svg'
+import gestao from '../assets/icons/icons-solucoes/gestao.svg'
+import inbound from '../assets/icons/icons-solucoes/inbound.svg'
+import rosa1 from '../assets/icons/icons-solucoes/rosas/rosa1.svg'
+import rosa2 from '../assets/icons/icons-solucoes/rosas/rosa2.svg'
+import rosa3 from '../assets/icons/icons-solucoes/rosas/rosa3.svg'
+import rosa4 from '../assets/icons/icons-solucoes/rosas/rosa4.svg'
+import rosa5 from '../assets/icons/icons-solucoes/rosas/rosa5.svg'
+import rosa6 from '../assets/icons/icons-solucoes/rosas/rosa6.svg'
 import { Card, CardMobile } from './Card';
 
 export function Solucoes(){

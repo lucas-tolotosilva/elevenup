@@ -66,7 +66,7 @@ export function CardMobile (props: cardPropMobile) {
     return(
         <div className='relative'>
             
-            <div className={`w-32 h-32 border  ${props.shadow} border-white-100 bg-gray-200 dark:bg-gray-800 flex flex-col flex-wrap items-center justify-center rounded-3xl`}>
+            <div className={`w-32 h-32   ${props.shadow} border-white-100 bg-gray-200 dark:bg-gray-800 flex flex-col flex-wrap items-center justify-center rounded-3xl`}>
 
                 <div className='relative pt-4 h-1/2'>
                     <img className='absolute -left-7 w-12 h-12' src={props.rosa} alt="Inbound"/> 
