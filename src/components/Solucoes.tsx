@@ -7,6 +7,12 @@ import dev from '../assets/icons/icons-solucoes/desenvolvimento.svg'
 import geracao from '../assets/icons/icons-solucoes/geracao.svg'
 import gestao from '../assets/icons/icons-solucoes/gestao.svg'
 import inbound from '../assets/icons/icons-solucoes/inbound.svg'
+import consultB from '../assets/icons/icons-solucoes/consultoria-branco.svg'
+import criacaoB from '../assets/icons/icons-solucoes/criacao-branco.svg'
+import devB from '../assets/icons/icons-solucoes/desenvolvimento-branco.svg'
+import geracaoB from '../assets/icons/icons-solucoes/geracao-branco.svg'
+import gestaoB from '../assets/icons/icons-solucoes/gestao-branco.svg'
+import inboundB from '../assets/icons/icons-solucoes/inbound-branco.svg'
 import rosa1 from '../assets/icons/icons-solucoes/rosas/rosa1.svg'
 import rosa2 from '../assets/icons/icons-solucoes/rosas/rosa2.svg'
 import rosa3 from '../assets/icons/icons-solucoes/rosas/rosa3.svg'
@@ -37,27 +43,49 @@ export function Solucoes(){
                     {/* DESKTOP */}
                      <div className="sm:hidden lg:flex relative items-center justify-center ">
                             
-                            <Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
-                            <Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
-                            <Card delay={0.60} shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
-                            <Card delay={0.80} shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
-                            <Card delay={1} shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
-                            <Card delay={1.20} shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+                            <div className='dark:hidden block'><Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} /></div>
+                            <div className='dark:block hidden'><Card delay={0.20} shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inboundB} /></div>
+                            
+                            <div className='dark:hidden block'><Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />  </div>  
+                            <div className='dark:block hidden'><Card delay={0.40} shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={devB} />  </div>  
 
+                            <div className='dark:hidden block'><Card delay={0.60} shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} /> </div>   
+                            <div className='dark:block hidden'><Card delay={0.60} shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestaoB} /> </div>  
+
+                            <div className='dark:hidden block'><Card delay={0.80} shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />  </div>  
+                            <div className='dark:block hidden'><Card delay={0.80} shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consultB} />  </div>
+
+                            <div className='dark:hidden block'><Card delay={1} shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    </div>
+                            <div className='dark:block hidden'><Card delay={1} shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracaoB} />    </div>
+
+                            <div className='dark:hidden block'><Card delay={1.20} shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> </div>
+                            <div className='dark:block hidden'><Card delay={1.20} shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacaoB} /> </div>
                     </div>
+                </div>
                     {/* MOBILE */}
                      <div className="sm:flex-wrap lg:hidden sm:flex sm:items-center sm:justify-center sm:gap-10  ">
                             
-                            <CardMobile  shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} />    
-                            <CardMobile  shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />    
-                            <CardMobile  shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} />    
-                            <CardMobile  shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />    
-                            <CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    
-                            <CardMobile  shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> 
+                     <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inbound} /></div>
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Inbound Marketing" rosa={rosa1} icon={inboundB} /></div>
+                            
+                            <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={dev} />  </div>  
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Desenvolvimento WEB" rosa={rosa4} icon={devB} />  </div>  
 
+                            <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestao} /> </div>   
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Gestão de Redes Sociais" rosa={rosa3} icon={gestaoB} /> </div>  
+
+                            <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consult} />  </div>  
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Consultoria em Inteligência de Mercado" rosa={rosa2} icon={consultB} />  </div>
+
+                            <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracao} />    </div>
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Geração de Leads Qualificados" rosa={rosa5} icon={geracaoB} />    </div>
+
+                            <div className='dark:hidden block'><CardMobile shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacao} /> </div>
+                            <div className='dark:block hidden'><CardMobile shadow="shadow-3xl" title="Criação de Conteúdo" rosa={rosa6} icon={criacaoB} /> </div>
+                    
                     </div>
                 </div>
             </div>
-        </div>
+        
     )
 }

@@ -2,22 +2,25 @@ import React, {useState} from "react"
 import { motion, } from "framer-motion"
 import { Nav } from "../Nav"
 import { listaEquipe } from "../DataEquipe"
-import iFace from "../../assets/icons/iface.svg"
-import iInsta from "../../assets/icons/iinsta.svg"
-import iLink from "../../assets/icons/ilinkedin.svg"
+import iFace from "../../assets/icons/redes-sociais/iface.svg"
+import iInsta from "../../assets/icons/redes-sociais/iinsta.svg"
+import iLink from "../../assets/icons/redes-sociais/ilinkedin.svg"
+import iFaceB from "../../assets/icons/redes-sociais/iface-branco.svg"
+import iInstaB from "../../assets/icons/redes-sociais/iinsta-branco.svg"
+import iLinkB from "../../assets/icons/redes-sociais/ilinkedin-branco.svg"
 import { Footer, FooterMobile } from "../Footer"
 
 export function Equipe(){
     return (
-        <div className="bg-gray-200 overflow-x-hidden">
+        <div className="bg-gray-200 dark:bg-black-900 overflow-x-hidden">
             <div className="absolute inicio top-0 bg-transparent"></div>
 
             <div className="relative w-screen min-h-screen flex flex-col items-center justify-center text-center mb-10 ">
                 {/* --------- Header (logo e menu) --------- */}
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
-                <div className="max-w-[1280px] bg-gray-200 mt-40">
-                    <h1 className="font-title tracking-wider font-bold sm:text-[80px] lg:text-[150px]">EQUIPE</h1>
+                <div className="max-w-[1280px] mt-40">
+                    <h1 className="dark:text-white-90 font-title tracking-wider font-bold sm:text-[80px] lg:text-[150px]">EQUIPE</h1>
                     <div className="w-full flex flex-wrap overflow-hidden lg:justify-start sm:justify-center sm:gap-5 lg:gap-10">
                         {listaEquipe.map(item => (
                             <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} insta={item.insta} face={item.face} linkedin={item.linkedin} img={item.img} />
@@ -66,13 +69,22 @@ export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProp
             <div className="w-full flex justify-center cover">
                 <img className={`${show ? '-mt-6 lg:w-[194px] lg:h-[194px] sm:w-[150px] sm:h-[150px] ' : ' lg:w-[280px] lg:h-[280px] sm:w-[180px] sm:h-[180px] transition-all ease-out duration-75 delay-75'} transition-all ease-in-out duration-500 rounded-t-2xl object-cover`} src={img} />
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center dark:text-white-90">
                 <span className="font-default font-regular mt-2 sm:text-[20px] lg:text-[24px]">{nome}</span>
                 <span className="font-default font-thin -mt-1 mb-2 text-[16px]">{funcao}</span>
                 <div className="flex gap-4 items-center justify-center">
-                    <a target="_blank" href={insta}><img className="w-6 " src={iInsta} /></a> 
-                    <a target="_blank" href={face}><img className="w-6 " src={iFace} /></a>
-                    <a target="_blank" href={linkedin}><img className="w-6 " src={iLink} /></a>
+                    <a target="_blank" href={insta}>
+                        <img className="w-6 dark:hidden block" src={iInsta} />
+                        <img className="w-6 dark:block hidden" src={iInstaB} />
+                    </a> 
+                    <a target="_blank" href={face}>
+                        <img className="w-6 dark:hidden block" src={iFace} />
+                        <img className="w-6 dark:block hidden" src={iFaceB} />
+                    </a>
+                    <a target="_blank" href={linkedin}>
+                        <img className="w-6 dark:hidden block" src={iLink} />
+                        <img className="w-6 dark:block hidden" src={iLinkB} />
+                    </a>
                 </div>
             </div>
         </motion.div>

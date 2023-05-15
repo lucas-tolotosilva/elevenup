@@ -7,12 +7,12 @@ import logoB from '../assets/logo-branco.png'
 import { BiMenuAltRight, BiX, BiSun } from "react-icons/bi";
 import { FaMoon } from 'react-icons/fa'
 import iDna from "../assets/icons/menu-dna.svg"
-import iFace from "../assets/icons/iface.svg"
-import iInsta from "../assets/icons/iinsta.svg"
-import iLink from "../assets/icons/ilinkedin.svg"
-import iFaceB from "../assets/icons/iface-branco.svg"
-import iInstaB from "../assets/icons/iinsta-branco.svg"
-import iLinkB from "../assets/icons/ilinkedin-branco.svg"
+import iFace from "../assets/icons/redes-sociais/iface.svg"
+import iInsta from "../assets/icons/redes-sociais/iinsta.svg"
+import iLink from "../assets/icons/redes-sociais/ilinkedin.svg"
+import iFaceB from "../assets/icons/redes-sociais/iface-branco.svg"
+import iInstaB from "../assets/icons/redes-sociais/iinsta-branco.svg"
+import iLinkB from "../assets/icons/redes-sociais/ilinkedin-branco.svg"
 import '../styles/main.css'
 
 

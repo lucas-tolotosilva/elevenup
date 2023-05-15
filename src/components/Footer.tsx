@@ -3,13 +3,13 @@ import '../styles/main.css'
 import { BiInfinite } from 'react-icons/bi'
 import logo from '../assets/logo.png'
 import logoB from '../assets/logo-branco.png'
-import img from '../assets/fundo-footer.png'
-import face from '../assets/icons/face.png'
-import insta from '../assets/icons/insta.png'
-import link from '../assets/icons/linkedin.png'
-import faceB from '../assets/icons/iface-branco.svg'
-import instaB from '../assets/icons/iinsta-branco.svg'
-import linkB from '../assets/icons/ilinkedin-branco.svg'
+import img from '../assets/img-footer/fundo-footer.png'
+import face from '../assets/icons/redes-sociais/face.png'
+import insta from '../assets/icons/redes-sociais/insta.png'
+import link from '../assets/icons/redes-sociais/linkedin.png'
+import faceB from '../assets/icons/redes-sociais/iface-branco.svg'
+import instaB from '../assets/icons/redes-sociais/iinsta-branco.svg'
+import linkB from '../assets/icons/redes-sociais/ilinkedin-branco.svg'
 
 
 export function Footer () {
@@ -86,7 +86,7 @@ export function Footer () {
                 </div>
             
 
-            <div className="w-full min-h-[900px] bg-[url('../assets/fundo.png')] dark:bg-[url('../assets/fundo-cinza-op.png')] relative cover blur-sm ">
+            <div className="w-full min-h-[900px] bg-[url('../assets/img-footer/fundo.png')] dark:bg-[url('../assets/img-footer/fundo-cinza-op.png')] relative cover blur-sm ">
                 <div className='animate-slow-anim4 w-full h-full flex justify-center relative'>
                     {/* ---- RETÂNGULO CENTRO - AZUL ---- */}
                     <div className='absolute -top-12 -rotate-[24deg] blur-sm w-96 h-56 rounded-3xl bg-gradient-to-r from-blue-600 to-blue-900'></div>
@@ -103,7 +103,7 @@ export function Footer () {
                 </div>
 
                 {/* ---- *** FUNDO COM OPACIDADE *** ---- */}
-                <div className={`w-full h-full bg-[url('../assets/fundo-opacidade.png')] dark:bg-[url('../assets/fundo-cinza-op.png')]  blur-sm absolute`} ></div>
+                <div className={`w-full h-full bg-[url('../assets/img-footer/fundo-opacidade.png')] dark:bg-[url('../assets/img-footer/fundo-cinza-op.png')]  blur-sm absolute`} ></div>
                 
                 {/* ---- RETÂNGULO ESQUERDA - AZUL ---- */}
                 <div className='animate-slow-anim5'>

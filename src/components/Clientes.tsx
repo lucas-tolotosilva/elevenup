@@ -57,7 +57,7 @@ export function Clientes () {
             </ParallaxProvider>
             </div>
 
-            <span className='sm:block lg:hidden font-default text-[15px] sm:mb-10 text-center'>Arraste para o lado para <br/> ver todos os clientes!</span>
+            <span className='sm:block lg:hidden font-default text-[15px] sm:mb-10 text-center dark:text-white-90'>Arraste para o lado para <br/> ver todos os clientes!</span>
             <div className='sm:ml-4 sm:block lg:hidden'>
                 <div id="client-logo" className="flex gap-12 overflow-auto overflow-y-hidden touch-auto">
                     {carousel1.map((item, indice)=> (

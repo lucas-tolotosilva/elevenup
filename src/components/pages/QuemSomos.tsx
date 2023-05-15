@@ -10,14 +10,14 @@ import img1 from "../../assets/quem-somos.jpg"
 export function QuemSomos() {
     return (
         
-        <div className="bg-gray-200 overflow-x-hidden">
+        <div className="bg-gray-200 dark:bg-black-900 overflow-x-hidden">
             <div id="inicio" className="absolute w-full h-10 top-0 bg-transparent"></div>
 
             <div className="relative  w-screen min-h-screen flex flex-col items-center justify-center text-center sm:mb-32 ">
                 <Nav />
 
                 <div className=" max-w-[1280px] mt-32">
-                    <h1 className="font-title tracking-wider font-bold mb-20 lg:text-[150px] sm:text-[65px]">quem somos</h1>
+                    <h1 className="font-title dark:text-white-90 tracking-wider font-bold mb-20 lg:text-[150px] sm:text-[65px]">quem somos</h1>
                     <div className="flex justify-end  items-center">
                         <img className="lg:inline-flex sm:hidden w-1/2 cover rounded-3xl" src={img1} />
                         <div className="sm:w-full sm:mx-5 text-justify px-10 py-5 rounded-3xl backdrop-blur-md font-default text-[15px] bg-white-80 ">
@@ -38,7 +38,7 @@ export function QuemSomos() {
                             </p>
                         </div>
                     </div>
-                    <div className="font-semibold font-default sm:text-2xl sm:mx-5 lg:text-4xl mt-28">
+                    <div className="font-semibold font-default dark:text-white-90 sm:text-2xl sm:mx-5 lg:text-4xl mt-28">
                         <p>
                             Nosso time contém especialistas em:
                         </p>
@@ -51,7 +51,7 @@ export function QuemSomos() {
                             <CardQuemSomos key={item.nome} img={item.img} nome={item.nome} />
                         ))}
             </div>
-            <div className="font-default pt-24 pb-16 flex items-center justify-center text-center sm:text-[15px] sm:mx-5 lg:text-xl">
+            <div className="font-default dark:text-white-90 pt-24 pb-16 flex items-center justify-center text-center sm:text-[15px] sm:mx-5 lg:text-xl">
                         <p>
                         Além de Biomédicos e Biólogos com mestrado e doutorado e
                         <br />Engenheiros de Bioprocessos, formados nas mais renomadas
@@ -64,7 +64,7 @@ export function QuemSomos() {
                     Venha para a ElevenUp e evolua para o mundo digital!</span>
             </div>
             <div className="w-screen flex items-center justify-center sm:mb-28 pt-10">
-                <div className="font-default sm:text-[14px] sm:mx-5 lg:mb-80 sm:mb-5 lg:text-2xl max-w-[1200px] text-center">
+                <div className="font-default dark:text-white-90 sm:text-[14px] sm:mx-5 lg:mb-80 sm:mb-5 lg:text-2xl max-w-[1200px] text-center">
                     <p>
                     Assim, ao se unir a ElevenUp você estará junto a
                     profissionais que entendem do seu negócio e utilizam
@@ -91,7 +91,7 @@ type quemSomosProps={
 }
 export function CardQuemSomos({ img, nome}:quemSomosProps ){
     return(
-        <div className='w-[280px] h-[280px]'>
+        <div className='w-[280px] h-[280px] dark:bg-gray-400 dark:rounded-lg'>
             <div className="w-full h-[280px]  flex flex-col items-center rounded-3xl justify-center cover ">
                 <img className='object-contain  w-[194px] h-[194px]  ' src={ img} />
                 <div className="flex flex-col items-center justify-center">
