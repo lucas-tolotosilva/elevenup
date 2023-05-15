@@ -1,9 +1,9 @@
 import react from 'react'
 //import gustavo from "../assets/equipe/gustavo.jpg"
 import wivian from "../assets/equipe/wivian.jpg"
+import gustavo from "../assets/equipe/gustavo-boss.jpg"
 import lucas from "../assets/equipe/lucas.jpg"
 import bruno from "../assets/equipe/bruno.jpg"
-import venancio from "../assets/equipe/venancio.jpg"
 import bia from "../assets/equipe/bia.jpg"
 import lennon from "../assets/equipe/lennon.jpg"
 import maria from "../assets/equipe/maria.jpg"
@@ -20,7 +20,7 @@ export const listaEquipe = [
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: maria
+        img: gustavo
     },
     {
         nome: 'Wivian Ramos',
@@ -47,14 +47,6 @@ export const listaEquipe = [
         img: bruno
     },
     {
-        nome: 'Gustavo Venancio',
-        funcao: 'Copywriter',
-        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
-        face: 'https://www.facebook.com/ElevenUpMarketing/',
-        linkedin: 'https://www.linkedin.com/company/elevenup/',
-        img: venancio
-    },
-    {
         nome: 'Beatriz',
         funcao: 'Copywriter',
         insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
@@ -65,9 +57,10 @@ export const listaEquipe = [
     {
         nome: 'Lennon Policastro',
         funcao: 'Gestor Operacional | Designer',
-        insta: 'https://www.instagram.com/elevenupmktg/?hl=pt-br',
+        insta: 'https://www.instagram.com/olennondesign',
         face: 'https://www.facebook.com/ElevenUpMarketing/',
         linkedin: 'https://www.linkedin.com/company/elevenup/',
+        behance: 'https://www.linkedin.com/company/elevenup/',
         img: lennon
     },
     {

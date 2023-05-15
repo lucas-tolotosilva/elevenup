@@ -138,7 +138,7 @@ export function Nav() {
             <div className={`fixed z-30 overflow-hidden top-0 transition duration-500 ease-in-out transform ${handleOpen ? 'translate-x-0 overflow-hidden' : 'translate-x-full overflow-y-hidden'}  w-full h-full`}>
                 <div className="bg-white-150 dark:bg-black-900 min-w-full min-h-full absolute z-10 object-cover">
                     <div id="renderSurface" className="min-w-full min-h-full absolute z-10 object-cover opacity-60 blur-sm"></div>
-                    <BiX onClick={handleMenu} color='#ffffff' className="absolute top-8 right-16 z-20 cursor-pointer" size={60} />
+                    <BiX onClick={handleMenu}  className="absolute dark:text-white-90 top-8 right-16 z-20 cursor-pointer" size={60} />
                     <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
                         <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
                             <h2 className="fonte-default blur-jj text-[200px] tracking-[60px] opacity-[0.15] font-black uppercase leading-[180px]">{text}</h2>
@@ -149,7 +149,7 @@ export function Nav() {
                             <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/">Home</a></li>
                             <li onMouseOver={() => handleMouseOver(2)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/quem-somos">Quem Somos</a></li>
                             <li onMouseOver={() => handleMouseOver(3)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/equipe">Equipe</a></li>
-                            <li onMouseOver={() => handleMouseOver(4)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/cases">Cases</a></li>
+                            {/* <li onMouseOver={() => handleMouseOver(4)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/cases">Cases</a></li> */}
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
                             <li onMouseOver={() => handleMouseOver(6)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/contato">Contato</a></li>
                         </ul>
@@ -157,7 +157,7 @@ export function Nav() {
                             <li  className="hover:cursor-pointer dark:text-white-100"><a href="/">Home</a></li>
                             <li  className="hover:cursor-pointer dark:text-white-100"><a href="/quem-somos">Quem Somos</a></li>
                             <li  className="hover:cursor-pointer dark:text-white-100"><a href="/equipe">Equipe</a></li>
-                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/cases">Cases</a></li>
+                            {/* <li  className="hover:cursor-pointer dark:text-white-100"><a href="/cases">Cases</a></li> */}
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
                             <li  className="hover:cursor-pointer dark:text-white-100"><a href="/contato">Contato</a></li>
                         </ul>
