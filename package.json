@@ -10,7 +10,9 @@
     "openmobile": "node ./node_modules/openmobile/ip.js"
   },
   "dependencies": {
+    "@types/react-i18next": "^8.1.0",
     "framer-motion": "^8.1.7",
+    "i18next": "^22.4.15",
     "js": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
