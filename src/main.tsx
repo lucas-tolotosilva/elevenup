@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 
@@ -12,6 +12,8 @@ import { Contato } from './components/pages/Contato'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { ErrorPAge } from './components/pages/ErrorPage'
 import { Termos } from './components/pages/termos'
+
+import { LanguageContext } from './components/Language/LanguageContext'
 
 const router = createBrowserRouter([
   {
@@ -49,8 +51,16 @@ const router = createBrowserRouter([
   }
 ])
 
+const [language, setLanguage] = useState('pt');
+
+export const changeLanguage = (language: string) => {
+  setLanguage(language);
+};
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+      <LanguageContext.Provider value={{ changeLanguage }}>
+        <RouterProvider router={router} />
+      </LanguageContext.Provider>
   </React.StrictMode>,
 )

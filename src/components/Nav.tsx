@@ -14,6 +14,7 @@ import iFaceB from "../assets/icons/redes-sociais/iface-branco.svg"
 import iInstaB from "../assets/icons/redes-sociais/iinsta-branco.svg"
 import iLinkB from "../assets/icons/redes-sociais/ilinkedin-branco.svg"
 import '../styles/main.css'
+import LanguageSwitcher from "./Language/LanguageSwitcher";
 
 
 export function Nav() {
@@ -116,6 +117,10 @@ export function Nav() {
 
                     {/* Desktop */}
                     <div className="flex items-center gap-10">
+                        <div>
+                            <LanguageSwitcher />
+   
+                        </div>
                         <div onClick={toggleTheme} className={`flex items-center justify-center rounded-md h-10 w-10 cursor-pointer`}>
                            {!theme ? <FaMoon color="#000000" size={20}/> : <BiSun color="#ffc222" size={30}/> } 
                         </div>
