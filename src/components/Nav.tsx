@@ -132,15 +132,11 @@ export function Nav() {
                             <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iLinkB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
 
                         </div>
-                        <div className="flex bg-white-50 h-9 rounded-lg relative">
-                                {/* <div className={`
+                        <div className="flex bg-white-50 h-6 rounded-full relative">
+                                <div className={`
                                 ${btnTranslate === 'pt' ? 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' : null 
                                 || btnTranslate === 'en' ? 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' : 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' 
-                                || btnTranslate === 'es' ? 'top-1/2 right-5 translate-x-1/2 -translate-y-1/2' : null} transition-all duration-700 ease-in-out delay-400 z-0 absolute w-9 h-9 rounded-full shadow-lg bg-white-100 `}></div> */}
-                            <div className={`
-                                ${btnTranslate === 'pt' ? 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' : null 
-                                || btnTranslate === 'en' ? 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' : 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' 
-                                || btnTranslate === 'es' ? 'top-1/2 right-5 translate-x-1/2 -translate-y-1/2' : null} transition-all duration-700 ease-in-out delay-400 z-0 absolute w-10 h-11 rounded-lg shadow-lg bg-white-100 `}></div>
+                                || btnTranslate === 'es' ? 'top-1/2 right-5 translate-x-1/2 -translate-y-1/2' : null} transition-all duration-700 ease-in-out delay-400 z-0 absolute w-10 h-10 rounded-full shadow-lg bg-white-100 `}></div> 
                             <button className="z-10 w-10" onClick={() => handleLanguageChange('pt')}>BR</button>
                             <button className="z-10 w-10" onClick={() => handleLanguageChange('en')}>EN</button>
                             <button className="z-10 w-10" onClick={() => handleLanguageChange('es')}>ES</button>
