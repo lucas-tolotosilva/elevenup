@@ -7,11 +7,10 @@ import { Header } from '../Header'
 import { Segmentos } from '../Segmentos'
 import { Solucoes } from '../Solucoes'
 
-
 export function Home () {
     return (
-      <div className='bg-gray-200 dark:bg-black-900'>
-        <div className="absolute inicio top-0 bg-transparent"></div>
+      <div className='bg-gray-200 dark:bg-black-900 overflow-x-hidden'>
+        
           
           <Header />  
         <div className='flex items-center justify-center'>

@@ -46,7 +46,7 @@ export function Card (props: cardProp) {
                 <motion.div  
                 style={{ x, y, rotateX, rotateY, z:10}}
                 className='h-1/2 flex items-center'> 
-                    <h2 className='font-default text-[13px] w-36'>{props.title}</h2>
+                    <h2 className='font-default text-center text-[13px] w-36'>{props.title}</h2>
                 </motion.div>
             </motion.div>
 

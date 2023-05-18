@@ -10,10 +10,11 @@ import link from '../assets/icons/redes-sociais/linkedin.png'
 import faceB from '../assets/icons/redes-sociais/iface-branco.svg'
 import instaB from '../assets/icons/redes-sociais/iinsta-branco.svg'
 import linkB from '../assets/icons/redes-sociais/ilinkedin-branco.svg'
+import { useTranslation } from "react-i18next";
 
 
 export function Footer () {
-    
+    const {t, i18n} = useTranslation()
     return (
         <div className={`w-full min-h-[900px] relative `}>
             <div className='absolute w-full h-full z-10'>
@@ -30,7 +31,7 @@ export function Footer () {
                         
                         <div className='flex space-x-24 z-30 font-default text-lg '>
                             <div >
-                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Nossa Unidade</h2>
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>{t('NossaUnidade')}</h2>
                                 <a className="dark:text-gray-400" href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" target="_blank">
                                     Rua Reverendo Francisco <br />
                                     Lotufo, 663 - Sala 6 <br />
@@ -39,19 +40,19 @@ export function Footer () {
                                 </a>
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Institucional</h2>
-                                    <a className="dark:text-gray-400" href='/quem-somos'>Quem Somos</a><br />
-                                    <a className="dark:text-gray-400" href='/equipe'>Equipe</a><br />
-                                    <a className="dark:text-gray-400" href='/contato'>Contato</a> <br />
-                                    <a className="dark:text-gray-400" href='/cases'>Cases</a> <br />
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>{t('Institucional')}</h2>
+                                    <a className="dark:text-gray-400" href='/quem-somos'>{t('QuemSomos')}</a><br />
+                                    <a className="dark:text-gray-400" href='/equipe'>{t('Equipe')}</a><br />
+                                    <a className="dark:text-gray-400" href='/contato'>{t('Contato')}</a> <br />
+                                    {/* <a className="dark:text-gray-400" href='/cases'>Cases</a> <br /> */}
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Contato</h2>
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>{t('Contato')}</h2>
                                 <a className="dark:text-gray-400" href="tel:+551433548256">(14) 3354-8256</a> <br />
                                 <a className="dark:text-gray-400" href="mailto:contato@elevenup.com.br">contato@elevenup.com.br</a>
                             </div>
                             <div>
-                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>Redes Sociais</h2>
+                                <h2 className='font-default mb-3 text-3xl font-bold dark:text-white-90'>{t('RedesSociais')}</h2>
                                 <div className='flex items-center justify-center space-x-5'>
                                     <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank">
                                         <img className='w-12 dark:hidden' src={face} />
@@ -77,9 +78,9 @@ export function Footer () {
                         </div>
                         <div className='w-full absolute z-20 bottom-8'> 
                             <div className='w-full flex flex-col items-center justify-center dark:text-white-90'>
-                                <span>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
+                                <span>{t('DesenvolvidoComMuito')} <span className='text-red-600'>♥</span> {t('por')}  <span className='text-blue-900 font-bold'>ElevenUp</span>
                                 </span> 
-                                <a className='cursor-pointer' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
+                                <a className='cursor-pointer' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10'>© 2023 {t('TodosDireitos')} </span></a> 
                             </div>
                         </div>
                     </div>
@@ -128,46 +129,47 @@ export function Footer () {
 }
 
 export function FooterMobile(){
+    const {t, i18n} = useTranslation()
     return (
         <div className='w-full '>
             <div>
                 <div className="block dark:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,181.3C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fillOpacity="1" d="M0,160L60,160C120,160,240,160,360,181.3C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
                 <div className="dark:block hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#696969" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,181.3C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#696969" fillOpacity="1" d="M0,160L60,160C120,160,240,160,360,181.3C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
             </div>
             <div className='bg-white-100 dark:bg-gray-800'>
                 <div className='w-full flex justify-center py-5'>
                     <img className='w-2/5 block dark:hidden' src={logo} />
-                    <img className='w-2/5 dark:block hiden' src={logoB} />
+                    <img className='w-2/5 dark:block hidden' src={logoB} />
                 </div>
             
-                <div className='mt-10 flex flex-col items-center justify-center gap-10 z-30 font-default text-lg '>
+                <div className='mt-10 flex flex-col text-center items-center justify-center gap-10 z-30 font-default text-lg '>
                     <div >
-                        <h2 className='dark:text-white-90 font-default mb-3 font-bold text-2xl '>Nossa Unidade</h2>
+                        <h2 className='dark:text-white-90 font-default mb-3 font-bold text-2xl '>{t('NossaUnidade')}</h2>
                         <a href="https://goo.gl/maps/e1Xxc5AXoCHpo9Bg6" className="text-[14px] dark:text-gray-400" target="_blank">
                             Rua Reverendo Francisco <br />
                             Lotufo, 663 - Sala 6 <br />
                             Vila Nogueira, Botucatu - SP <br />
                             18606-810 <br />
                         </a>
+                    </div >
+                    <div >
+                        <h2 className='font-default text-left  mb-3 font-bold text-2xl dark:text-white-90'>{t('Institucional')}</h2>
+                            <a href='/quem-somos' className="text-[14px] dark:text-gray-400">{t('QuemSomos')}</a><br />
+                            <a href='/equipe' className="text-[14px] dark:text-gray-400 ">{t('Equipe')}</a><br />
+                            <a href='/contato' className="text-[14px] dark:text-gray-400">{t('Contato')}</a> <br />
+                            {/* <a href='/cases' className="text-[14px] dark:text-gray-400">Cases</a> <br /> */}
                     </div>
                     <div>
-                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>Institucional</h2>
-                            <a href='/quem-somos' className="text-[14px] dark:text-gray-400">Quem Somos</a><br />
-                            <a href='/equipe' className="text-[14px] dark:text-gray-400 ">Equipe</a><br />
-                            <a href='/contato' className="text-[14px] dark:text-gray-400">Contato</a> <br />
-                            <a href='/cases' className="text-[14px] dark:text-gray-400">Cases</a> <br />
-                    </div>
-                    <div>
-                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>Contato</h2>
+                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>{t('Contato')}</h2>
                         <a href="tel:+551433548256" className="text-[14px] dark:text-gray-400">(14) 3354-8256</a> <br />
                         <a href="mailto:contato@elevenup.com.br" className="text-[14px] dark:text-gray-400">contato@elevenup.com.br</a>
                     </div>
                     <div>
-                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>Redes Sociais</h2>
+                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>{t('RedesSocsiais')}</h2>
                         <div className='flex items-center justify-center space-x-5'>
                             <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank">
                                 <img className='w-10 dark:hidden' src={face} />
@@ -185,9 +187,9 @@ export function FooterMobile(){
                         </div>
                     </div>
                     <hr className='w-2/3 h-[2px] border-none dark:text-white-90 bg-[#FF0ED1]'/>
-                    <span className='text-sm dark:text-white-90'>Desenvolvido com muito <span className='text-red-600'>♥</span> por <span className='text-blue-900 font-bold'>ElevenUp</span>
+                    <span className='text-sm dark:text-white-90'>{t('DesenvolvidoComMuito')} <span className='text-red-600'>♥</span> {t('por')} <span className='text-blue-900 font-bold'>ElevenUp</span>
                     </span>
-                    <a className='-mt-8' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10 dark:text-white-90'>© 2023 Todos direitos reservados | Termos de Uso</span></a> 
+                    <a className='-mt-8' href="/termos-de-uso-e-politica-de-privacidade"><span className='text-sm mb-10 dark:text-white-90'>© 2023 {t('TodosDireitos')}</span></a> 
                 </div>
             </div>
         </div>

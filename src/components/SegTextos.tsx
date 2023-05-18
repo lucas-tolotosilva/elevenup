@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
-
+import { useTranslation } from "react-i18next";
 export function Healthcare (){
+    const {t, i18n} = useTranslation()
     return (
            <div className="w-full sm:pb-10 h-full flex flex-col justify-center relative ">
               
@@ -10,27 +11,22 @@ export function Healthcare (){
                     </div>
                     <div className="mb-7">
                         <p className="lg:dark:text-gray-400 sm:dark:text-black-200 sm:text-[14px] lg:text-[18px]">
-                            Através de nosso conhecimento biológico, criamos uma
-                            estratégia personalizada  para  o  seu negócio utilizando
-                            marketing    e    Healthcare.    Vamos   proporcionar   sua
-                            evolução potencializando seus resultados,  aumentando
-                            sua  presença   digital  e   solucionando   todos   os  seus
-                            problemas de marketing.
+                            {t('HealthcareText')}
                         </p>   
                     </div>
 
                     <div className="mb-7">
-                        <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-center sm:text-[17px]">Utilizamos Ciência e Inovação!</h6>
+                        <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-center sm:text-[17px]">{t('UtilizamosCiencia')}</h6>
                     </div>
                     
                     <div>
-                        <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 sm:text-[17px] font-bold">Nossos segmentos:</h6>
+                        <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 sm:text-[17px] font-bold">{t('NossosSegmentos')}</h6>
                         <ul className="lg:dark:text-gray-400 sm:dark:text-black-200 sm:text-[14px] list-disc ml-10 sm:mt-4">
-                            <li>Laboratórios de análise.</li>
-                            <li>Serviços especializados em saúde.</li>
-                            <li>Empresas de equipamentos especializados.</li>
-                            <li>Empresas de plano de saúde (clínicas populares).</li>
-                            <li>Clínicas de saúde.</li>
+                            <li>{t('LaboratoriosDeAnalise')}</li>
+                            <li>{t('ServicosEspecializados')}</li>
+                            <li>{t('EmpresasDeEquipamentos')}</li>
+                            <li>{t('EmpresasDePlano')}</li>
+                            <li>{t('ClínicasDeSaúde')}</li>
                         </ul>
                     </div>
                     
@@ -42,7 +38,7 @@ export function Healthcare (){
 }
 
 export function Lifescience (){
-
+    const {t, i18n} = useTranslation()
     return (
         <div className="w-full h-full sm:pb-10 flex flex-col justify-center relative">
             
@@ -52,25 +48,21 @@ export function Lifescience (){
                 </div>
                 <div className="mb-7">
                     <p className="lg:dark:text-gray-400 sm:dark:text-black-200 sm:text-[14px] lg:text-[18px]">
-                    Através de nosso conhecimento biológico, criamos uma estratégia  personalizada   para  o  seu
-                    negócio utilizando marketing e Life Science. Vamos proporcionar sua evolução potencializando
-                    seus resultados, aumentando sua presença digital e solucionando todos os seus problemas de
-                    marketing.
-
+                        {t('LifescienceText')}  
                     </p>   
                 </div>
 
                 <div className="mb-7">
-                    <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-[17px] text-center">Utilizamos Ciência e Inovação!</h6>
+                    <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-[17px] text-center">{t('UtilizamosCiencia')}</h6>
                 </div>
 
                 <div>
-                    <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-[17px] sm:mb-4">Nossos segmentos:</h6>
+                    <h6 className="lg:dark:text-white-90 sm:dark:text-black-200 font-bold sm:text-[17px] sm:mb-4">{t('NossosSegmentos')}</h6>
                     <ul className="lg:dark:text-gray-400 sm:dark:text-black-200 list-disc ml-10 sm:text-[14px]">
-                        <li>Representantes de materiais laboratoriais e médico-hospitalares.</li>
-                        <li>Prestadores de serviços de suporte e manutenção.</li>
-                        <li>Softwares relacionados à Biotech.</li>
-                        <li>Indústria de materiais laboratoriais e médico-hospitalares.</li>
+                        <li>{t('RepresentantesDeMateriais')}</li>
+                        <li>{t('PrestadoresDeServicos')}</li>
+                        <li>{t('SoftwareRelacionados')}</li>
+                        <li>{t('IndustriaDeMateriais')}</li>
                         <br />
                     </ul>
                 </div>

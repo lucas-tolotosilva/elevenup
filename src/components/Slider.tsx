@@ -4,6 +4,7 @@ import lifescience from '../assets/lifescience.jpg'
 import healthcare from '../assets/healthcare.jpg'
 import { Healthcare, Lifescience } from "./SegTextos";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 export function Slider () {
 
@@ -107,6 +108,7 @@ export function Slider () {
 }
 
 export function SlideSm() {
+    const {t, i18n} = useTranslation()
     const [showHealth, setHealth] = useState(false)
 
     function handleLife(){
@@ -119,8 +121,11 @@ export function SlideSm() {
     return(
         <div className="w-full mx-5 mt-10 text-[18px]">
             <div className={`dark:text-white-90 font-title rounded-md text-[30px]`}>
-                <button onClick={handleHealth} className={`px-2 py-2 ${showHealth ? 'bg-pink-200 dark:text-black-900' : 'dark:text-white-90'} -ml-[6px] rounded-t-lg`}>Healthcare</button> | 
-                <button onClick={handleLife} className={`px-2 py-2 ${showHealth ? 'dark:text-white-90' : 'bg-blue-200 rounded-t-lg dark:text-black-900'}`}>Lifescience</button>
+                <div className="flex justify-center">
+                    <button onClick={handleHealth} className={`px-2 py-2 ${showHealth ? 'bg-pink-200 dark:text-black-900' : 'dark:text-white-90'} -ml-[6px] rounded-t-lg`}>Healthcare</button> | 
+                    <button onClick={handleLife} className={`px-2 py-2 ${showHealth ? 'dark:text-white-90' : 'bg-blue-200 rounded-t-lg dark:text-black-900'}`}>Lifescience</button>
+
+                </div>
                 
                 <div className={`${showHealth ? 'bg-pink-200 rounded-t-lg rounded-b-lg' : 'bg-blue-200 rounded-t-lg rounded-b-lg'}`}>
                     {showHealth ? <Healthcare /> : <Lifescience /> }

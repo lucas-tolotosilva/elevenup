@@ -9,8 +9,10 @@ import iFaceB from "../../assets/icons/redes-sociais/iface-branco.svg"
 import iInstaB from "../../assets/icons/redes-sociais/iinsta-branco.svg"
 import iLinkB from "../../assets/icons/redes-sociais/ilinkedin-branco.svg"
 import { Footer, FooterMobile } from "../Footer"
+import { useTranslation } from "react-i18next"
 
 export function Equipe(){
+    const { t, i18n} = useTranslation()
     return (
         <div className="bg-gray-200 dark:bg-black-900 overflow-x-hidden">
             <div className="absolute inicio top-0 bg-transparent"></div>
@@ -20,10 +22,10 @@ export function Equipe(){
                 <Nav  />           
                 {/* --------- Fim - Header (logo e menu) --------- */} 
                 <div className="max-w-[1280px] mt-40">
-                    <h1 className="dark:text-white-90 font-title tracking-wider font-bold sm:text-[80px] lg:text-[150px]">EQUIPE</h1>
+                    <h1 className="dark:text-white-90 font-title tracking-wider font-bold sm:text-[80px] lg:text-[150px]">{t('Equipe')}</h1>
                     <div className="w-full flex flex-wrap overflow-hidden lg:justify-start sm:justify-center sm:gap-5 lg:gap-10">
                         {listaEquipe.map(item => (
-                            <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} insta={item.insta} face={item.face} linkedin={item.linkedin} img={item.img} />
+                            <CardEquipe key={item.nome} nome={item.nome} funcao={item.funcao} img={item.img}  rede1={item.rede1} rede2={item.rede2} imgRede1={item.imgRede1} imgRede2={item.imgRede2} imgRede1Branco={item.imgRede1Branco} imgRede2Branco={item.imgRede2Branco}/>
                         ))}
                     </div>
                     <div>
@@ -46,12 +48,16 @@ export function Equipe(){
 type equipeProps={
     nome: string,
     funcao: string,
-    insta: string,
-    face: string,
-    linkedin: string,
-    img: string
+    img: string,
+    rede1: any,
+    rede2: any,
+    imgRede1: string,
+    imgRede2: any,
+    imgRede1Branco: string,
+    imgRede2Branco: any,
+    
 }
-export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProps ){
+export function CardEquipe({nome, funcao, img, rede1, rede2, imgRede1, imgRede2, imgRede1Branco, imgRede2Branco}:equipeProps ){
     const [show, setShow] = useState(false)
     
    function handleMouseOver() {
@@ -73,18 +79,18 @@ export function CardEquipe({nome, funcao, insta, face, linkedin, img}:equipeProp
                 <span className="font-default font-regular mt-2 sm:text-[20px] lg:text-[24px]">{nome}</span>
                 <span className="font-default font-thin -mt-1 mb-2 text-[16px]">{funcao}</span>
                 <div className="flex gap-4 items-center justify-center">
-                    <a target="_blank" href={insta}>
-                        <img className="w-6 dark:hidden block" src={iInsta} />
-                        <img className="w-6 dark:block hidden" src={iInstaB} />
+                    <a target="_blank" href={rede1}>
+                        <img className="w-6 dark:hidden block" src={imgRede1} />
+                        <img className="w-6 dark:block hidden" src={imgRede1Branco} />
                     </a> 
-                    <a target="_blank" href={face}>
-                        <img className="w-6 dark:hidden block" src={iFace} />
-                        <img className="w-6 dark:block hidden" src={iFaceB} />
+                    {
+                        rede2 == null ? '' :
+                        <a target="_blank" href={rede2}>
+                        <img className="w-6 dark:hidden block" src={imgRede2} />
+                        <img className="w-6 dark:block hidden" src={imgRede2Branco} />
                     </a>
-                    <a target="_blank" href={linkedin}>
-                        <img className="w-6 dark:hidden block" src={iLink} />
-                        <img className="w-6 dark:block hidden" src={iLinkB} />
-                    </a>
+                    }
+                    
                 </div>
             </div>
         </motion.div>

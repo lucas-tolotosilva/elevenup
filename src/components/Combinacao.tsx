@@ -1,31 +1,31 @@
-import React from 'react'
 import { motion } from "framer-motion"
 import life from '../assets/life.jpg'
 import health from '../assets/health.jpg'
+import { useTranslation } from 'react-i18next'
 
 export function Combinacao() {
+    const {t, i18n} = useTranslation()
     return (
-        <div className='w-full relative sm:mb-20 lg:mb-96'>
+        <div className='w-full relative flex flex-col items-center sm:mb-20 lg:mb-96'>
             <motion.h2
                 className="dark:text-white-90 font-title w-full sm:text-[45px] sm:text-center lg:text-[150px] mb-4"
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}>A Combinação Perfeita</motion.h2>
+                viewport={{ once: true }}>{t('CombinacaoPerfeita')}</motion.h2>
 
             <motion.p
-                className='dark:text-gray-400 font-default sm:text-[14px] lg:text-[18px] sm:mx-5'
+                className='dark:text-gray-400 text-center sm:w-full lg:w-[800px] font-default sm:text-[14px] lg:text-[18px] sm:mx-10'
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}>
-                Ao se unir a ElevenUp você estará junto a profissionais que entendem do seu negócio e utilizam as melhores <br />
-                ferramentaspara desenvolver sua empresa, fazer você se relacionar com seu cliente e vender mais!
+                    {t('CombinacaoPerfeitaText')}
             </motion.p>
 
             <motion.h3
-                className='dark:text-white-90 font-title lg:text-7xl sm:text-[30px] lg:mb-36 sm:my-16 lg:my-20'
+                className='dark:text-white-90 text-center font-title lg:text-7xl sm:text-[30px] lg:mb-36 sm:my-16 lg:my-20'
                 initial={{ opacity: 0, y: 100, scale: 0.7 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={{ once: true }}> Qual o segmento da sua empresa?
+                viewport={{ once: true }}> {t('QualOSegmento')}
             </motion.h3>
 
             <div className='w-full  flex justify-center'>
@@ -39,12 +39,10 @@ export function Combinacao() {
                         <div>
                             <h4 className='dark:text-white-90 font-title text-left mb-6 text-4xl'>Life Science</h4>
                             <p className='dark:text-gray-400 font-default w-11/12'>
-                                – Representantes de materiais laboratoriais e
-                                médico-hospitalares. <br />
-                                – Prestadores de serviços de suporte e manutenção. <br />
-                                – Softwares relacionados à Biotech. <br />
-                                – Indústria de materiais laboratoriais
-                                médico-hospitalares. <br />
+                                – {t('RepresentantesDeMateriais')} <br />
+                                – {t('PrestadoresDeServicos')} <br />
+                                – {t('SoftwareRelacionados')} <br />
+                                – {t('IndustriaDeMateriais')} <br />
                             </p>
                         </div>
                     </motion.div>
@@ -58,11 +56,11 @@ export function Combinacao() {
                         <div>
                             <h4 className='dark:text-white-90 font-title text-left mb-6 text-4xl'>Healthcare</h4>
                             <p className='dark:text-gray-400 font-default w-11/12'>
-                                – Laboratórios de análise. <br />
-                                – Serviços especializados em saúde.<br />
-                                – Empresas de equipamentos especializados.<br />
-                                – Empresas de plano de saúde (clínicas populares).<br />
-                                – Clínicas de saúde.<br /><br />
+                                – {t('LaboratoriosDeAnalise')} <br />
+                                – {t('ServicosEspecializados')}<br />
+                                – {t('EmpresasDeEquipamentos')}<br />
+                                – {t('EmpresasDePlano')}<br />
+                                – {t('ClínicasDeSaúde')}<br /><br />
                             </p>
                         </div>
                     </motion.div>

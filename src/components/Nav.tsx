@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"
 import '../styles/main.css'
 import { motion, } from "framer-motion"
 import logo from '../assets/logo.png'
@@ -13,9 +12,7 @@ import iLink from "../assets/icons/redes-sociais/ilinkedin.svg"
 import iFaceB from "../assets/icons/redes-sociais/iface-branco.svg"
 import iInstaB from "../assets/icons/redes-sociais/iinsta-branco.svg"
 import iLinkB from "../assets/icons/redes-sociais/ilinkedin-branco.svg"
-import '../styles/main.css'
-import LanguageSwitcher from "./Language/LanguageSwitcher";
-
+import { useTranslation } from 'react-i18next';
 
 export function Nav() {
     const [icon, setIcon] = useState(false) //Variável state que guarda valor bool para trocar o ícone
@@ -25,6 +22,22 @@ export function Nav() {
     const [theme, setTheme] = useState(false)    
     const [toggle, setToggle] = useState("")    
 
+    const [btnTranslate, setBtnTranslate] = useState('')
+
+    const { t, i18n } = useTranslation();
+
+  const handleLanguageChange = (language: string) => {
+    localStorage.setItem('language', language);
+    i18n.changeLanguage(language); // Acesse o método changeLanguage através de i18n
+
+    if(language === 'pt'){
+        setBtnTranslate('pt')
+    } else if ( language === 'en'){
+        setBtnTranslate('en')
+    } else {
+        setBtnTranslate('es')
+    }
+  };      
     // Função para trocar o icone com hover
     function handleIconOver() {
         setIcon(true)
@@ -45,15 +58,15 @@ export function Nav() {
         if (value === 1) {
             setText('Home')
         } else if (value === 2) {
-            setText('Quem Somos')
+            setText(t('QuemSomos'))
         } else if (value === 3) {
-            setText('Equipe')
+            setText(t('Equipe'))
         } else if (value === 4) {
             setText('Cases')
         } else if (value === 5) {
             setText('Blog')
         } else if (value === 6) {
-            setText('Contato')
+            setText(t('Contato'))
         }
     }
 
@@ -75,6 +88,7 @@ export function Nav() {
         const newTheme = !theme; // Alternamos entre true e false
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme ? "dark" : "light"); // Armazenamos a string correspondente ao novo tema
+        
       }
 
       useEffect(() => {
@@ -108,18 +122,25 @@ export function Nav() {
                                             transition-all duration-700 ease-in-out delay-400  w-full lg:px-16 h-24 flex sm:pl-5 items-center justify-between fixed `}>
                     <a href="/"><img className="lg:w-32 sm:w-24" src={!theme ? logo : logoB} /></a>
 
-                    <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} transition-all duration-700 ease-in-out delay-400`}>
-                        <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={!theme ? iInsta : iInstaB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-                        <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={!theme ? iFace : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-                        <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iLinkB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
-
-                    </div>
+                    
 
                     {/* Desktop */}
                     <div className="flex items-center gap-10">
-                        <div>
-                            <LanguageSwitcher />
-   
+                        <div className={`${showMenu ? 'lg:flex sm:hidden gap-2 -ml-16 ' : 'hidden'} mr-3 transition-all duration-700 ease-in-out delay-400`}>
+                            <a href="https://www.instagram.com/elevenupmktg/?hl=pt-br"><img src={!theme ? iInsta : iInstaB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                            <a href="https://www.facebook.com/ElevenUpMarketing/"><img src={!theme ? iFace : iFaceB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+                            <a href="https://www.linkedin.com/company/elevenup/"><img src={!theme ? iLink : iLinkB} className="w-6 hover:cursor-pointer opacity-40 hover:opacity-100 hover:w-10 transition-opacity ease-in delay-75" /></a>
+
+                        </div>
+                        <div className="flex bg-white-90 h-9 rounded-lg relative">
+                            {/* <div className={`${btnTranslate === 'pt' ? 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' : btnTranslate === 'en' ? 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' : 'top-1/2 -right-5 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out delay-400'} transition-all duration-700 ease-in-out delay-400 z-0 absolute w-10 h-11 rounded-lg shadow-lg bg-white-100 `}></div> */}
+                            <div className={`
+                                ${btnTranslate === 'pt' ? 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' : null 
+                                || btnTranslate === 'en' ? 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' : 'top-1/2 left-5 -translate-x-1/2 -translate-y-1/2' 
+                                || btnTranslate === 'es' ? 'top-1/2 right-5 translate-x-1/2 -translate-y-1/2' : null} transition-all duration-700 ease-in-out delay-400 z-0 absolute w-10 h-11 rounded-lg shadow-lg bg-white-100 `}></div>
+                            <button className="z-10 w-10" onClick={() => handleLanguageChange('pt')}>BR</button>
+                            <button className="z-10 w-10" onClick={() => handleLanguageChange('en')}>EN</button>
+                            <button className="z-10 w-10" onClick={() => handleLanguageChange('es')}>ES</button>
                         </div>
                         <div onClick={toggleTheme} className={`flex items-center justify-center rounded-md h-10 w-10 cursor-pointer`}>
                            {!theme ? <FaMoon color="#000000" size={20}/> : <BiSun color="#ffc222" size={30}/> } 
@@ -152,19 +173,19 @@ export function Nav() {
                         </div>
                         <ul className="lg:flex sm:hidden flex-col font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
                             <li onMouseOver={() => handleMouseOver(1)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/">Home</a></li>
-                            <li onMouseOver={() => handleMouseOver(2)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/quem-somos">Quem Somos</a></li>
-                            <li onMouseOver={() => handleMouseOver(3)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/equipe">Equipe</a></li>
+                            <li onMouseOver={() => handleMouseOver(2)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/quem-somos">{t('QuemSomos')}</a></li>
+                            <li onMouseOver={() => handleMouseOver(3)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/equipe">{t('Equipe')}</a></li>
                             {/* <li onMouseOver={() => handleMouseOver(4)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/cases">Cases</a></li> */}
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
-                            <li onMouseOver={() => handleMouseOver(6)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/contato">Contato</a></li>
+                            <li onMouseOver={() => handleMouseOver(6)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/contato">{t('Contato')}</a></li>
                         </ul>
                         <ul className="sm:flex flex-col lg:hidden font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
                             <li  className="hover:cursor-pointer dark:text-white-100"><a href="/">Home</a></li>
-                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/quem-somos">Quem Somos</a></li>
-                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/equipe">Equipe</a></li>
+                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/quem-somos">{t('QuemSomos')}</a></li>
+                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/equipe">{t('Equipe')}</a></li>
                             {/* <li  className="hover:cursor-pointer dark:text-white-100"><a href="/cases">Cases</a></li> */}
                             {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
-                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/contato">Contato</a></li>
+                            <li  className="hover:cursor-pointer dark:text-white-100"><a href="/contato">{t('Contato')}</a></li>
                         </ul>
                     </div>
                 </div>
