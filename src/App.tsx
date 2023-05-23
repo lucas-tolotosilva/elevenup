@@ -9,6 +9,7 @@ import { Contato } from './components/pages/Contato'
 import { ErrorPAge } from './components/pages/ErrorPage'
 import { Termos } from './components/pages/termos'
 import { Nav } from './components/Nav'
+import { Obrigado } from './components/pages/Obrigado'
 import './styles/main.css'
 
 function App() {
@@ -46,6 +47,10 @@ function App() {
       path: "/nav",
       element: <Nav />
     },
+    {
+      path: "/obrigado",
+      element: <Obrigado />
+    }
   ]);
 
   return (

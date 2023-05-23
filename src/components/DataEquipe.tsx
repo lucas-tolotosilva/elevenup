@@ -74,12 +74,12 @@ export const listaEquipe = [
     {
         nome: 'Bruno Prado',
         funcao: 'Gestor de Tráfego',
-        rede1: 'https://www.linkedin.com/in/wivian-ramos-35561b137/',
-        rede2: null,
+        rede1: 'https://www.linkedin.com/in/bruno-prado-b65422163/',
+        rede2: 'https://www.instagram.com/bprado013/',
         imgRede1: iLink,
-        imgRede2: null,
+        imgRede2: iInsta,
         imgRede1Branco: iLinkB,
-        imgRede2Branco: null,
+        imgRede2Branco: iInstaB,
         img: bruno
     },
     {
@@ -140,12 +140,12 @@ export const listaEquipe = [
     {
         nome: 'Gustavo Simões',
         funcao: 'Videomaker',
-        rede1: 'https://www.linkedin.com/in/wivian-ramos-35561b137/',
-        rede2: null,
+        rede1: 'https://www.linkedin.com/in/lgsimoes/',
+        rede2: 'https://www.instagram.com/lg.simoes/',
         imgRede1: iLink,
-        imgRede2: null,
+        imgRede2: iInsta,
         imgRede1Branco: iLinkB,
-        imgRede2Branco: null,
+        imgRede2Branco: iInstaB,
         img: simoes
     },
     {
