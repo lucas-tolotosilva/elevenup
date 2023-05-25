@@ -31,13 +31,12 @@ export function Contato() {
       email: email,
       origin: "Formulário Contato - ElevenUp",
       custom_fields: {
-        mensagem: msg
+        '4ca155bb53dbd89f4eb402d8258aa9e47f26a446'  : msg
       }
-    }    
+    }
+    
   })
 
-
-  
   const headers = {
     'Content-Type': 'application/json'
   }

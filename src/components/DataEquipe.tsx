@@ -40,11 +40,11 @@ export const listaEquipe = [
     {
         nome: 'Gustavo Vieira',
         funcao: 'CEO',
-        rede1: 'https://www.linkedin.com/in/wivian-ramos-35561b137/',
+        rede1: 'https://www.instagram.com/gustavovieirabr/',
         rede2: null,
-        imgRede1: iLink,
+        imgRede1: iInsta,
         imgRede2: null,
-        imgRede1Branco: iLinkB,
+        imgRede1Branco: iInstaB,
         imgRede2Branco: null,
         img: gustavo
     },
@@ -85,11 +85,11 @@ export const listaEquipe = [
     {
         nome: 'Beatriz',
         funcao: 'Copywriter',
-        rede1: 'https://www.linkedin.com/in/wivian-ramos-35561b137/',
+        rede1: 'https://www.instagram.com/enfbeatrizsilva/',
         rede2: null,
-        imgRede1: iLink,
+        imgRede1: iInsta,
         imgRede2: null,
-        imgRede1Branco: iLinkB,
+        imgRede1Branco: iInstaB,
         imgRede2Branco: null,
         img: bia
     },

@@ -169,7 +169,7 @@ export function FooterMobile(){
                         <a href="mailto:contato@elevenup.com.br" className="text-[14px] dark:text-gray-400">contato@elevenup.com.br</a>
                     </div>
                     <div>
-                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>{t('RedesSocsiais')}</h2>
+                        <h2 className='font-default mb-3 font-bold text-2xl dark:text-white-90'>{t('RedesSociais')}</h2>
                         <div className='flex items-center justify-center space-x-5'>
                             <a href="https://www.facebook.com/ElevenUpMarketing/" target="_blank">
                                 <img className='w-10 dark:hidden' src={face} />
