@@ -1,6 +1,7 @@
 {
   "name": "elevenup",
   "private": true,
+  "homepage": "https://elevenup.com.br/site-eleven/dist/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

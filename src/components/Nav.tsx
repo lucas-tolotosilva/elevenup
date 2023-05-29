@@ -54,20 +54,10 @@ export function Nav() {
     setHandleOpen((handleOpen) => !handleOpen);
   }
 
+  
+
   function handleMouseOver(value: number) {
-    if (value === 1) {
-      setText("Home");
-    } else if (value === 2) {
-      setText(t("QuemSomos"));
-    } else if (value === 3) {
-      setText(t("Equipe"));
-    } else if (value === 4) {
-      setText("Cases");
-    } else if (value === 5) {
-      setText("Blog");
-    } else if (value === 6) {
-      setText(t("Contato"));
-    }
+    
   }
 
   const handleBgMenu = () => {
@@ -253,25 +243,25 @@ export function Nav() {
           <div className="w-screen h-screen absolute flex flex-col justify-center items-center z-10 ">
             <div className="w-screen absolute h-screen z-0 flex justify-center items-center">
               <h2 className="fonte-default blur-jj text-[200px] tracking-[60px] opacity-[0.15] font-black uppercase leading-[180px]">
-                {text}
+                {text === 'Home' ? t('Home') : text === 'QuemSomos' ? t('QuemSomos') : text === 'Equipe' ? t('Equipe') : t('Contato')}
               </h2>
             </div>
             <div className="bg-white-200 opacity-20 backdrop-blur-lg w-screen absolute h-screen z-10 flex justify-center items-center"></div>
             <ul className="lg:flex sm:hidden flex-col font-default font-extrabold z-20 uppercase lg:leading-[100px] sm:leading-[80px] lg:text-7xl sm:text-3xl ">
               <li
-                onMouseOver={() => handleMouseOver(1)}
+                onMouseOver={() => setText('Home')}
                 className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"
               >
                 <a href="/">Home</a>
               </li>
               <li
-                onMouseOver={() => handleMouseOver(2)}
+                onMouseOver={() => setText('QuemSomos')}
                 className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"
               >
                 <a href="/quem-somos">{t("QuemSomos")}</a>
               </li>
               <li
-                onMouseOver={() => handleMouseOver(3)}
+                onMouseOver={() => setText('Equipe')}
                 className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"
               >
                 <a href="/equipe">{t("Equipe")}</a>
@@ -279,7 +269,7 @@ export function Nav() {
               {/* <li onMouseOver={() => handleMouseOver(4)} className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"><a href="/cases">Cases</a></li> */}
               {/* <li onMouseOver={() => handleMouseOver(5)} className="hover:text-8xl hover:cursor-pointer "><Link href="/blog">Blog</Link></li> */}
               <li
-                onMouseOver={() => handleMouseOver(6)}
+                onMouseOver={() => setText('Contato')}
                 className="lg:hover:text-8xl hover:cursor-pointer dark:text-white-90"
               >
                 <a href="/contato">{t("Contato")}</a>
